@@ -130,6 +130,7 @@ The biggest update yet to how arrivals behave at the runway.
 - **Stage a holding clearance** with a live preview of the racetrack and the correct ICAO entry (direct, teardrop or parallel).
 - **Left / Right turn buttons** to force a turn direction on the first turn.
 - **"Or less" / "or greater" speed constraints.**
+- **Reciprocal runway protection** — selecting a runway blocks its opposite end in the picker so you can't activate a head-on pair by accident.
 
 ---
 
@@ -153,7 +154,8 @@ The biggest update yet to how arrivals behave at the runway.
 A large update that turned the prototype into a proper simulation.
 
 - **Schedule-driven traffic** — real callsigns, aircraft types and airport pairs from an offline database.
-- **Full physics chain** — indicated → true → ground speed with an altitude-varying wind model, automatic night mode, and an automatic 250 kt speed cap below FL100.
+- **Full physics chain** — indicated → true → ground speed with an altitude-varying wind model (Normal / Strong / Jet upper winds), automatic night mode from the real time of day, and an automatic 250 kt speed cap below FL100.
+- **Approach and direct-to clearances** staged alongside heading/level/speed and sent together on EXE.
 - **Full keyboard navigation** for the command panel.
 - **3-slot save/load** with autosave on exit.
 - **Settings menu** and an animated main menu with a live radar background.
@@ -171,4 +173,5 @@ The first playable version of MultiScope ATC, controlling **EHAM (Amsterdam Schi
 - ILS approaches with localizer capture and glideslope, and holding patterns with all three ICAO entry types.
 - Conflict detection (STCA) with ICAO separation minima and predictive advisories.
 - 49 aircraft types, each with its own performance.
-- Offline Windows voice control with realistic pilot read-backs.
+- Offline Windows voice control with realistic pilot read-backs and a full radio audio chain (squelch clicks, static hiss).
+- Plan-view radar scope with data tags, speed vectors, ILS lines, airspace boundaries and conflict symbology.
