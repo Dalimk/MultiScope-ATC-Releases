@@ -1,0 +1,109 @@
+name: Sync roadmap to Discord
+
+# Whenever ROADMAP.md changes, post (first time) or edit (every time after) a
+# single Discord message via a channel webhook, so the pinned roadmap in Discord
+# always matches the file. The message id is stored in .github/roadmap-message-id.
+#
+# Setup (one time):
+#   1. In Discord: Server Settings -> Integrations -> Webhooks -> New Webhook in
+#      your roadmap channel -> Copy Webhook URL. (A plain webhook -- do NOT add
+#      "/github" to it; that suffix is only for GitHub's release integration.)
+#   2. In this repo: Settings -> Secrets and variables -> Actions -> New
+#      repository secret named DISCORD_ROADMAP_WEBHOOK with that URL.
+#   3. Run this workflow once (push a ROADMAP.md change, or the "Run workflow"
+#      button), then pin the resulting Discord message once. Future edits update
+#      it in place and keep the pin.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ROADMAP.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: roadmap-discord
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Discord embed payload from ROADMAP.md
+        run: |
+          set -euo pipefail
+          BLOB="https://github.com/${GITHUB_REPOSITORY}/blob/main"
+          # Transform the Markdown into an embed description:
+          #  - drop the leading H1 (the embed has its own title)
+          #  - drop horizontal rules ('---'), which Discord shows literally
+          #  - make the relative changelog link absolute
+          desc="$(sed -e '1{/^# /d}' -e '/^---$/d' \
+                      -e "s#](CHANGELOG.md)#](${BLOB}/CHANGELOG.md)#g" ROADMAP.md)"
+          # Discord embed descriptions are capped at 4096 characters.
+          desc="$(printf '%s' "$desc" | head -c 4000)"
+          jq -n \
+            --arg title "MultiScope ATC — Roadmap" \
+            --arg url "${BLOB}/ROADMAP.md" \
+            --arg desc "$desc" \
+            '{embeds:[{title:$title, url:$url, description:$desc, color:3447003,
+                       footer:{text:"Updated automatically from GitHub"}}]}' \
+            > payload.json
+          echo "payload bytes: $(wc -c < payload.json)"
+
+      - name: Post or update the Discord message
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_ROADMAP_WEBHOOK }}
+        run: |
+          set -euo pipefail
+          if [ -z "${WEBHOOK:-}" ]; then
+            echo "::error::Secret DISCORD_ROADMAP_WEBHOOK is not set. See the setup notes in this workflow file."
+            exit 1
+          fi
+
+          IDFILE=.github/roadmap-message-id
+          MSG_ID=""
+          [ -f "$IDFILE" ] && MSG_ID="$(tr -d '[:space:]' < "$IDFILE")"
+
+          post_new() {
+            curl -sS -X POST "${WEBHOOK}?wait=true" \
+              -H 'Content-Type: application/json' \
+              -d @payload.json -o resp.json -w '%{http_code}'
+          }
+          patch_existing() {
+            curl -sS -X PATCH "${WEBHOOK}/messages/${MSG_ID}" \
+              -H 'Content-Type: application/json' \
+              -d @payload.json -o resp.json -w '%{http_code}'
+          }
+
+          if [ -n "$MSG_ID" ]; then
+            code="$(patch_existing)"
+            if [ "$code" = "404" ]; then
+              echo "Stored message $MSG_ID no longer exists; posting a new one."
+              code="$(post_new)"
+            fi
+          else
+            code="$(post_new)"
+          fi
+
+          echo "Discord responded HTTP $code"
+          if [ "$code" -ge 300 ]; then
+            echo "Discord error body:"; cat resp.json; echo
+            exit 1
+          fi
+
+          # If a new message was created, persist its id so future runs edit it.
+          NEW_ID="$(jq -r '.id // empty' resp.json)"
+          if [ -n "$NEW_ID" ] && [ "$NEW_ID" != "$MSG_ID" ]; then
+            echo "$NEW_ID" > "$IDFILE"
+            git config user.name  'github-actions[bot]'
+            git config user.email 'github-actions[bot]@users.noreply.github.com'
+            git add "$IDFILE"
+            git commit -m "Roadmap: store Discord message id [skip ci]"
+            git push
+            echo "Stored new Discord message id $NEW_ID"
+          fi
