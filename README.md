@@ -13,6 +13,7 @@ Control arriving and departing aircraft at **EHAM (Amsterdam Schiphol)** using v
 - **[Latest release](https://github.com/Dalimk/MultiScope-ATC-Releases/releases/latest)**
 - **[All releases](https://github.com/Dalimk/MultiScope-ATC-Releases/releases)**
 - **[Full changelog](CHANGELOG.md)**
+- **[Roadmap](ROADMAP.md)** — what's coming next
 
 Every new version is published here as a GitHub Release, so you can watch this repo (Watch → Custom → Releases) to be notified.
 
