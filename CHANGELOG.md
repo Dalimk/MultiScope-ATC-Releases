@@ -6,6 +6,18 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.21.0 — Ground movement & taxi control
+
+Aircraft now live on the airport surface — watch them land, taxi in, and taxi them yourself.
+
+- **New ground (airport) map.** Press **G** to switch to a top-down view of Schiphol's taxiways, aprons, stands and runways. Pan and zoom to follow the action on the surface.
+- **See the whole arrival.** Aircraft appear on the ground map as they come down final approach — touchdown, rollout, and turning off the runway onto a taxiway are all shown.
+- **Aircraft taxi in instead of vanishing.** After landing, an aircraft clears the runway, taxis past the holding point and waits for your instructions instead of disappearing.
+- **Give taxi clearances.** Click an aircraft on the ground and clear it to a stand, choosing exactly which taxiways it should follow — including routes that double back over the same taxiway.
+- **Runway crossings.** When a taxi route crosses a runway, the aircraft holds short and asks to cross; you issue the crossing clearance and it continues.
+
+---
+
 ## v0.20.4 — Landings, crosswind and go-arounds
 
 The biggest update yet to how arrivals behave at the runway.
