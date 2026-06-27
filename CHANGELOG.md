@@ -6,6 +6,17 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.22.0 — Simplified control panel (BID)
+
+A new, beginner-friendly way to direct aircraft, sitting right next to the detailed panel you already know.
+
+- **New "Basic" input panel.** Switch between the full list panel and a cleaner, simpler one using the panel buttons above the command bar — handy when the detailed layout feels like a lot, especially while you're learning.
+- **Direct-to a fix in one click.** A single DIRECT list shows the arrival's route fixes, navaids and approach fixes together; click one to send the aircraft straight there. Press and hold a holding fix to put it in the hold.
+- **Simple heading, level and speed steppers.** Nudge heading, altitude and speed up or down with arrow buttons, or clear a setting with its red ✕. The aircraft's current target shows in amber and your pending change in blue, just like the detailed panel.
+- **Nothing else changes.** Same EXE confirmation, same keyboard shortcuts, same flying — only the way you enter instructions is simpler. Switch back to the full panel any time.
+
+---
+
 ## v0.21.0 — Ground movement & taxi control
 
 Aircraft now live on the airport surface — watch them land, taxi in, and taxi them yourself.
