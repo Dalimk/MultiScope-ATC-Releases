@@ -6,6 +6,17 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.23.0 — Wake separation, expedite climb/descent & in-game feedback
+
+Two new tools for managing your traffic, plus a quick way to tell us what you think — right from the radar.
+
+- **Expedite climb and descent.** Tell an aircraft to climb or descend at its maximum rate when you need it to get a move on. Press **E** (or long-press the level on the control panel); the pilot reads back "expedite climb/descent." Re-selecting a level normally cancels the expedite.
+- **Wake turbulence separation.** Aircraft now need wake spacing behind heavier traffic. A red trail and **WAKE** marker show when a follower is too close, final-approach spacing shows a marker for where the next arrival should sit, and an aircraft that catches wake on final will go around ("going around, due to wake"). Lined-up departures also wait the required time behind the one ahead. Losing wake separation costs points on the new score panel, and you can turn the whole system on or off in Settings (ICAO or RECAT rules).
+- **Send feedback from inside the game.** Press **F8** (or use the pause menu) to send a bug report, suggestion or note without leaving the game. Pick a category, add a title and message, and optionally include a screenshot of your current radar — it goes straight to the team. Nothing personal is sent.
+- **Consistent dropdown menus.** All the dropdown menus across the game now share the same clean look.
+
+---
+
 ## v0.22.0 — Simplified control panel (BID)
 
 A new, beginner-friendly way to direct aircraft, sitting right next to the detailed panel you already know.
