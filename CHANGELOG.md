@@ -6,6 +6,20 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.24.0 — Scores, stats & your controller career
+
+Track how you're doing — in the moment, at the end of each session, and across your whole career.
+
+- **A clearer score panel.** The in-game score now splits into Traffic (arrivals, departures, transits, total, and time played) and Performance (separation losses, wake losses, sector violations, and your total score), colour-coded so you can read it at a glance.
+- **End-of-session report card.** Pause the game and open Statistics for a letter grade from S to F with a one-line verdict, your safety percentage, most common incident, and how this session stacks up against your personal best.
+- **Your controller career.** A new Career screen on the main menu keeps lifetime stats — total aircraft handled, hours controlling, safety record, best and busiest sessions, favourite runways, and the aircraft types, airlines and destinations you see most. It fills in as you play.
+- **Smoother go-arounds.** Aircraft that go around now do the right thing when you give them a new heading, route or approach: the heading shows on the tag, they re-intercept the localizer for another try, and the missed-approach line clears once you take over.
+- **Pilots take a beat.** After you press EXE, aircraft now wait a second or two before starting the manoeuvre — like a real crew reading back, then acting. Your readback and the label update instantly.
+- **More weather variety.** Starting a new game now rolls the QNH along with the wind, instead of always sitting at 1013.
+- **Fixes & polish.** Better voice handling of altitudes above the transition level, the runways you pick in setup now show correctly in-game, paused games no longer nag you with "do you read?", and an all-round tidier control panel.
+
+---
+
 ## v0.23.0 — Wake separation, expedite climb/descent & in-game feedback
 
 Two new tools for managing your traffic, plus a quick way to tell us what you think — right from the radar.
