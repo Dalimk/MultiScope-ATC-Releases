@@ -6,6 +6,22 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.25.0 — Tailwind go-arounds, the departure list & custom controls
+
+Wind now matters on both ends of the runway, you can see your departures coming, and the controls are yours to change.
+
+- **Wind that works both ways.** Aircraft now watch the tailwind as well as the crosswind. A strong tailwind can push a landing aircraft into a go-around, and pilots will call up when they can't land in it. Departures wait on the ground while their runway has too much tailwind, and the runway picker turns red or orange when a runway is out of — or close to — its wind limits.
+- **Go-arounds tell you why.** When an aircraft goes around it now says the reason — runway not clear, wake turbulence, too much crosswind or too much tailwind — and repeats it when it checks back in on the missed approach. Give one a heading and it drops the missed-approach procedure to become a normal arrival again; the missed-approach path shows in yellow the first time you select it.
+- **See your departures coming.** A new departure list on the radar shows the upcoming departures for each active runway — when they'll appear, their callsign, type and SID — so you can plan the outbound flow before they even spawn.
+- **Rebind your controls.** Every keyboard shortcut is now listed under Settings → Controls, and you can rebind the ones that matter — hold, approach, expedite, push-to-talk, the radar toggles, sim speed and more. Click a key, press a new one; if it clashes with another shortcut they simply swap.
+- **Know what every setting does.** A small "?" next to each setting explains what it does — and for the arcade/realistic options, what each side changes.
+- **Set your own track-line length.** A new slider sets how far ahead the predicted track lines project by default (still adjustable live with the [ and ] keys).
+- **Name your saves.** Saving now lets you type a name for the slot and warns you before overwriting an existing save.
+- **Sharper separation and scoring.** Departures climbing away on diverging routes are handled more realistically, a brief re-loss right after you've fixed a conflict isn't double-counted, and every landing now counts — even when the aircraft taxis clear of the runway.
+- **Coming soon.** New Game now shows a **Live ADS-B** traffic mode as a preview of what's next.
+
+---
+
 ## v0.24.0 — Scores, stats & your controller career
 
 Track how you're doing — in the moment, at the end of each session, and across your whole career.
