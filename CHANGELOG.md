@@ -6,6 +6,48 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.0 — General aviation, smarter runways & realistic descents
+
+Schiphol gets general-aviation traffic with its own runway logic, a new "semi-active" runway state, and more natural descents. This release also rolls in everything since v0.25.0.
+
+### New in this release
+
+**General aviation comes to Schiphol**
+
+Business jets and light aircraft — Gulfstreams, Citations, Learjets, the Pilatus PC-12 and PC-24, the Dornier 328 and more — now fly to their own runways and behave differently from the airliners.
+
+- **Arrivals** ignore the usual entry-point logic and head for **RWY 22**. When 22 isn't available — because it's out on the wind, or another runway it conflicts with is in use — they're sent to **RWY 36R** instead.
+- **The 36R break-off.** About **three in four** GA arrivals sent to 36R fly the ILS down to around 300 ft, then leave the glideslope, cross the 36R threshold at ~150 ft and make a **visual right turn to land on the short RWY 04**. Their label stays on 36R the whole way, and if one goes around it flies the correct missed approach for wherever it was — 36R before the break-off, 04 after.
+- **Go-arounds re-plan.** If a GA arrival goes around, the game immediately works out its new landing runway and updates the label straight away — it might not be the runway it was on before.
+- **Departures** have their own runway order: **RWY 04** by default (with a lower initial climb of 3,000 ft), falling back to 09, 22 or 18L depending on what's in use. A RWY 04 departure waits for GA break-off traffic on final and for a spell after a 06/36R go-around; a RWY 22 departure waits for arrivals on short final; and when RWY 24 is the departure runway, 22 and 24 are sequenced together so they don't go head-to-head.
+
+**Semi-active runways**
+
+Runways can now be in a half-way state instead of just on or off.
+
+- Deselect a runway that still has aircraft committed to it and it becomes **semi-active**: it shows as a **dashed-green box** in the runway menu, its localizer and locator stay on the scope, and its traffic keeps landing — but nothing new is sent to it. Once the last aircraft is down it blinks three times and goes dark. A note in the runway menu tells you which runway is winding down.
+- The same state powers GA traffic on runways you haven't selected: a GA arrival or departure lights its runway up (blinking in), and a GA **departure** runway appears about **ten minutes ahead** — the moment the flight shows in the departure list — then switches off once it has departed and climbed through 2,000 ft.
+
+**More realistic descents**
+
+With the Realistic descent setting, vectored arrivals below FL100 no longer use one fixed rate. Each aircraft picks a comfortable descent rate and plans **where to level off** on the way to 2,000 ft — gentler descents level off earlier, steeper ones carry on further out — so the flow down final looks a lot more natural. (Arcade descents are unchanged.)
+
+**Start with traffic already flowing**
+
+A fresh game can **pre-load the airspace** with a few minutes of traffic already in progress, so you drop straight into a live picture with aircraft on the arrival and departure flows instead of waiting for an empty scope to fill.
+
+### Also since v0.25.0
+
+- **Radio phraseology overhaul.** Pilots now read back with varied wording instead of one fixed phrase every time, and a "descend" instruction that would actually be a climb (or the other way round) gets a **"confirm climb/descend?"** query back instead of being flown the wrong way. Read-backs also match the aircraft's state and your QNH setting.
+- **First-run welcome & help.** New players are greeted and pick **Arcade or Realistic** to start, which sets sensible defaults; you can change it later. Every setting now has a small **"?"** explaining what it does, including what each side of the Arcade/Realistic toggles changes.
+- **Ground view (early).** A first look at an airport-surface (ground radar) view with taxiing aircraft, its own zoom and pan.
+- **Levels of separation.** Aircraft that are procedurally separated — departures on diverging SIDs, parallel missed approaches, a missed approach against the parallel localizer, and similar — no longer trip **false separation losses**.
+- **RWY 24 departure hold.** A RWY 24 departure now waits on the ground while an 18C arrival is on short final, and for two minutes after one goes around.
+- **New commands.** Cancel a hold to rejoin the route, and resume normal (own) speed to hand speed back to the procedure.
+- **Fixes.** Wake-separation alerts no longer fire for aircraft still on the ground; handed-off labels keep their side; approach-while-vectoring re-arms correctly; every landing counts even when the aircraft taxis clear; and the New Game setup steppers support press-and-hold.
+
+---
+
 ## v0.25.0 — Fresh menus, your career, real-world traffic & tailwind go-arounds
 
 A big one. As well as this release's new features, it brings together everything since v0.24.0 — a full menu redesign, a controller career with ranks and medals, and a real-world traffic mode.
