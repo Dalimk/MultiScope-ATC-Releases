@@ -6,6 +6,31 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.1 — Frequency discipline & sharper separation
+
+A radio-realism update: only one aircraft talks at a time, and separation now behaves the way the rulebook says it should.
+
+### One frequency, one voice
+
+The shared radio channel now behaves like a real party-line.
+
+- **Pilots wait for a clear frequency.** An aircraft won't check in until the frequency has been silent for a couple of seconds, so calls no longer step on each other.
+- **Key over someone and you'll hear it.** Transmit while a pilot is already talking and you get the classic **blocked heterodyne squeal** — the two transmissions garble, just like the real thing.
+- **You have to answer them first.** An aircraft can't be given instructions until it has checked in with you — the transfer button, keyboard commands and voice all wait until it's on frequency. Selecting an aircraft also gives you a few seconds' grace before it re-calls.
+- **Steadier re-calls.** An aircraft you haven't answered now re-calls on a consistent ten-second rhythm instead of drifting out to long, uneven gaps.
+
+### Separation that matches the book
+
+- **On the line is separated.** Two aircraft sitting *exactly* on the required distance now count as separated — you only lose separation once the gap drops **below** the minimum, not the instant you touch it.
+- **Departures behave in the climb.** A departure following another now stays on its ground-based wake spacing until it climbs through **2,000 ft**, rather than switching the moment its wheels leave the ground.
+- **Inbound spacing respects wake.** Traffic feeding in at ARTIP, SUGOL and RIVER is now spaced by whichever is greater — the standard gap or the wake requirement for that specific pairing — so a light aircraft behind a heavy is never fed in too tight.
+
+### Voice recognition
+
+- More reliable speech recognition on Windows, including a fix for **non-English Windows** installs where the command grammar could fail to load.
+
+---
+
 ## v0.26.0 — General aviation, smarter runways & realistic descents
 
 Schiphol gets general-aviation traffic with its own runway logic, a new "semi-active" runway state, and more natural descents. This release also rolls in everything since v0.25.0.
