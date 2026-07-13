@@ -6,6 +6,31 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.3 — Colourblind support, cleaner airspace warnings & fixes
+
+### Accessibility
+
+- **Colourblind display modes.** New deuteranopia / protanopia / tritanopia options recolour the airspace boundaries (TMA, CTR, CTA, FIR) with a colourblind-safe palette so the lines stay easy to tell apart from the background and each other. Off by default — pick your mode in **Settings → Radar**.
+
+### Turns, speeds & the data tag
+
+- **Aircraft turn the way you tell them.** Choosing left or right next to a heading now actually flies that direction for the turn onto the new heading, instead of always taking the shortest way round.
+- **FAS and MCS in the BID.** The button-input speed selector now steps into final-approach speed and minimum-clean speed, sitting in the list at their real speed values.
+- **Vectored departures keep their exit fix.** A departure flying a heading off a vector SID still shows its sector-exit point, so you can send it direct.
+- **Voice labels update as you speak.** With auto label update on, the data tag shows your new clearance the moment the game understands it — the aircraft still complies after the pilot reads back. With it off, the tag now holds heading, level **and** speed until you set them yourself.
+
+### Airspace warnings
+
+- **No more false warnings over neighbouring airspace.** Legally overflying Rotterdam's TMA at 3,000 ft, or holding near SUGOL up at FL70, no longer flashes a warning — the game now checks the full 3D shape of each sector (floor and ceiling included) before flagging anything.
+
+### Fixes
+
+- **Arrivals land reliably at any QNH** — a low-pressure bug that could leave an aircraft hanging just above the runway is fixed.
+- The 18C/36C centreline stays on **18C by default** and only flips to 36C when 36C is landing.
+- Spacing crossbars and range read-outs now update in step with the radar sweep, so they no longer jitter.
+
+---
+
 ## v0.26.1 — Frequency discipline & sharper separation
 
 A radio-realism update: only one aircraft talks at a time, and separation now behaves the way the rulebook says it should.
