@@ -6,6 +6,27 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.4 — Realistic approach speeds & smarter sector handoffs
+
+### Approach speeds
+
+- **Arrivals now fly a real deceleration profile on their own.** With no speed instruction given, an arrival smoothly slows toward 1.3× its final approach speed by 10 miles out, to 160 knots by 6 miles, then down to final approach speed inside 4 miles — instead of just holding whatever speed it last had.
+- **Speed restrictions expire on their own.** Give an aircraft a hard speed restriction below FL100 and it won't fly it forever — the pilot will resume the normal approach speed once established close enough to the localizer, announcing "reducing speed" when they do.
+- **New NORMAL button.** Clear a speed restriction and hand control back to the aircraft's own profile from either the button panel or the keyboard speed selector — previously only possible by voice.
+
+### Sector handoffs
+
+- **More accurate jurisdiction handoffs.** Which sector an aircraft belongs to is now worked out from its actual entry or exit fix, fixing edge cases where the wrong sector could be shown as receiving an aircraft.
+- **Airspace proximity warnings are a little more forgiving** near a neighbouring sector's boundary, and now also catch aircraft cruising toward one without any altitude change staged.
+
+### Accessibility & quality of life
+
+- **Colourblind mode now covers the main menu too**, not just the live radar screen.
+- **New microphone test** in the settings menu so you can check your input level before jumping into a session.
+- **Fixed a voice-recognition bug** where a correctly spoken QNH readout could be silently ignored instead of accepted.
+
+---
+
 ## v0.26.3 — Colourblind support, cleaner airspace warnings & fixes
 
 ### Accessibility
