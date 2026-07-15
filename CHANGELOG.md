@@ -6,6 +6,24 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.6 — "Under Control" rename & input fixes
+
+### Taking and handing off aircraft
+
+- **"TOC" is now "UCO" (Under Control).** The transfer-of-control button and setting have been renamed throughout — same mechanic, clearer name. Your existing settings carry over automatically.
+- **The UCO/REL button tells you what it does.** It shows **UCO** when you can take an aircraft under control, **REL** once you're controlling it in realistic (hidden-frequency) mode, or the **handoff frequency** in arcade mode — so the button always matches the action available.
+
+### Controls
+
+- **Direct-to now works from the basic input panel (BID).** You can send an aircraft direct to a waypoint from the BID, not just the advanced panel.
+- **Cleaner BID speed selection.** Final approach speed is now the slowest option you can pick (no unrealistic sub-approach speeds), the top of the range is capped at the aircraft's maximum speed just like the advanced panel, and the selector wraps around from the slowest stop back to the fastest.
+
+### Radio
+
+- **Reduce to final approach or minimum clean speed by voice.** You can now say "reduce to final approach speed" or "reduce to minimum clean speed" and the pilot slows to that aircraft's correct speed.
+
+---
+
 ## v0.26.5 — Correct handoff frequencies, natural readbacks & keyboard polish
 
 ### Radio & readbacks
