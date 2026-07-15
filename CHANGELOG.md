@@ -6,6 +6,27 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.7 — All-caps display & quicker departure climbs
+
+### Look & feel
+
+- **The whole interface is now in capitals** — a cleaner, more authentic ATC-display look across menus, the command panel, and every radar data tag.
+
+### Controls
+
+- **One-tap standard departure climb.** On the basic input panel (BID), the first time you raise a departure's level it jumps straight to **FL130** — the standard initial climb — instead of creeping up one step at a time. From there the arrows fine-tune to any other level as usual. (A departure already above FL130 just steps normally.)
+- **The UCO/REL button tells you what it does** — **UCO** when you can take an aircraft under control (or take back one you handed off), **REL** once you're controlling it in realistic (hidden-frequency) mode, or the **handoff frequency** in arcade mode.
+
+### Airspace
+
+- **Approach can now use the full height of the Schiphol control zone** — the old 3000 ft cap in the approach sectors has been removed.
+
+### Radio
+
+- **Dutch pronunciation of "contact."** The voice command now also understands "kontakt" / "kontact" when you tell a pilot to contact another frequency.
+
+---
+
 ## v0.26.6 — "Under Control" rename & input fixes
 
 ### Taking and handing off aircraft
