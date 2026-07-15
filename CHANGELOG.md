@@ -6,6 +6,27 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.5 — Correct handoff frequencies, natural readbacks & keyboard polish
+
+### Radio & readbacks
+
+- **Give the right frequency or nothing happens.** When you tell a pilot to contact another frequency, they only act on it if it's the frequency they'd actually be handed to next — the tower for their runway, or the area sector for their departure. Read the wrong one and the instruction is simply not understood, so you can't accidentally hand an aircraft to the wrong controller.
+- **Pilots read fixes back more naturally.** Waypoints are read the way real crews say them — pronounceable names as words ("SUGOL"), three-letter beacons spelled out or occasionally by their spoken name ("sierra papa lima" / "schiphol"), and RNAV points as "alfa mike zero nine four".
+
+### Flying & guidance
+
+- **Published altitude restrictions respect the current QNH.** "At or above / at or below" limits on SIDs and STARs are now read against the actual pressure setting, so they hold aircraft at the correct height on high- or low-pressure days.
+- **Turns you set stay the way you set them.** Nudging a heading with the keyboard keeps the turn going the direction you started — a small correction the other way no longer flips the aircraft into a full turn the wrong way round. The dashed preview line always shows the direction the aircraft will really fly.
+- **Proximity warnings match the preview.** The warning for vectoring an aircraft toward a neighbouring sector now follows the exact same predicted path as the dashed heading line, so what you see is what's checked.
+
+### Radar & controls
+
+- **ILS approaches read APP on the tag.** A full ILS clearance now shows **APP** from the moment it's armed, instead of switching from "ILS" to "APP" only once established. Localizer-only approaches still read **LOC**.
+- **Heading, level and speed lists follow the keyboard.** Stepping a value with the keyboard now scrolls its column to keep your selection in view, so you can always see what you're setting.
+- **Wake category shows RECAT** on the aircraft tag when RECAT wake separation is turned on.
+
+---
+
 ## v0.26.4 — Realistic approach speeds & smarter sector handoffs
 
 ### Approach speeds
