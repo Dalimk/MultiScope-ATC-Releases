@@ -6,6 +6,34 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.8 — Snappier readbacks & control polish
+
+### Radio
+
+- **Pilots reply the instant you instruct them.** Readbacks and responses to your commands — handovers ("contact …, good day"), "confirm climb/descend?", "unable / request QNH", "unable, maximum speed …" — now come straight back instead of waiting a couple of seconds behind other radio traffic.
+- **Pausing silences the frequency.** No pilot call plays while the game is paused; the interrupted transmission picks up again when you resume.
+- **Clearer direct-to phrasing.** Sending an aircraft direct to a fix now reads back as "direct {fix}". The "resume own navigation, proceed direct {fix}" phrasing is reserved for when an aircraft you'd vectored rejoins a point on its own route.
+
+### Controls
+
+- **One-tap FL130 climb on the advanced panel too.** The first level-up on a departure jumps straight to FL130 on the LID as well as the BID.
+- **Direct-to shows its route on the BID.** Picking a fix in the BID DIRECT column now draws the track on the radar — straight to the fix, plus the rest of the SID when the fix is on the aircraft's route.
+- **Steppers keep a steady speed when fast-forwarding.** The traffic-per-hour selector and the heading/level/speed steppers no longer race when you speed the sim up.
+
+### Radar
+
+- **Semi-active runway buttons no longer flicker.** They blink cleanly and at a steady rate regardless of sim speed.
+- **Route (RTE) labels are readable.** Showing an aircraft's route no longer double-prints its waypoint names over the map labels.
+- **Departure list shows the plan for aircraft on a heading.** A vectored departure now lists its heading plus its exit point as a short code (e.g. `H123 BRG`).
+
+### Flying
+
+- **Approach won't ask for QNH twice.** An aircraft already down on the local pressure setting (or already descending onto it) won't be asked for QNH again on the next low-altitude clearance.
+- **Straighter preset arrivals.** The preset ARTIP-to-TIDVO arrival (runway 27) now tracks a clean straight line in.
+- **Schiphol control-zone ceiling.** The approach sectors of the Schiphol CTR are now capped at 3000 ft (adjusting the change from the previous update).
+
+---
+
 ## v0.26.7 — All-caps display & quicker departure climbs
 
 ### Look & feel
