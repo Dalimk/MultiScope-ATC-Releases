@@ -6,6 +6,35 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.11 — New difficulty tier & clearer settings
+
+### Difficulty & settings
+
+- **New Professional difficulty.** There are now four presets — **Beginner, Enthusiast, Professional, Expert** — with Professional sitting between Enthusiast and Expert. It's offered on first launch and can be changed any time in Settings. Every preset's mix of realistic and assisted options was re-tuned.
+- **Clearer setting names.** Several gameplay options were renamed to say what they actually do: **Transfer Frequency**, **Under Control (UCO)**, **Auto Speed Change in Label**, **Airspace Restriction Labels**, **Airspace Infringement Warning**, and **Short Term Conflict Alert**. Your existing choices carry over.
+- **Speed in the label: Live or Instructed.** Auto Speed Change now works across the whole flight. **Live** shows the aircraft's actual speed (rounded to 10 kt) as it speeds up or slows down; **Instructed** shows only the last speed you gave — "or greater" as +1, "or less" as −1 — with the real change happening quietly in the background.
+
+### Airspace
+
+- **Sharper airspace warnings.** The infringement warning now flags a staged vector that would drop an aircraft below a stepped TMA's floor (or above its ceiling), as well as one that would send it into a neighbouring sector — and it no longer false-flags a descent that levels exactly at a floor.
+- **Restriction labels follow the pressure.** Airspace floors set to the transition level now track the current QNH.
+
+### Aircraft & voice
+
+- **"Speed X or greater" speeds back up.** An "or greater" instruction is now a floor, not a fixed target — the aircraft accelerates back to its normal speed instead of getting stuck at whatever it was doing when you said it.
+- **Acknowledged aircraft stop re-calling.** Once you've dealt with an aircraft, it won't keep repeating its check-in; a fresh call after a go-around still comes through.
+- **Voice speed qualifiers work.** Saying "two two zero or greater" is now understood as a floor instead of a fixed 220, and frequencies spoken without "decimal" (e.g. "one two one five") are recognised.
+
+### Feedback
+
+- **Optional Discord name.** The in-game feedback form now has a remembered Discord field — enter your user ID to be pinged when we reply. Reports also attach the full data of the aircraft you have selected.
+
+### Traffic
+
+- Added **Air Serbia** to the airline list.
+
+---
+
 ## v0.26.10 — Manual label updates (INST/ADMIN)
 
 ### Voice & labels
