@@ -6,6 +6,28 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.13 — Voice, labels & smarter traffic
+
+### Voice
+
+- **Speed readbacks say the right thing.** Minimum-clean and final-approach-speed clearances now read back "reducing" or "increasing" to match the actual change.
+- **"Speed 220 or less" just works.** You no longer have to say "maintain" first — "speed 220 or less" (and "or greater") is understood on its own.
+- **Labels update the instant you're understood.** Heading, direct-to and approach clearances now update the aircraft tag as soon as the command is understood, the same way speed and level already did — no waiting for the readback.
+- **Two label fixes.** The heading tag no longer shows a wrong value when auto label update is off, and an aircraft no longer makes its initial call after you've already instructed it.
+
+### Traffic & radar
+
+- **Shorter turns on re-direct.** Sending an aircraft direct to a fix and then direct to another fix mid-turn now takes the shorter way round.
+- **Both departure runways at once.** With two departure runways in use, departures are now spread across both in parallel instead of one runway working through its queue before the other starts.
+- **Better pre-loaded traffic.** Arrivals that are already in the air when you start now sit on the correct straight-in track and at a realistic, already-descending level instead of holding high.
+- **Cleaner airspace labels.** Removed a duplicate altitude label sitting next to the control zone.
+
+### Feedback
+
+- **More useful bug reports.** In-game feedback now includes your hardware, display and recent log details — no personal data — to help pin down issues faster.
+
+---
+
 ## v0.26.12 — Smoother arrivals, sharper voice & radar
 
 ### Traffic & simulation
