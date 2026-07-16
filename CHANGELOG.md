@@ -6,6 +6,30 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.12 — Smoother arrivals, sharper voice & radar
+
+### Traffic & simulation
+
+- **Arrivals fly a proper speed profile.** Inbound aircraft now hold 250 kt on the way in and only start slowing once they are close to final, with a "reducing speed" call — instead of quietly bleeding speed off far out.
+- **General-aviation departures fly SIDs.** GA departures now follow a real departure route like everyone else, and their departure runway shows in the aircraft info panel.
+
+### Voice
+
+- **Your GA runways are understood.** Saying a general-aviation landing runway — like "runway two two" or 36R — is now recognised.
+- **Handoff without a frequency works.** "Contact Amsterdam" or "Contact Tower", with no frequency, now transfers the aircraft.
+- **Red means "understood, but can't".** When the game understood your instruction but couldn't carry it out, the voice readout turns red — so it's clear it wasn't a mis-hear.
+
+### Radar
+
+- **No more phantom airspace warnings.** The infringement warning now only triggers on the altitude limits actually shown on the label, so an aircraft above a hidden ceiling no longer sets it off.
+- **Traffic you don't own looks like it.** Aircraft that aren't on your frequency yet stay greyed out until they check in (in automatic under-control mode).
+
+### Fixes
+
+- You can now type number-row digits in the in-game feedback box.
+
+---
+
 ## v0.26.11 — New difficulty tier & clearer settings
 
 ### Difficulty & settings
