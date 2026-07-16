@@ -6,6 +6,18 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.10 — Manual label updates (INST/ADMIN)
+
+### Voice & labels
+
+- **New INST / ADMIN switch on the command panel**, shown when Voice Auto Label Update is off. After you instruct an aircraft by voice, flip to **ADMIN** and press EXE to bring its data tag in line with what you said — without re-sending the instruction or triggering a second readback. **INST** keeps the normal behaviour (issues the clearance and gets a readback). It sits beside the BID/LID/TID buttons, colour-coded amber for INST and blue for ADMIN.
+
+### Holding
+
+- **Correct holding leg timing down the stack.** A holding aircraft's inbound leg now shortens from 90 to 60 seconds as it descends through FL140, for both your holds and published holds.
+
+---
+
 ## v0.26.9 — Landings, approach speeds & spacing
 
 ### Approach & landing
