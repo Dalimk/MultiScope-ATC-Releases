@@ -6,6 +6,37 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.26.9 — Landings, approach speeds & spacing
+
+### Approach & landing
+
+- **Aircraft land reliably again on high-pressure days.** ILS traffic no longer hangs a few hundred feet above the runway — it descends through the touchdown gate and lands.
+- **Firmer, realistic approach speeds.** Arrivals hold their speed until they need to slow, then reduce cleanly, instead of drifting slow from far out.
+- **"180 knots or greater" releases on final** so the aircraft can slow to final-approach speed for landing.
+
+### Descent & spacing
+
+- **Straight-in arrivals hold higher until they reach you.** Preloaded straight-in traffic stays at FL070 until it enters your airspace instead of descending too low in the neighbouring sector.
+- **Published crossing restrictions stay put.** A restriction at or above the transition level is treated as a flight level, so it no longer drifts when the pressure changes.
+- **Cleaner approach spacing.** The spacing arcs rank downwind traffic more honestly.
+
+### Control & sectors
+
+- **Strays count sooner.** An aircraft that wanders into a neighbouring sector counts as a violation even before you've accepted it.
+- **"Contact tower" respects range.** A voice handoff of an arrival to Tower is only accepted once it's within localizer range, matching the REL button.
+
+### Radio
+
+- **QNH still read back.** With QNH not required, pilots still read back the pressure setting on their first descent through the transition altitude.
+
+### Radar & weather
+
+- **Uniform airspace borders.** Overlapping boundaries of the same type draw at a single opacity instead of stacking darker.
+- **New default airspace opacities** on first launch (CTR, TMA, CTA, MILL, coastline).
+- **Wind stays within limits.** The random-weather button keeps the wind clear of every active runway's crosswind and tailwind limits.
+
+---
+
 ## v0.26.8 — Snappier readbacks & control polish
 
 ### Radio
