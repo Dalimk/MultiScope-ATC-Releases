@@ -6,6 +6,22 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.1 — Playtest hotfix
+
+Fixes from the first round of playtest reports — thank you for sending them in.
+
+- Fixed a bug where achievements you had earned did not show as unlocked on the medals wall.
+- Fixed a bug where aircraft would go around for no clear reason even when spacing was more than enough, sometimes going around repeatedly.
+- Fixed a bug where departing aircraft often did not make their initial check-in call.
+- Fixed a bug where an aircraft would sometimes check in a second time even after you had already given it an instruction.
+- Fixed a bug where an aircraft that went around would not climb when instructed, got stuck, never called Approach back, and showed a flashing label.
+- Fixed a bug where the Spijkerboor (SPY) departure was read aloud letter-by-letter instead of by name.
+- Fixed a bug where an inactive runway's localizer line stayed on the scope when "active runways only" was turned on.
+- Fixed a bug where the game did not fill ultrawide (21:9) monitors, leaving a black bar down the side.
+- Fixed a bug where voice-recognition setup errors were confusing — they now explain the cause and how to fix it, with a new setup guide in Settings → Audio.
+
+---
+
 ## v0.27.0 — Playtest is ready: join the community
 
 The playtest now has its own Discord, and claiming your **Playtester** role takes one click.
