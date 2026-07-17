@@ -6,6 +6,28 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.0 — Playtest is ready: join the community
+
+The playtest now has its own Discord, and claiming your **Playtester** role takes one click.
+
+### Community
+
+- **Get your Playtester role in one click.** From the main menu, hit **PLAYTESTER DISCORD**, authorize in your browser, and you're in the server with the Playtester role — no codes to copy or paste. It's tied to your Steam playtest access, so it just works.
+- **You're in control of your data.** Once you're in, the button becomes **Disconnect Discord** (also under Settings → About / Legal) — one click removes your role and deletes the link between your accounts, whenever you like.
+
+### Feedback
+
+- **Better bug reports.** The in-game feedback tool (press **F8**) now includes more technical detail with each report so we can fix things faster. You still choose what to send, and nothing leaves your machine until you press Send.
+
+### Stability
+
+- **Crash-safe saves.** A crash or power loss while saving can no longer corrupt your saved game.
+- **More reliable startup.** The game now degrades gracefully instead of failing to launch if any bundled data is off.
+
+Thanks for helping test — see you in the Discord!
+
+---
+
 ## v0.26.13 — Voice, labels & smarter traffic
 
 ### Voice
