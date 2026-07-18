@@ -6,6 +6,38 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.2 — Administrative label mode, new settings, and a big batch of fixes
+
+### New
+
+- **Administrative label mode.** With **Voice Auto Label Update** turned off, the data tag, LID and BID now behave like your own notepad: they show only what *you* enter through the LID/BID — voice clearances no longer change them. You keep the label in sync yourself, the way a real controller does. Departures show FL60 / no heading / no speed on check-in until you enter your instructions.
+- **New setting — Infringement Look-Ahead.** Choose how far ahead the airspace infringement warning projects an aircraft's staged track.
+- **New setting — Heading Preview Length.** Choose how long the dashed heading-preview line is.
+- **Voice: "and" and "stand by".** You can now use "and" as a filler ("…and reduce speed…"), and say "stand by" to an aircraft.
+- **Game-speed shortcuts are now F1–F5** by default (still rebindable).
+- **Better bug reports.** Reports now include the last 10 instructions you gave the selected aircraft, and suggestions/praise now go to their own feedback channel. The feedback form also asks you to pick a type before sending.
+- **Departure list** now has a column header row (RWY · EOBT · CALLSIGN · TYPE · SID · HDG).
+- The heading list now **centres on the aircraft's current heading** when you select it, so the heading you want is right there.
+- Settings sliders redrawn so the bar is actually visible and clearer to read.
+
+### Fixes
+
+- Fixed a bug where two aircraft both established on the **same runway's ILS** could trigger a false separation-loss alert.
+- Fixed a bug where a go-around aircraft **didn't tell you why** it was going around.
+- Fixed a bug where a go-around aircraft **wouldn't climb** when instructed after a runway conflict.
+- Fixed a bug where a go-around aircraft's label showed the **wrong cleared altitude** (now shows the missed-approach level).
+- Fixed a bug where a go-around aircraft left an **endless dashed line** and hid the SPL VOR after you gave it a new heading.
+- Fixed a bug where an aircraft **asked to climb again after you'd handed it off** to the next sector.
+- Fixed a bug where a **departure was offered an arrival approach fix** it shouldn't have.
+- Fixed a bug where **"Contact" was shown as "Kontact"** on screen.
+- Fixed a bug where an aircraft landing on **36R was given the wrong tower frequency**.
+- Fixed a bug where a spoken **"direct [fix]" was understood but not carried out**.
+- Fixed a bug where **greyed-out (too-high) altitudes could still be selected** with the keyboard.
+- Fixed a bug where the **per-aircraft runway dropdown could get stuck open** when switching aircraft.
+- Fixed a bug where typing on an aircraft you **hadn't taken control of** would stage a heading.
+
+---
+
 ## v0.27.1 — Playtest hotfix
 
 Fixes from the first round of playtest reports — thank you for sending them in.
