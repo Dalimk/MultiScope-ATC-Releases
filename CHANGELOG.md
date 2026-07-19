@@ -6,6 +6,30 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.4 Keyboard shortcuts, scroll-wheel pickers, custom difficulty, and voice fixes
+
+### New
+
+- **Mappable keyboard shortcuts for the action buttons.** EXE, RTE, LOC and RWY can now be triggered from the keyboard and rebound in Settings > Controls (defaults: EXE = Enter, RTE = Space, LOC = /, RWY = '). With the runway popup open you can move through the runways with the up and down arrows, press Enter to select one, and Enter again to execute.
+- **Scroll wheel on the pickers.** Hover the HDG, LVL or SPD picker and scroll to change the value: scroll up to increase, scroll down to decrease.
+- **Peek at a route with a long press.** Hold left-click on an aircraft's blip or label to show its route while you hold, without pressing RTE.
+- **Pan with an aircraft selected.** Right-drag now pans the scope even when an aircraft is selected, so you no longer have to deselect first. A quick right-click near the aircraft still moves its label.
+- **Custom difficulty.** Change any of the difficulty-linked settings and the preset now shows CUSTOM. Your exact setup is saved and restored on restart, and the four named presets always start you on their settings.
+- **Restart in the pause menu.** A new RESTART button (with a confirmation) starts a fresh run with the same settings and new traffic.
+- **Smarter heading column for departures.** Selecting a departure that flies a published (RNAV) route now opens the heading column on its route instead of a full list of headings. The moment you start turning it, the heading list opens so you can pick a heading and execute.
+- **Departure list tidy-up.** The list stays pinned to the bottom-right corner at any window size, the header row is restyled, and the runway is shown in white. Its heading column is now blank for departures that fly a fixed route, and shows a heading only for departures that depart on a heading.
+- **Kuwait Airways (KAC)** added, read back as "Kuwaiti".
+- The range and traffic readout in the bottom-left now shows only with the developer menu open, to keep the scope clean.
+
+### Fixes
+
+- Fixed a bug where transferring an aircraft by voice ("contact tower", "contact approach") did nothing at all.
+- Fixed a bug where saying "radar contact" or "identified" to an aircraft that had just checked in didn't take it under control or stop its check-in call, forcing you to use the button or Tab.
+- Fixed a bug where two aircraft a safe 1000 feet apart in altitude could still trigger a wake-turbulence separation loss.
+- Fixed a bug where raising the render scale pushed the side command panel off the top and bottom of the screen and changed its width.
+
+---
+
 ## v0.27.3 — Phraseology reference, approach fixes, and display options
 
 ### New
