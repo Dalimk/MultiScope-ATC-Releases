@@ -6,6 +6,31 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.3 — Phraseology reference, approach fixes, and display options
+
+### New
+
+- **Phraseology reference card.** A **?** button on the main menu and pause menu opens a searchable list of the controller commands, grouped by type, with the parts you fill in highlighted and their valid ranges shown. Alternate ways of saying each command are tucked behind a toggle.
+- **In-game quick-reference cheat-sheet.** A small, draggable panel that shows the relevant commands for whatever you have selected — arrival vs departure — so you always have the phraseology handy. It can be shown or hidden in Settings (and defaults to shown on the easier difficulties).
+- **Aircraft slow down for landing on their own.** After you assign a speed on final, the aircraft now reduces to its approach speed at the right point for landing (hold 180 to about 6 miles, or 160 to about 4) instead of flying the assigned speed all the way to the runway.
+- **Wind a full 360 with the keyboard.** The heading arrow keys keep the shortest turn for normal tweaks, but you can now keep tapping ‹ or › to send an aircraft the long way around a full circle.
+- **More display resolutions**, including ultrawide (21:9) and super-ultrawide (32:9) window sizes, for windowed play. Fullscreen already renders at your screen's native resolution on any monitor.
+- **Simpler voice recognition confidence.** One setting (Strict / Normal / Relaxed / Lenient) now applies to every command consistently — lower it if your accent or setup is getting missed.
+- Bug reports sent from the game now include more detail, so we can track down issues faster.
+
+### Fixes
+
+- Fixed a bug where an aircraft held its assigned speed all the way to touchdown instead of slowing down to land.
+- Fixed a bug where the instructed speed disappeared from an aircraft's label once it slowed for landing.
+- Fixed a bug where an aircraft established on the localizer but held **above** the glideslope triggered a false wake-separation loss.
+- Fixed a bug where a go-around kept drawing its missed-approach line back to a fix it had already flown over.
+- Fixed a bug where showing an aircraft's route (RTE) while it was being vectored or holding hid the SPL VOR and other navaids.
+- Fixed a bug where "contact tower" or "contact Amsterdam" read back the wrong frequency instead of the one the aircraft was actually handed to.
+- Fixed a bug where giving a departing aircraft a landing runway didn't bring back its approach fix.
+- Fixed a bug where rebinding a game-speed key back to 1–5 reverted to F1–F5 after restarting.
+
+---
+
 ## v0.27.2 — Administrative label mode, new settings, and a big batch of fixes
 
 ### New
