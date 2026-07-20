@@ -6,6 +6,35 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.5 Merged Amsterdam ATC data, general-aviation runways, and voice additions
+
+### New
+
+- **Amsterdam Approach frequency corrected** to 119.055.
+- **General-aviation runway logic reworked** for both arrivals and departures, so GA traffic picks sensible runways and a case that could cause a loss of separation on a GA departure is fixed.
+- **Held QNH clearances.** Descend an aircraft below the transition level without giving a QNH and the clearance is now held while the pilot asks for it, instead of the whole instruction being rejected. The level flies the moment you pass the QNH.
+- **New voice instructions:** "report speed", speed "or less" / "or greater", and loose "cleared approach" / "cleared localizer" (clears the aircraft for its already-assigned runway). You can now also say "level" in place of "flight level".
+- **Runways are more forgiving to say** by voice: grouped numbers ("eighteen right"), a dropped leading zero ("six" for 06), and "centre" as well as "center".
+- **SIDs are spoken by name** (Spijkerboor rather than being spelled out), and departures flown on a heading check in with that heading.
+- **Reworked radar range controls:** configurable range buttons, finer scroll-wheel zoom, and range out to 80 NM.
+- **Settings overhaul:** collapsible sections, an on/off toggle for the conflict-prediction alert (STCA), and revert buttons for the range and airspace settings.
+- **Arrival labels** now show the STAR terminal fix, the clearance limit from Area Control.
+
+### Fixes
+
+- Fixed a bug where an aircraft given an explicit left or right turn direct to a fix could keep turning past the fix, all the way around.
+- Fixed a bug where the airspace warning falsely lit the Area Control sector when you steered an aircraft that was already descending out of it.
+- Fixed a bug where a runway used only for departures did not draw its centreline on the scope.
+- Fixed a bug where a pilot could read the QNH back twice.
+- Fixed the readback-speed preview button in Settings doing nothing during a game.
+- Fixed the phraseology trainer asking for altitudes it could not accept.
+
+### Changed
+
+- Separation, wake and sector-violation penalties are gentler now, so a single incident no longer wipes out a long session.
+
+---
+
 ## v0.27.4 Keyboard shortcuts, scroll-wheel pickers, custom difficulty, and voice fixes
 
 ### New
