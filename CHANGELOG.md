@@ -18,6 +18,7 @@ This is the curated, plain-English changelog — it highlights what changes for 
 - **Restart in the pause menu.** A new RESTART button (with a confirmation) starts a fresh run with the same settings and new traffic.
 - **Smarter heading column for departures.** Selecting a departure that flies a published (RNAV) route now opens the heading column on its route instead of a full list of headings. The moment you start turning it, the heading list opens so you can pick a heading and execute.
 - **Departure list tidy-up.** The list stays pinned to the bottom-right corner at any window size, the header row is restyled, and the runway is shown in white. Its heading column is now blank for departures that fly a fixed route, and shows a heading only for departures that depart on a heading.
+- **Phraseology trainer.** A new practice mode under New Game > TUTORIAL that drills you on the radio calls by voice. You get a task ("Turn KLM123 left onto heading 210"), say it on push-to-talk, and it is graded by the same voice recognition the game itself uses, then scored at the end. Eight levels: Headings, Altitude and levels, Speed, Approach, Navigation, Handoff, Mixed practice, and an Endless mode that keeps going until you stop. Your best score is saved per level. (The per-sector tutorial tracks are still to come.)
 - **Kuwait Airways (KAC)** added, read back as "Kuwaiti".
 - The range and traffic readout in the bottom-left now shows only with the developer menu open, to keep the scope clean.
 
