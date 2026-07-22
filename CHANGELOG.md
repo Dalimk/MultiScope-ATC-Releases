@@ -6,6 +6,31 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.6 Runway operations, spacing, and picker polish
+
+### New
+
+- **Expedite until a level.** Say "expedite climb/descend until passing [flight level or altitude]" and the aircraft expedites, then goes back to its normal rate at that level.
+- **Runway 27 is now available as a departure runway.**
+- **Combined single-runway capacity.** A runway used for both arrivals and departures is now measured against one combined traffic rate instead of two separate ones.
+- **Handoff rules.** An arrival can only be sent to Tower once it is cleared for the full ILS and established on the localizer; a departure can only be sent to ACC once cleared to FL130.
+- **Runway picker.** Clearer warnings when a runway clashes only with a semi-active one, locks that update as a semi-active runway winds down, ESC to close the panels, and it now keeps you from starting without both an arrival and a departure runway selected.
+- **Scoring.** The clean-handling percentage in the statistics panel is reworked to line up with your session rating.
+
+### Fixed
+
+- Changing the arrivals-per-hour no longer reshuffles your departure times.
+- Single-runway operations: a departure now holds while an arrival is on, or on short final to, the same runway.
+- Runway-occupancy-time and spacing arcs reworked for more realistic braking, with no more cases where a smaller jet showed a longer occupancy than a larger one, and steadier arcs.
+- Smoother, more realistic descents when levelling off at intermediate altitudes.
+- Voice: "level" is accepted for "flight level", some fixes and callsigns are recognised more reliably, departures only accept direct-to points on their own route, and "request higher" no longer talks over a climb you just gave.
+- You can now vector a departure off its SID with the basic input device, and heading nudges start from the aircraft's current heading and turn the way you press.
+- Go-arounds draw the correct missed-approach, plus assorted runway-picker and setup-screen fixes.
+- Aircraft label stems stay a constant size when zooming; the "reducing speed" call no longer arrives late; on Windows, switching from fullscreen to windowed now works; tutorial-menu tidy-up.
+- Runway 27 departure routes corrected.
+
+---
+
 ## v0.27.5 Merged Amsterdam ATC data, general-aviation runways, and voice additions
 
 ### New
