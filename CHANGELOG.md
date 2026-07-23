@@ -6,6 +6,28 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.27.7 Approach clearance display, notepad mode, and voice fixes
+
+### New
+
+- **Approach clearance on the command bar.** The APP/LOC clearance now shows its full state in colour on the command bar: blue while you set it up, live once cleared, and red when it is interrupted or cancelled. Staging a heading over a cleared approach turns it red as a warning; executing the heading cancels the approach and the pilot reads back "cancel approach, heading two seven zero". Re-clear the approach in the same instruction as the heading and the pilot reads "heading two seven zero, still cleared ILS".
+- **Notepad mode is complete.** With voice label updates and the command function both off, every instruction you set up (heading, level, speed, approach, direct-to, hold and runway) is now recorded as a note on the label without being sent to the aircraft, and the columns stop showing the aircraft's live values so they read as a clean notepad.
+- **Amsterdam RWY24 departures to ANDIK** now pick the correct SID (ANDIK3S or SPY5K) automatically based on which runways are active, matching real procedure.
+- **Amsterdam SUGOL inbounds to RWY27** are now cleared to FL80 instead of FL70 (they still cross SUGOL between FL95 and FL100), and the label shows 080.
+
+### Fixed
+
+- Approach clearances now work in the Phraseology Trainer.
+- Give a descent with the wrong QNH and the pilot asks you to confirm it and holds the descent; passing the correct QNH on its own now starts the descent, with no need to repeat the whole clearance.
+- A departure can no longer be sent direct to, or held at, an arrival-only fix, including through combined instructions.
+- "Direct [fix] thereafter direct [fix]" is now understood.
+- Speaking "contact [sector]" recognises every controller name for that sector.
+- Custom traffic now fast-forwards the clock, the aircraft and the departure list with the speed controls, and the departure list shows take-off times.
+- A heading turns the shortest way (or the way you specify), the wake category ("heavy" / "super") is spoken on first contact, and the intercept heading stays on the label after the aircraft locks onto the localizer.
+- Several smaller display and voice fixes.
+
+---
+
 ## v0.27.6 Runway operations, spacing, and picker polish
 
 ### New
