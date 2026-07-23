@@ -24,6 +24,8 @@ This is the curated, plain-English changelog — it highlights what changes for 
 - Speaking "contact [sector]" recognises every controller name for that sector.
 - Custom traffic now fast-forwards the clock, the aircraft and the departure list with the speed controls, and the departure list shows take-off times.
 - A heading turns the shortest way (or the way you specify), the wake category ("heavy" / "super") is spoken on first contact, and the intercept heading stays on the label after the aircraft locks onto the localizer.
+- In notepad mode, descending a route-following aircraft no longer replaces its route fix on the label with a heading.
+- Aircraft labels on the west side of the radar no longer drift sideways when a long direct-to name is shown.
 - Several smaller display and voice fixes.
 
 ---
