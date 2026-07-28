@@ -6,6 +6,26 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.28.0 Pilots now have accents
+
+### New
+
+- **Pilots speak with their airline's accent.** A KLM crew sounds Dutch, Lufthansa German, Air France French, Delta and United American, Iberia Spanish, LOT Polish. Each airline is matched to its home country, so you can often tell who is calling before you read the callsign. 102 voices across 23 accent groups, up from 4 British voices.
+- **Accents can be turned off.** A new PILOT ACCENTS setting in the AUDIO tab. Switch it off and every aircraft uses the clear British voices instead. The change applies immediately, including to aircraft already on frequency.
+- **Every aircraft sounds like a different person.** Voices are drawn so the same one never repeats until the whole group has been used, and no accent group has fewer than three voices. Two aircraft on frequency at once will not sound identical.
+
+### Improved
+
+- **Pilots speak at a consistent pace.** Some voices used to rush and others drag, because each one has its own natural speaking rate. Every voice is now measured and matched to a common pace, so a Vietnamese crew no longer gabbles while a Persian crew plods.
+- **Readback speed is safer at high settings.** Turning readback speed right up used to make some voices run words together until they were hard to follow. There is now a limit past which a voice will not be pushed, so raising the setting no longer costs you clarity.
+- **Accents sound like accents, not like glitches.** Sounds that a language does not have, such as the "th" in three or the English "r", are now spoken the way a real non-native speaker would say them rather than coming out garbled.
+
+### Notes
+
+- A handful of airlines have no accent available and use the nearest match: Turkish, Chinese, Korean, Arabic and Israeli carriers fall back to a neighbouring accent or to English.
+
+---
+
 ## v0.27.7 Approach clearance display, notepad mode, and voice fixes
 
 ### New
