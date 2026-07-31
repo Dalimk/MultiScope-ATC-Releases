@@ -6,6 +6,28 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.29.0 The AI can work an approach
+
+### New
+
+- **An AI controller that can run an arrival stream.** Switch it on and it takes the arrivals: builds the landing order, vectors the pattern, spaces every pair to the runway occupancy and wake requirement you see on the scope, and hands over to the tower once established. Tested at 40 arrivals an hour into a single runway.
+- **It decides by working out the cost, not by following rules.** Rather than a list of preferences applied one pair at a time, it prices every sensible landing order and flies the cheapest. Straight-ins keep their place, aircraft already in trail stay together, and a heavy is put where it costs the stream least, all because the arithmetic says so rather than because someone wrote a rule for each case.
+- **The first step towards multi-sector.** Running several sectors at once means positions that nobody is sitting at, and this is the piece that makes that possible: a controller that can hold a position properly while you work another. Approach first, more to follow.
+
+### Changed
+
+- **Aircraft fly the published profile.** 180 knots to 6 miles, 160 to 4, then final approach speed. The AI slows earlier only when a pair is genuinely going to lose separation, and then only by as much as that pair needs.
+- **Delay is paid where it is cheapest.** Speed first, while an aircraft is still well out and flying the track anyway, and track miles only when speed is not enough. Patterns are sized to hit the spacing exactly rather than overshoot it, and an aircraft given more room than it needs is brought back in.
+- **Patterns stay inside controlled airspace.** However busy it gets, the AI will not vector an aircraft out of the TMA to build a gap.
+
+### Fixed
+
+- General aviation arrivals are sequenced properly on their own runway instead of being left to their own devices.
+- An aircraft cleared to an altitude now flies that altitude at any QNH.
+- Aircraft are handed to the tower only once they are established on the approach.
+
+---
+
 ## v0.28.0 Pilots now have accents
 
 ### New
