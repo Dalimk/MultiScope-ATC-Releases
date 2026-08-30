@@ -6,6 +6,24 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.30.1 Smoother approaches, and touch control
+
+### New
+
+- **Touch Input Device.** A new touch panel for issuing heading, level and speed — control an aircraft by tapping rather than typing.
+- **Straight-in approaches that behave.** An arrival already lined up with the runway now joins the localizer directly, and buys any delay it needs by intercepting a little further out — the way a real controller would — instead of being sent round a full pattern it never needed.
+
+### Changed
+
+- **The AI controller spaces more like a human.** It pulls an aircraft back in when a gap it opened is no longer needed, instead of leaving it landing wide. It avoids stretching any single aircraft to the very edge of the airspace when spreading the delay would fly everyone comfortably. And when a lined-up arrival simply cannot be delayed, it lets that one land first and puts the delay on the traffic that has room to take it — so two arrivals converging from different directions no longer end up on top of each other on final.
+- **Cleaner intercepts.** An aircraft is only committed to the ILS once it is genuinely close to the localizer, so it stays flexible until the last sensible moment and no longer gets flung out and turned back onto final.
+
+### Coming next
+
+- **Towards multi-sector.** Continued work under the hood on the en-route (ACC) sectors — the next step towards working more than one position at once.
+
+---
+
 ## v0.29.0 The AI can work an approach
 
 ### New
