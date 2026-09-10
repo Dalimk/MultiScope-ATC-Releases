@@ -6,6 +6,24 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.31.0 Rotterdam joins the map
+
+Schiphol is no longer the only airport you can control. Rotterdam The Hague (EHRD) is now playable, short flights run between the two, and approach control gets smarter about keeping aircraft apart in the vertical.
+
+### New
+
+- **A second airport: Rotterdam The Hague (EHRD).** Pick it on the New Game screen and control its traffic on its single 06/24 runway — its own arrivals, departures and approach.
+- **Flights between Schiphol and Rotterdam.** Short local hops now run between EHAM and EHRD, so the two airports feel like part of one busy region.
+- **Set the neighbour's traffic level.** When you're working Schiphol in multi-sector, a separate control lets you dial how much Rotterdam feeder traffic joins the picture.
+- **Touch controller shortcuts.** The Touch Input Device gains keyboard shortcuts for quicker heading, level and speed entry.
+
+### Changed
+
+- **Smarter vertical separation on approach.** The approach controller now stacks arrivals and steps departures up at different levels to keep them safely apart — holding a following arrival a little higher until the one ahead is clear, and lifting departures before handing them on.
+- **Cleaner handovers between sectors.** Aircraft crossing between sectors, and up to Area Control, are handed off more smoothly, with fewer avoidable go-arounds.
+
+---
+
 ## v0.30.1 Smoother approaches, and touch control
 
 ### New
