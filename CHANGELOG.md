@@ -19,7 +19,7 @@ Schiphol is no longer the only airport you can control. Rotterdam The Hague (EHR
 
 ### Changed
 
-- **Smarter vertical separation on approach.** The approach controller now stacks arrivals and steps departures up at different levels to keep them safely apart — holding a following arrival a little higher until the one ahead is clear, and lifting departures before handing them on.
+- **Smarter vertical separation on approach.** The approach auto controller now stacks arrivals and steps departures up at different levels to keep them safely apart — holding a following arrival a little higher until the one ahead is clear, and lifting departures before handing them on.
 - **Cleaner handovers between sectors.** Aircraft crossing between sectors, and up to Area Control, are handed off more smoothly, with fewer avoidable go-arounds.
 
 ---
