@@ -6,7 +6,7 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
-## v0.31.0 Rotterdam joins the map
+## v0.31.0 Rotterdam joins the scope
 
 Schiphol is no longer the only airport you can control. Rotterdam The Hague (EHRD) is now playable, short flights run between the two, and approach control gets smarter about keeping aircraft apart in the vertical.
 
