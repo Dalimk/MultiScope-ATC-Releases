@@ -6,6 +6,31 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.32.0 A smarter approach controller
+
+The approach auto controller now keeps every aircraft apart from every other, departures included, and only ever gives the kind of level clearance a real controller would. This release also fixes aircraft performance, which in v0.31.0 was quietly using generic values for every type.
+
+### New
+
+- **Watch the approach controller think.** With the auto controller's lines switched on, the radar now shows each conflict it is working around: where two aircraft would meet, how soon, and which level it gave instead.
+
+### Changed
+
+- **Every aircraft is watched.** The approach controller now keeps arrivals clear of departures as well as of each other, and also sees traffic it doesn't control, such as yours, the tower's and Area Control's, so it steers its own aircraft around it.
+- **It knows where aircraft are really going.** Separation is now judged on the path each aircraft is actually flying (its downwind, a hold, a heading) instead of the published route it has already left.
+- **Real clearances only.** Aircraft are held at proper round levels: altitudes up to 3000 ft, flight levels above the transition level, never something like 3,486 ft. No more "flight level 48".
+- **Aircraft following each other to the same runway** are left to normal approach spacing instead of triggering needless warnings.
+- **Arrivals keep descending.** After the feeder hands an arrival on, it now continues down to 2000 ft instead of sitting at FL050 until the glideslope.
+- **Too high for the glideslope.** An aircraft that captures the localizer well above the glidepath may now go around as unstable, and one far too high says so and flies the localizer level.
+
+### Fixed
+
+- **Aircraft performance is back.** Every aircraft type flies with its own climb, descent and speed figures again.
+- **Rotterdam arrivals stay on Rotterdam's runway.** Changing Schiphol's arrival runway no longer drags Rotterdam traffic onto it.
+- **No false conflict alerts on parallel finals.** Aircraft established on the parallel 18R/18C or 36R/36C approaches are no longer flagged against each other.
+
+---
+
 ## v0.31.0 Rotterdam joins the scope
 
 Schiphol is no longer the only airport you can control. Rotterdam The Hague (EHRD) is now playable, short flights run between the two, and approach control gets smarter about keeping aircraft apart in the vertical.
