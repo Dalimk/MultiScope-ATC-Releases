@@ -6,6 +6,21 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.33.0 — COSYS (Coordination System)
+
+- **New: COSYS coordination window** in multisector. A new on-radar window lets you coordinate with the neighbouring sectors.
+  - **Request an aircraft on your frequency early.** Pick an aircraft, send the request, and the neighbouring controller approves or denies it after a few seconds. Once approved, the aircraft is handed to you shortly after.
+  - **Add conditions to your request**: a heading, level, speed or direct-to. The other controller issues them before handing the aircraft over.
+  - Requests are approved only when it makes sense: the aircraft must be close to its entry point, next in line, and clear of other traffic.
+- **Take or hand back approach sectors mid-game.** Take over any approach sector from the AUTO controller, or give it back, at any time. You can also preview a neighbouring sector's traffic, which highlights its labels in blue.
+- **Smarter approach sequencing.** The AUTO approach controller keeps a steadier landing order, never squeezes an aircraft between two already on final without room, respects wake turbulence spacing strictly, and flies go-arounds back round a proper circuit.
+- **Parallel approaches.** When both parallel runways are landing, the centre runway joins higher and further out (3000 ft at 11 NM), so the two streams no longer meet side by side at the same level.
+- **Cleaner labels.** Aircraft labels now start on a sensible side for each arrival and departure route.
+- **Spacing indicators** now react when the radar blip reaches the line, not slightly before.
+- **Fixes:** LAMSO arrivals now spawn at the right levels, and GA aircraft going around are now given a runway again correctly.
+
+---
+
 ## v0.32.0 A smarter approach controller
 
 The approach auto controller now keeps every aircraft apart from every other, departures included, and only ever gives the kind of level clearance a real controller would. This release also fixes aircraft performance, which in v0.31.0 was quietly using generic values for every type.
