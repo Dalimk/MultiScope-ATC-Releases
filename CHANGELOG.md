@@ -6,6 +6,21 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.34.0 — Smarter voice control
+
+- **New: Enhanced AI voice recognition option, now the default.** MultiScope ATC now has its own speech model, trained on the game's ATC phraseology. It understands callsigns, flight levels, QNH, ILS clearances and waypoint names far more reliably, copes with accents, and responds in about a fifth of a second.
+  - It needs a graphics card. Without one, the game automatically switches to Windows speech recognition. You can also choose Windows speech yourself in Settings > Audio.
+  - It runs entirely on your own PC: nothing you say leaves your computer.
+  - **Talk naturally.** Extra words like "good morning" or "have a good day" around your instructions are fine.
+  - **Say "correction"** to fix a mistake: repeat the callsign to start the whole transmission over, or just say the corrected part.
+- **More phraseology, for both voice engines:** "when ready descend…", "stop descent at…", "continue descent", "continue left heading…", "expedite descent", "set course direct…" and "no speed restriction".
+- **COSYS:** when the neighbouring controller can't accept one of your conditions, they now counter with the closest value they can accept, instead of only approving or denying.
+- **The info panel shows RFL and XFL** (requested and exit flight level).
+- **Smoother approaches:** the AUTO approach controller handles speed on final more precisely, lets straight-ins join further out, and flies go-arounds more cleanly.
+- **Fixes:** a misheard frequency no longer sends an aircraft to the wrong frequency, aircraft turn onto the localizer more smoothly, and landings are only counted once the aircraft is over the runway.
+
+---
+
 ## v0.33.0 — COSYS (Coordination System)
 
 - **New: COSYS coordination window** in multisector. A new on-radar window lets you coordinate with the neighbouring sectors.
