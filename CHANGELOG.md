@@ -6,6 +6,81 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.35.0 — COSYS grows up, voice control improves and gameplay deepens
+
+### COSYS (Coordination System)
+
+- **Transfer levels.** Agree the level an aircraft is handed over at, for arrivals coming to you and for departures leaving you. Do it for one aircraft, or as a GENERAL coordination for all traffic that matches your rules.
+- **The neighbours ask you too.** Area Control, the tower and Rotterdam approach now send you "Aircraft on frequency" requests when one of your aircraft is about to enter their airspace and you haven't transferred it yet.
+- **Go-around inform.** The tower lets you know when an aircraft goes around, and keeps it until you've answered. Accept the standard missed approach, or change it.
+- **Area delegation.** Borrow a piece of a neighbour's airspace for a long final: the 36R area from Rotterdam, or Lelystad's TMA 1 for runway 27.
+- **Departure release.** Rotterdam departures heading for Schiphol's airspace need your release. Hold them, release them, set a release time, or change their heading or level first, straight from COSYS or the departure list.
+- **Inbound procedure change.** Tell Area Control that inbounds via an IAF will be cleared on a different route after their STAR, for one aircraft or for all of them.
+
+### Voice control
+
+- **Enhanced AI voice now also runs without a graphics card:** a lighter speech model runs on your processor. A new SPEECH MODEL setting (AUTO / GPU / CPU) shows which one is in use.
+- **Much more phraseology:**
+  - "break break"
+  - rates ("…with 2000 feet per minute or greater") and pilot's discretion descents
+  - "expect climb in 3 minutes"
+  - present heading and speed, relative turns ("turn left by 20 degrees")
+  - "stop climb" / "stop descent"
+  - report instructions and speed "until"
+  - go-around with instructions
+  - more ways of saying crossing restrictions
+  - abbreviated registrations ("papa echo mike")
+  - US (FAA) phrasing alongside ICAO
+- **Smarter recognition:**
+  - A waypoint name that's almost right is corrected to the fix on the aircraft's own route.
+  - Dropped frequency digits are filled in.
+  - An approach or runway that isn't in use is understood and refused in red.
+- **Pilots talk back more naturally:**
+  - If they hear their callsign but miss the instruction, they say "say again" and name the part they missed.
+  - Say only a callsign and the pilot answers "go ahead"; "disregard" gets a "roger".
+- **The phraseology trainer** in the tutorial uses the same recogniser as the game.
+
+### Pilots and radio
+
+- **Pilots now sound like a real VHF frequency:** the carrier opens just before they speak, and sometimes the start or end of a word gets clipped.
+- **New pilot voices**, including Flemish and Italian accents and many more American voices. A few voices whose licence didn't allow use in the game were replaced, which unfortunately cost us some accents.
+- **Faster pilot replies.**
+- **Departures check in after passing 2000 ft.** "Ready for descent" and "request further clearance" come at more natural moments.
+
+### Simulation
+
+- **Aircraft climb and descend more realistically.** They build up to their rate, ease off as they approach the level, and use at most 1500 ft/min over the last 1000 ft.
+- **A smarter approach controller.** When it needs more vertical room, it now asks for a firmer rate first and only uses "expedite" as a last resort.
+- **Start with traffic already flying.** The pre-load was rebuilt: in a few seconds, behind a new loading screen, the AUTO controllers fly the first minutes for you, so you start with a live picture.
+- **Better custom traffic:**
+  - Arrivals come in evenly at the rate you set, also at high rates.
+  - Single sector: aircraft spawn further out, for better planning.
+
+### Radar and interface
+
+- **The radar map now has a real coastline**, plus the shores of the IJsselmeer and Markermeer.
+- **Sharper radar:** blips, labels and lines sit on whole pixels, so they keep their shape, are easier to read and no longer flicker.
+- **FID (Flyout Input Device):** give instructions from menus that appear out of the aircraft label.
+- **Hover to select (optional):** rest the mouse on a label to select the aircraft. Click it to keep it selected; otherwise it's let go after 10 seconds away from it.
+- **Labels are easier to click:** the click area matches the text.
+- **Squawk ident** makes the label blink green.
+- **The side panel can slide away** with the SIDE PANEL tab or the S key.
+- **COSYS and the departure list:**
+  - Dock them to the side panel or to the range buttons, and they move with the panel when it slides away.
+  - Collapse them with their tab or the C (COSYS) and D (departure list) keys.
+  - Collapsed, the departure list notifies you which aircraft just took off, and COSYS shows each new coordination received. Click one to go straight to it.
+- **A new main menu** with Schiphol traffic in the background, worked by the auto controllers.
+- **Tidier menus:** all text in capitals, save slots show single sector or multisector, a restyled save menu, and a SCOPE SCALE setting. The game also loads a few seconds faster.
+
+### Fixes
+
+- Runway 18R's heading was 30 degrees off; it now matches its ILS again.
+- Voice recognition no longer goes silent from the second game, or lags after fast-forwarding.
+- Some pilot voices that stayed silent now speak.
+- Clicking in between the LID/BID/TID columns no longer deselects the aircraft.
+
+---
+
 ## v0.34.0 — Smarter voice control
 
 - **New: Enhanced AI voice recognition option, now the default.** MultiScope ATC now has its own speech model, trained on the game's ATC phraseology. It understands callsigns, flight levels, QNH, ILS clearances and waypoint names far more reliably, copes with accents, and responds in about a fifth of a second.
