@@ -6,6 +6,99 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.36.0 Academy Box, S-pattern delays and radio direction finding
+
+### Academy Box (new)
+
+- New Game → Tutorial now opens the Academy Box: eight lessons in a fictional 40 x 40 NM training airspace. They run from "Headings and navigating" in lesson 1 to an inbound peak and an outbound peak in lessons 7 and 8.
+- A lesson is a normal single-sector session with the game's radar, labels, panels and voice. The steps appear one at a time, and the label field you need to set next blinks amber. You start at 100 points and lose them for mistakes such as entering a closed block (15) or a loss of separation (15).
+- Each lesson card in the menu shows a radar picture of the lesson, what it teaches and your best score.
+
+### Approach AUTO controller
+
+- When arrivals need delay, the AUTO approach controller can now send them round an S-pattern: a leg 4 NM beyond the downwind, flown at FL070, with a connector back into a gap on the downwind. It is used on runways 06, 18R, 27, 36C and 36R.
+- An arrival stays on its STAR until it has 50 seconds of delay left or reaches the release point set for its runway and arrival route. Before this change it could be released early and sent out on a long base.
+- Landing order:
+  - An aircraft further back on the same downwind no longer overtakes the one ahead of it.
+  - An aircraft that cannot absorb more delay may go ahead of one that can.
+  - A go-around is placed in a gap it can reach, ahead of traffic that can take the extra delay.
+- Speeds: 220 kt from 10 NM before the base turn, never below 180 kt on the downwind or base, and 180 kt by 8 NM. On the final an aircraft flies 180 kt like the one ahead and only speeds up as much as the gap needs.
+- To fit an aircraft into a gap, the controller can slow the aircraft behind it early on the localizer: 160 kt from 20 NM and final approach speed from 10 NM. It only does this when no other way closes the gap.
+- Independent parallel approaches (18R/18C and 36R/36C):
+  - While both runways are landing, each joins its localizer at its own level and distance: 18R 2000 ft at 11 NM, 18C 3000 ft at 12 NM, 36R 3000 ft at 15 NM, 36C 4000 ft at 15 NM. The two streams are 1000 ft apart until established.
+  - 18C and 36C traffic is cleared for the localizer first, then for the approach once the aircraft beside it is established.
+  - If the other runway has no arrival due within 3 minutes, an aircraft gets the normal approach: 2000 ft, 8 NM, cleared for the approach.
+- Separation is planned to 3.3 NM, so a small error in the prediction does not become a loss of separation. Behind a heavier aircraft the controller uses the wake turbulence distance.
+- If separation is lost anyway, the controller moves one of the two aircraft vertically. It never descends an aircraft below 2000 ft to do so.
+- Runway 22 now prefers the west downwind while 27 is landing, which keeps its circuit away from 27's final.
+- Descents no longer take aircraft into another airport's airspace.
+
+### Area control AUTO controller (multisector)
+
+- Arrivals reach their IAF 7 NM apart, or further when the aircraft ahead is heavier and wake turbulence spacing needs more.
+- Far out, the controller spaces them with small heading changes. It turns them to the side away from the departure flows and keeps them inside our own airspace. Speed is used closer in.
+- The order at each IAF is kept, and the label shows each arrival's place in it.
+- The separation manager now also solves conflicts between two arrivals, in the same stream or in two different streams.
+- Area control clears an arrival down, and the pilot flies their own descent profile to the crossing level.
+- Custom traffic in multisector is spaced at the FIR entry point, with at most 6 arrivals per IAF in any 10 minutes.
+
+### COSYS
+
+- Inbound Procedure Change is now called Inbound Clearance. It also covers Rotterdam inbounds via FLEVO, and it can use the 14 NM final fixes BOVCO (36C), KAROF (36R), DIBRU (18R) and ALINA (18C), from which the aircraft flies on to the localizer.
+- An Inbound Clearance heading is only offered if it takes the aircraft into your airspace within 5 NM of the IAF and keeps it there for 25 NM.
+- Departure Release requests for Rotterdam departures now come from Rotterdam tower. A request can be released IN SEQUENCE behind one you are already holding, and a release time can be typed as minutes and seconds, for example 1:20.
+- Headings are now one scrolling list. Conditions you can click are framed like buttons, and the menu path to your selection is drawn in green.
+- When you select a message, the jurisdictions involved light up in purple.
+- The tower no longer sends an "Aircraft on frequency" request for an aircraft you have already handed off.
+
+### Voice control
+
+- The game ships a new speech model. It handles "one eighty" speeds, 2000 and 3000 ft, "double" and "triple" digits and shortened frequencies better than the previous one.
+- The Enhanced AI recogniser now reads the transmission as a whole sentence. It uses the aircraft's level, speed, runways and route to choose between possible readings. Some of what it now understands:
+  - one wrong word inside an instruction
+  - "go down", "lower", "slow down", "seventy", "one eighty"
+  - "correction" ("after SUGOL heading 265, correction heading 090")
+  - "disregard" halfway through a message
+  - "on present heading, cleared approach"
+  - "after ARTIP direct PAM, thereafter heading 235"
+  - "expect runway 22, direct" plus a fix in one call
+  - frequencies without the leading "one" or without "decimal" ("two four decimal eight eight" for 124.880)
+- When a pilot asks "say again the heading", you can answer with the heading alone. After a plain "say again", your next transmission goes to that aircraft even without the callsign.
+- "Contact tower" by voice now transfers the aircraft in the same way as the REL button. Before, an arrival transferred by voice could go around for having no landing clearance.
+- On macOS, push-to-talk now uses the Enhanced AI recogniser.
+
+### Pilots and radio
+
+- On first contact, arrivals mostly give their callsign and the ATIS letter. Departures mostly give the level they are passing.
+- Pilots greet you by the time of day ("good afternoon") and call "radio check" when you do not answer.
+- Readbacks usually repeat your own words. When you give several instructions in one call, the pilot joins them the way crews do. There are 96 new readback wordings across 46 instructions.
+- "Free speed" and "speed free" cancel the speed restriction.
+
+### Radar and interface
+
+- RDF (radio direction finding): while a pilot transmits, a strobe cross, a circle or both mark where the call comes from. A pointer at the screen edge shows callers that are off screen. Switch it on under Settings → Radar → RDF Display, where you can also set the cross and circle sizes.
+- With the side panel slid away, the new Compact Info Panel at the top centre shows the ATIS, wind, QNH and transition level. It also shows the selected aircraft's callsign, type, telephony and next frequency.
+- Settings → Radar → WAYPOINTS sets which waypoints are drawn and which show their name. EDIT ON RADAR lets you do this over the scope, also from the main menu.
+- The AoR Visibility setting draws the outer border of your area of responsibility as a solid green line.
+- Departures that start their take-off roll while the departure list is slid away are listed next to its tab.
+- In multisector, a departure can be cleared direct to its APP exit at most, and a Rotterdam inbound direct to KAKKO at most. The fixes beyond belong to the next controller and are greyed out.
+
+### Weather and simulation
+
+- Rotterdam has its own wind and ATIS letter, and its own METAR when live weather is on. Its runway in use follows its own wind. The QNH stays the same as Schiphol's.
+- Fewer go-arounds for wind. For a medium jet at 20 to 25 kt crosswind the chance is now 2% (it was 30%). Gusts in a live METAR now count towards the go-around chance.
+- A tailwind of 15 kt or more is out of limits. The runway picker blocks it and warns from 10 kt.
+- The controller turns aircraft onto the localizer at 15 to 30 degrees. An aircraft captures the localizer when it can still roll out on the centreline, and one flying parallel to it or away from it does not capture.
+- An arrival descends to its approach level before it reaches the glideslope, also after it is cleared for the ILS.
+
+### Bug fixes
+
+- After an approach clearance is cancelled with a new heading, the label shows the new heading instead of the old intercept heading.
+- A GA aircraft breaking off for runway 04 no longer gets stuck in the side-step at high QNH.
+- An aircraft cleared for the localizer only on a parallel approach is no longer broken off and re-cleared over and over.
+
+---
+
 ## v0.35.0 — COSYS grows up, voice control improves and gameplay deepens
 
 ### COSYS (Coordination System)
