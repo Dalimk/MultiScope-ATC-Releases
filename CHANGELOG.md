@@ -6,6 +6,53 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.37.0 Scoring, grades and a controller career
+
+### Scoring
+
+- Every landing, departure and transfer earns 10 points. A transfer is a Rotterdam inbound you work through your airspace and hand to Rotterdam approach. A flight between Schiphol and Rotterdam counts once, as a departure or an arrival.
+- A loss of separation costs 30, 40 or 60 points, depending on how much of the minimum was kept: at least two thirds, at least one third, or less. A wake turbulence loss costs 30 and a sector violation 20.
+- Efficient work earns small bonuses:
+  - Final spacing: when the aircraft ahead crosses the threshold, the one behind earns +5, +3 or +1 if it is within 0.2, 0.4 or 0.6 NM of the spacing line it had to stay behind.
+  - +1 for a clean intercept of the localizer.
+  - +2 for a departure sent direct when this saves at least 2 NM of track.
+  - +1 for a departure that is handed over without levelling off at or below its transfer level.
+  - A go-around you caused costs 5.
+- An aircraft involved in an incident loses the bonuses it had earned.
+- In multisector, a handoff into a predicted conflict costs 5. An on-time handoff scores nothing, and a late one lowers your coordination grade.
+- A small +5 or -3 rises above the aircraft that scored. The reason is in the score log.
+- In multisector you are credited only for traffic you worked yourself. An arrival you worked and then handed to an AUTO position still earns its landing.
+
+### Grades and the session report
+
+- Each session gets a grade from S to F for safety, coordination and efficiency, plus an overall grade. Safety counts incidents per 100 movements, so short and long sessions are judged alike. The overall grade is never better than the safety grade.
+- Coordination is graded in multisector only. Coordination and efficiency get a grade once there is enough to judge, so one late handoff does not give you an F.
+- The report opens from the pause menu and when you quit or restart. It starts with a summary: your grades, what held them back, movements, score, incidents and the change to your rank score. DETAILED REPORT adds every figure, a timeline of traffic and score, and the score log.
+
+### Controller career
+
+- Your career now has a controller rating, based on the Glicko-2 rating system. It rises when you do better than your current level and falls when you do worse, and busier traffic counts as a harder opponent.
+- There are nine ranks: Candidate, Trainee, Student ATCO, Licensed ATCO, Experienced ATCO, OJT Instructor, Assessor, Supervisor and Watch Manager.
+- A rank needs a rank score, which comes from your rating, and XP: one point for every landing, departure or transfer of an aircraft that was not in an incident. Licensed ATCO and every rank above it also need 100 clean movements in multisector.
+- With one-hour sessions at 30 movements an hour, Licensed ATCO takes about 10 sessions. Watch Manager needs busy multisector traffic with very few losses, and about 100 sessions.
+- A rank is only lost when your rank score drops 50 points below it. Your best rank stays on the career page, together with a hint for what the next rank needs.
+- Your first sessions are placement, and the report shows PLACEMENT while the game works out your level. Sessions under 10 movements are not rated.
+- Ten short sessions count the same as one long session with the same traffic and results.
+- Every session counts towards your career: after a restart, a quit, closing the game, or the game stopping unexpectedly.
+- The career page is one scrolling list, with a menu that follows where you are, and it can show single sector or multisector on its own. Past sessions open their full report. There is a personal best for each mode, and a best score per movement for sessions of 20 movements or more.
+- Careers from earlier versions start again on the new scoring. Unlocked achievements are kept.
+
+### Other changes
+
+- Time played now counts simulated time, so it runs faster with fast-forward.
+- The entertainment-only notice is now part of the first-launch screen. You can read it again under Settings, About / Legal.
+- All COSYS text is shown in capitals.
+- Voice control: the Legacy recogniser no longer freezes the game when you press push-to-talk. A change of recogniser or speech model now takes effect during a flight.
+- The phraseology trainer keeps a separate best score for each recogniser setup.
+- With a traffic schedule loaded, custom traffic uses only flights from that schedule.
+
+---
+
 ## v0.36.0 Academy Box, S-pattern delays and radio direction finding
 
 ### Academy Box (new)
