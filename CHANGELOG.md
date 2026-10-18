@@ -6,6 +6,72 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.38.0 A rebuilt approach controller, the AMAN and a new side panel
+
+### Approach AUTO controller
+
+- The AUTO approach controller has been rebuilt from scratch. It plans 3.3 NM or 1000 ft between aircraft along each aircraft's predicted path.
+- All arrival levels are now planned in one pass each radar sweep. Two parts of the controller no longer give the same aircraft different levels.
+- 27 and 22 landing together share one landing order and one capacity, because their finals come within 3 NM of each other. Neither flies an S-pattern while the other lands.
+
+### Arrival manager (AMAN)
+
+- A new AMAN gives every arrival a landing slot and a time to cross its IAF.
+- The AMAN window shows the slots for each landing runway and the arrivals still to cross their IAF. Turn it on under Settings, Radar, AMAN. The A key slides it away, and POP OUT moves it into a window of its own.
+- In multisector, area control times each arrival to cross its IAF within 2 minutes of its slot. An arrival with more than 5 minutes of delay left holds at the IAF until its slot.
+- When approach falls behind, the AMAN leaves landing slots empty so it can catch up, and more arrivals take their delay in the holds.
+- The traffic sliders stop at what the active landing runways can take.
+- In single sector the AMAN only watches. It warns you when your traffic rate is more than the runways can take.
+
+### Side panel
+
+- TRAFFIC / HOUR is now a bar that splits the hourly total into each airport's departures and arrivals. Click it to open the sliders: TOTAL, and DEP and ARR for each airport. Each airport can be collapsed.
+- The runway picker and the weather panel now drop down from the side panel itself.
+- WX INFO opens the weather settings with a click anywhere on the block: WIND, SPEED and QNH sliders that apply at once.
+- In multisector, a click on the ARRIVAL runway card starts a COSYS request to add or remove a landing runway.
+
+### COSYS
+
+- Feeder spacing: working an arrival position, you can ask the AUTO feeder for more room between the aircraft it hands you: 0.5, 1 or 1.5 NM more than the minimum. The feeder agrees, or offers less when the runway is busy (and tells you up to which arrival rate your choice would fit), or refuses when there is no room. You can also pick it on the New Game screen.
+- Runway change: ask the tower to add or remove an arrival or departure runway, as soon as possible or at a time you choose. The tower agrees, offers another runway or a later time, or refuses with the reason.
+- Start holding, Release from hold and End holding let you run holding at the IAFs yourself, released on the expected approach times or on request.
+- The supervisor tells you when you fall behind on the arrival flow (new arrivals may then be held back) and what helps: adding a landing runway, or a lower arrival rate.
+- Messages waiting for your answer blink.
+
+### Academy
+
+- New Game → ACADEMY replaces the Tutorial. It opens on an INTRODUCTION with new sessions, Airspace layout, Speeds and winds, Headings and navigating & Levels and vertical limits.
+- The approach lessons are now Basic training 1 to 6 in the Approach Academy, with reworked exercises.
+- The phraseology trainer is now the Phraseology Academy: a course in two parts, Basic radio and Advanced radio, practised in the Academy Box airspace.
+- Each radio lesson starts with cards that teach the phrases, then drills them in three stages: repeat, hint and recall.
+- Mistakes are listed in the order of the phrase, each with an explanation. A second miss shows a hint and a third shows the whole phrase.
+- A cheat sheet lists 22 airline radio names, the digits and the phonetic alphabet.
+
+### New Game menu
+
+- A new order: runways, traffic, positions, weather and start options.
+- An airspace map beside the setup shows the runways in use, the finals, the arrival routes, the departure routes and which positions are yours. Hover a position to see its routes and finals on the map.
+- The positions are cards with their frequency, level band, and the runways or IAFs they work.
+- REAL WORLD traffic shows the schedule's movements per hour as a chart. Click an hour to start there.
+- Traffic and weather values are set with sliders.
+
+### Radar and labels
+
+- Your radar only shows conflict alerts and separation losses that involve your own traffic.
+
+### Scoring
+
+- In multisector, handing a departure over on a heading more than 30 degrees off its route costs 5 coordination points. A heading agreed in COSYS does not count.
+- Leaving a pilot waiting for 60 seconds, after a check-in or a request for a higher level, costs 2 efficiency points.
+- You are only scored for traffic you instructed.
+
+### Other changes
+
+- A departure no longer takes off with an arrival on the runway or on short final.
+- On a slow computer at fast-forward, the game now runs slower to catch up instead of freezing.
+
+---
+
 ## v0.37.0 Scoring, grades and a controller career
 
 ### Scoring
