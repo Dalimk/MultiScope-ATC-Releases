@@ -6,6 +6,95 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.39.0 Pre-release playtest
+
+This is the build for the new playtest. The last one ran on v0.27.7, and everything below has been added since then.
+
+### Multisector and coordination
+
+- Multisector covers the whole Amsterdam FIR. You work the approach positions you pick, and AUTO area control works the rest. Traffic for Rotterdam The Hague and short local flights between the two airports fly through it.
+- COSYS is the coordination system for multisector. Ask a neighbour to put an aircraft on your frequency early, agree transfer levels, delegate airspace, release departures, ask the tower for a runway change, ask the feeder for more spacing and run holding at the IAFs.
+- When there is too much traffic for the runways, the supervisor sends you a COSYS message to choose between adding a landing runway and reducing the arrival flow.
+
+### AUTO controllers
+
+- Any approach position you do not work is run by an AUTO controller. It sequences arrivals, sizes downwinds, doglegs and S-patterns, and climbs departures, keeping 3 NM or 1000 ft between aircraft.
+- When you work an arrival position, the AUTO feeder hands you arrivals on a clean leg at a safe level, clear of departures that are still climbing out.
+- An aircraft the AUTO controller is working cannot be taken over by mistake with a UCO or a voice call.
+
+### Arrival manager (AMAN)
+
+- The AMAN gives every arrival a landing slot and a time to cross its IAF. Arrivals with a long delay hold at the IAF until their slot.
+- The AMAN window shows the slots for each landing runway, side by side.
+- In multisector, a flow manager keeps the number of new arrivals within the landing slots.
+
+### Runways
+
+- Runway combinations are rated, from preferred down to dangerous. Dangerous combinations cannot be picked, and the AUTO controllers never start one of the combinations best avoided.
+
+### Routes and safety nets
+
+- Every aircraft flies one continuous route, its STAR joined to the ILS route for its runway, and the RTE overlay shows it up to its clearance limit.
+- Every aircraft has TCAS. Pilots follow a resolution advisory (RA), report it and return to their clearance afterwards. An RA costs 100 points.
+- The STCA conflict alert has a spoken alarm that repeats every 10 seconds while the conflict lasts, and both aircraft's spacing rings flash red during a loss of separation.
+- COSYS messages and sector violations have their own sounds. Each alert has its own volume under ALERTS VOLUME.
+
+### Radio and voice
+
+- Pilots speak English with the accent of their airline's home country, and answer on a modelled VHF frequency.
+- Voice control runs on the game's own speech model, trained on its ATC phraseology and run on your own computer.
+- Radio direction finding (RDF) shows where a call came from.
+
+### Giving instructions
+
+- The Touch Input Device (TID) is a third way to give instructions, next to the BID and LID. The game remembers the device you used last.
+- Chain up to three steps in one instruction with THEN, for example direct to one fix, then another fix, then a heading. This works by voice as well.
+- Trackpad support: two-finger scroll moves the map, pinch zooms, and a long press starts a measure line.
+
+### Radar and panels
+
+- The Quick Info panel shows the weather and the selected aircraft's details, including its exit level and, with transfer frequencies on, the next unit's frequency.
+- The radar borders have five layers (CTR, your area of responsibility, level restrictions, neighbouring sectors and coastline), each with its own colour, line style and opacity.
+- A waypoint editor.
+
+### The Academy
+
+- An introduction, Basic training 1 to 6 in the Approach Academy, and a radio course in the Phraseology Academy, all flown in a training airspace of its own.
+- Two instructors, Rodger and Wilko, take you through the lessons in a dialogue box. The introduction is fully guided, with a yellow line showing the path to fly and keyboard tips with every instruction.
+- When you start the game for the first time, it suggests where to begin based on how much you already know about ATC.
+
+### Scoring and career
+
+- Each session is graded from S to F for safety, coordination and efficiency, and has a report.
+- Your career has a controller rating with nine ranks, from Candidate to Watch Manager.
+- Steam leaderboards in your career, and your Steam rank on the session report.
+
+### Replays
+
+- Your newest 20 sessions are kept as replays in your career. Watch one, or click a moment on its timeline to start there.
+- LOOK BACK opens the last 30 minutes of the session you are playing, from the statistics or the end-of-session report.
+- TAKE OVER at any moment in a replay and play on from there. The score starts at that moment.
+
+### Starting a game and settings
+
+- A new game starts with traffic already in the air.
+- New menu style, with a Classic option for the earlier colours under Accessibility.
+- INTERFACE SCALE makes menus and panels larger, and HIGH CONTRAST brightens the radar's lines and labels.
+
+### Feedback
+
+- A bug report includes a recording of your session and the last five minutes of what your radar showed, so we can watch what happened.
+- If the game closes unexpectedly, it offers to send a crash report the next time you start it.
+- A report that cannot be sent is saved on your computer, and the game tells you where.
+
+### Fixes
+
+- Saved games bring back everything a session needs.
+- Altitudes on QNH are exact: A030 is 3000 ft, never 2999.
+- Realistic descents also work in a loaded game.
+
+---
+
 ## v0.38.0 A rebuilt approach controller, the AMAN and a new side panel
 
 ### Approach AUTO controller
