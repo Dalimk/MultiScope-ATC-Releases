@@ -6,6 +6,26 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.39.4 Neighbours' labels, localizer settings and parallel approaches
+
+- New Radar setting, Neighbours' labels: in multisector, aircraft worked by another position in your sector (an AUTO approach or arrival position, or the tower) show either a small grey label or the full label in grey.
+- Hold Alt and click an aircraft that is not yours to switch its label between small and full. The key can be changed in the settings.
+- New LOC/ILS section in the Radar settings: localizer colour, dots or dashes, their spacing and size, and the localizer length (10 to 25 NM). A localizer longer than 10 NM gets a mark at 10, 15 and 20 NM.
+- Push-to-talk on Ctrl now works with the right Ctrl key as well as the left one.
+- Testing the microphone in the settings no longer leaves push-to-talk dead in the game.
+- Voice recognition now works on microphones that report the wrong sample rate. On those machines every transmission came back empty.
+- Parallel approaches: the AUTO approach controller keeps 18R arrivals at 2000 ft and 36R arrivals at 3000 ft until they join the localizer, 1000 ft below the other runway's stream. With you working 18C, an AUTO 18R arrival sometimes joined at 3000 ft beside your traffic.
+- AUTO hands arrivals to you once they have rolled out on the entry to the downwind, and places them behind the traffic it is already working unless they fit a gap.
+- A go-around that was never transferred to the tower stays on your frequency and reports "going around" 5 to 20 seconds later. One the tower already had is handed back to approach once it climbs out of the tower's airspace.
+- Holding RTE also shows the route an AUTO controller gave an aircraft. An area control route change shows the moment it is cleared.
+- COSYS: a transfer level that is already in force is greyed out and cannot be sent again.
+- The TID's APP key can now be bound separately from the LID and BID.
+- Schiphol TMA: TMA 1 now starts at 2000 ft, and two new areas (TMA 7 and TMA 8) cover 1300 to 1500 ft.
+- New runway combinations: arrivals on 18R or 18C with departures from 18C and 18L.
+- Replays show the AUTO controllers' traffic as theirs, with the right labels.
+
+---
+
 ## v0.39.0 Pre-release playtest
 
 This is the build for the new playtest. The last one ran on v0.27.7, and everything below has been added since then.
