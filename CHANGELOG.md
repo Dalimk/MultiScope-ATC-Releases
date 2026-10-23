@@ -6,6 +6,26 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.39.5 Voice before UCO, a pop-out TID and fairer scoring
+
+- You can give a voice instruction to an aircraft transferred to you before it has called in or before you have pressed UCO. The pilot reads it back, flies it and does not call you afterwards. With Voice Auto Label Update on, the instruction also accepts the aircraft. With it off, the label stays offered until you press UCO.
+- A pilot cleared for an approach to a runway other than the one it expects answers "Negative, we expect runway one eight right" and flies nothing from that call. Give it the new runway in the same transmission ("expect runway 06, cleared ILS 06") and it accepts.
+- Corendon flights answer their first call. Every first call to a Corendon aircraft used to get "say again".
+- On a Mac running the game through CrossOver or Wine, voice recognition runs on the processor. On the graphics card it turned clear speech into nonsense. Choosing CPU as the speech model in the settings now really keeps it there (restart the game after switching).
+- The TID can be popped out into its own window with the icon in the corner of its tab.
+- New TID key IF / EXIT (Page Down) sends an arrival direct to its IF or a departure direct to its SID exit. The third fix key moves to End, and saved key bindings are updated for you.
+- The TID's RWY page lists the airport's runways by name. Only active landing runways can be picked, and the allocated one is yellow.
+- With Voice Auto Label Update off, the label shows MAP while an aircraft flies the missed approach. A REL mark makes the label small at once, and it turns grey when the aircraft has actually been transferred. An aircraft you transfer by voice and leave unmarked is marked REL after 2 seconds.
+- When you work an arrival position, the AUTO feeder also hands arrivals over on a straight base leg, leaves you more room to turn them onto the localizer and hands each one over at the latest 2 minutes before it joins the final.
+- Pilot left waiting: the 60 seconds start when you have heard the check-in call and stop as soon as you answer with "hello" or an instruction, even before UCO.
+- A departure handed to area control counts as a handoff into a conflict only when it is cleared to the same level as another aircraft and less than 5 NM from it at the moment of transfer.
+- Conflicts between area control's own aircraft no longer sound your STCA or cost you points.
+- The AMAN pop-out window scales to the screen it is on. On large or high-resolution screens it used to be tiny.
+- Academy: once a lesson has taught transfers, forgetting to transfer an arrival to the tower or a departure to Academy Control stops the exercise. Voice Auto Label Update is always on in the Academy.
+- The value column of the career list is no longer cut off.
+
+---
+
 ## v0.39.4 Neighbours' labels, localizer settings and parallel approaches
 
 - New Radar setting, Neighbours' labels: in multisector, aircraft worked by another position in your sector (an AUTO approach or arrival position, or the tower) show either a small grey label or the full label in grey.
