@@ -6,6 +6,13 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.39.6 Voice recognition fix for surround sound
+
+- Voice recognition now works on PCs whose sound output is set to 5.1 or 7.1 surround, as many gaming headsets and HDMI outputs are. On those PCs the voice test in the settings heard the callsign at best and then nothing, and push-to-talk in the game stopped working.
+- If voice still fails for you, press F8 in the game and send feedback. The log it attaches now shows your microphone and speaker setup.
+
+---
+
 ## v0.39.5 Voice before UCO, a pop-out TID and fairer scoring
 
 - You can give a voice instruction to an aircraft transferred to you before it has called in or before you have pressed UCO. The pilot reads it back, flies it and does not call you afterwards. With Voice Auto Label Update on, the instruction also accepts the aircraft. With it off, the label stays offered until you press UCO.
