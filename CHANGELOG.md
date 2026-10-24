@@ -24,6 +24,13 @@ This is the curated, plain-English changelog — it highlights what changes for 
 - "KLM123, approach" now answers a pilot's call, and "disregard" gets no reply.
 - The capacity warning shows the rate and the maximum, for example "68 /HR OF 68 MAX", for arrivals and departures.
 - Scoring: an aircraft handed to you by an AUTO controller does not cost you points until you have had time to react.
+- The 2 NM final rule only counts aircraft that are actually on the final. A cleared arrival still on a vector beside the runway used to count as a violation.
+- TID: new shortcut keys, and on parallel runways the PAM and SPY keys follow the arrival's runway (ALINA or DIBRU on 18R and 18C, BOVCO or KAROF on 36C and 36R).
+- An instruction you give by voice and on a device within a minute is read back once.
+- The full phraseology list from the quick reference pauses the game while it is open.
+- Switching Voice Auto Label Update off during a game keeps every label as it was, and the labels of aircraft worked by area control, an AUTO position or the tower keep following their live clearance.
+- When area control sends an arrival direct to its IAF, the label shows the clearance limit (SPL) instead of the IAF.
+- Taking over from a bug report replay now starts from a save in the replay file, so the traffic matches what was recorded.
 
 ---
 
