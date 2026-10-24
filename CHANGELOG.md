@@ -6,6 +6,28 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.40.0 New font, conditional descents by voice and COSYS holding
+
+- The game has its own font, MSATC_MONO. It keeps the look and spacing of the old one, with cleaner B, U and 0, and labels stay sharp at small sizes.
+- Label leader lines no longer show a gap or a one-pixel step, and the runway on the leader line is one size larger.
+- You can say "after RIVER descend flight level 45". The pilot reads back both parts, keeps its present level until RIVER and descends from there.
+- Quiet speech gets through more often. A call that is still too quiet to use now shows a red TOO QUIET message on the voice bar.
+- A greeting on its own ("good morning") or "continue" answers a pilot's call, the same as "hello".
+- Pilots leave "your" out of readbacks ("Expedite descent"). Once you have shortened a registration callsign, they use the short form too.
+- A departure can no longer be cleared for the ILS by voice by mistake. A misheard "LOPIK" was taken as "LOC".
+- With Voice Auto Label Update off, RTE turns red and shows the route on your label whenever the aircraft is flying something else.
+- COSYS: Inbound Clearance is renamed Inbound Procedure, and every standard option for a landing runway is offered. A new message with nothing selected opens as a general coordination with the callsign list ready.
+- When area control opens a holding stack at an IAF you feed, it asks you first. You choose whether it releases aircraft at their expected approach time (with up to 30 minutes added) or on your request.
+- Aircraft released from a hold keep their inbound procedure. Area control sometimes gave them a heading seconds after the release.
+- Your COSYS runway change can pick any acceptable combination, including landing pairs that are not standard.
+- The AUTO feeder hands arrivals to you no earlier than 6 minutes before they join the final. Some came 11 minutes out.
+- An aircraft cleared for the approach and sent direct to the IF turns onto the localizer there, without overshooting the centreline.
+- Efficiency scoring starts at C. With no bonuses and no penalties, a session was graded F.
+- Restarting a loaded game keeps its setup, so a multisector save no longer restarts as single sector.
+- The runway picker applies your choice when you close it.
+
+---
+
 ## v0.39.6 Voice recognition fix for surround sound
 
 - Voice recognition now works on PCs whose sound output is set to 5.1 or 7.1 surround, as many gaming headsets and HDMI outputs are. On those PCs the voice test in the settings heard the callsign at best and then nothing, and push-to-talk in the game stopped working.
