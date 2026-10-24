@@ -6,6 +6,27 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.41.0 STCA on the finals, a steadier AUTO approach and 160 kt to 4 NM
+
+- STCA no longer warns about two arrivals that are both inside the final approach area of their own runway (from the threshold to 15 NM out, 3 NM either side, below 4000 ft). Base turns towards parallel or close runways used to set it off again and again. A real loss of separation is still shown and counted.
+- The AUTO approach controller no longer holds two arrivals at the same level next to each other. The one in front is given the level below, so it is clearly number one.
+- An AUTO arrival that is already close to another aircraft may now descend away from it. It used to be stopped at the level it was passing.
+- On parallel approaches the higher aircraft is cleared for the localizer first, on either runway, and for the full approach once the aircraft beside it is established.
+- A departure is no longer kept at FL060 under an arrival flying ahead of it in the same direction. It climbs above it when there is room.
+- With 36C and 36R both landing, a RIVER arrival for 36R is sent on a dogleg straight in when that makes its slot, otherwise over SPL onto the 36R downwind.
+- An AUTO arrival that is too high for its base turn, or misses its join, is turned onto a new pattern.
+- Area control keeps other traffic clear of its holding stacks, and puts a vectored arrival back on its route before handing it to approach.
+- The PC-12, the ATR 72 and every other type that can fly it now hold 160 kt to 4 NM on the approach. A PC-12 used to come down the final at about 120 kt and slow everyone behind it.
+- In single sector, an arrival is transferred to you 2 to 5 NM before its IAF and calls you there, not as soon as it appears.
+- New game: the wind favours a headwind on the runways in use, the WEATHER panel warns when the wind is near or over a runway's crosswind or tailwind limit (START is blocked when it is over), and runways you picked yourself stay when you change the traffic load.
+- COSYS: Release from hold can release a stack in sequence or all at once (SIMULTANEOUS), a Departure Release shows its SID on the radar while you hover it, and a Missed Approach counter can give a direct to a fix.
+- With Voice Auto Label Update off, a warning appears when a command you execute repeats an instruction you have just given by voice.
+- "KLM123, approach" now answers a pilot's call, and "disregard" gets no reply.
+- The capacity warning shows the rate and the maximum, for example "68 /HR OF 68 MAX", for arrivals and departures.
+- Scoring: an aircraft handed to you by an AUTO controller does not cost you points until you have had time to react.
+
+---
+
 ## v0.40.0 New font, conditional descents by voice and COSYS holding
 
 - The game has its own font, MSATC_MONO. It keeps the look and spacing of the old one, with cleaner B, U and 0, and labels stay sharp at small sizes.
