@@ -6,6 +6,17 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.42.0 MultiScope ATC on the Mac
+
+- The playtest has a macOS build for both Apple Silicon and Intel Macs. Steam installs the right build for your system, next to the Windows and Linux ones.
+- The Mac build includes voice recognition and the pilot voices. On Apple Silicon, speech recognition runs on the graphics chip.
+- The first time you press push-to-talk, macOS asks for permission to use the microphone. Allow it, or voice commands hear nothing.
+- Your saves and settings on a Mac are kept in ~/Library/Application Support/MultiScopeATC.
+- This is the first Mac build. If something does not work, press F8 in the game and send feedback: the report includes your log.
+- Gameplay is the same as in v0.41.1.
+
+---
+
 ## v0.41.1 Linux and Steam Deck playtest build
 
 - The playtest has a Linux build for Linux and SteamOS (Steam Deck), 64-bit. Steam picks the right build for your system, so Windows players keep the Windows one.
