@@ -6,6 +6,16 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.41.1 Linux and Steam Deck playtest build
+
+- The playtest has a Linux build for Linux and SteamOS (Steam Deck), 64-bit. Steam picks the right build for your system, so Windows players keep the Windows one.
+- The Linux build includes the pilot voices and voice recognition. Recognition uses the Enhanced AI recogniser, on the graphics card through Vulkan or on the processor.
+- Your saves and settings on Linux are kept in ~/.local/share/MultiScopeATC.
+- This is the first Linux build and nobody has played it on a Linux desktop yet. If something does not work, press F8 in the game and send feedback: the report includes your log.
+- Gameplay is the same as in v0.41.0.
+
+---
+
 ## v0.41.0 STCA on the finals, a steadier AUTO approach and 160 kt to 4 NM
 
 - STCA no longer warns about two arrivals that are both inside the final approach area of their own runway (from the threshold to 15 NM out, 3 NM either side, below 4000 ft). Base turns towards parallel or close runways used to set it off again and again. A real loss of separation is still shown and counted.
