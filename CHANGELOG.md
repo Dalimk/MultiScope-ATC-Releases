@@ -6,6 +6,34 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.43.0 Multiplayer
+
+- Up to four players can now work one multisector session together. Each player takes any desired position(s), and the AUTO controllers work every position nobody holds. Players without a position watch as the spectator.
+- Host a session from MULTIPLAYER on the main menu, as a new game or by continuing one of your multisector saves. Others join through Steam, a Discord invite or a lobby code, or on a local network.
+- The host decides who can find the session (invite only, friends or public) and how players get in (open, ask the host or a password). The host can lock the session and remove a player. If the host leaves, another player takes over and the game carries on.
+- Pausing in multiplayer is shared, and the game resumes once the players vote for it.
+- COSYS works between players. A request to a position another player holds waits for their answer, and they can approve it, refuse it or send a counter. (If you are in a call, make sure to coordinate through the game what you discussed, so the game knows what you are doing.)
+- Each player is scored only on the aircraft they handled. Multiplayer scores have their own leaderboard and stay off the single-player boards.
+- You can connect Discord in the game.
+- New DMAN (departure manager). It gives each departure a take-off slot and keeps it at the gate until it is time to taxi. When departures build up, the tower asks you to open a second departure runway, and asks to close it again when traffic drops.
+- The AMAN now manages the arrival flow in single sector too, with short radar warnings in place of COSYS messages.
+- Departure intervals now depend on the performance of both aircraft and on whether their routes diverge. Wake turbulence spacing applies when it needs more.
+- COSYS: a GENERAL Departure Release covers every matching departure of a tower. Outbound Transfer lets you ask area control for a departure's level, a heading or a direct past your exit. Skip my Sector is new.
+- AUTO approach: an arrival coordinated onto a fix on the final (for example ARTIP direct ALINA) flies that route and turns in there. Downwind joins go direct to the base point. Arrivals over SPL fly at least 5 NM past the final before they turn, and arrivals are kept clear of departures climbing out underneath them.
+- Feeder spacing (TIGHT, NORMAL, COMFORT, RELAXED) adds 0.5 to 2.0 NM between the arrivals handed to you, taken from spare time only. When traffic becomes too busy, the feeder will let you know and start spacing tighter.
+- The BID, LID and TID can be popped out. They float over the radar, see-through, or can be dragged onto another screen as a window of their own. The AMAN and DMAN pop out the same way.
+- The TID can run on a different device on your network: scan the QR code on the TID tab and its keys and status bar appear in the device's browser.
+- The game is now laid out at your window's own size, so it stays sharp at any resolution and a bigger window shows more of the scope. F11 switches between fullscreen and windowed.
+- Trackpad pinch zoom follows your fingers, and two-finger scrolling works in the lists.
+- Settings has a search field that covers every page.
+- 86 achievements in four tiers (bronze, silver, gold and platinum) replace the old eight. The career screen shows your record in each family, and the rank score now starts at 0.
+- When UCO or REL is refused, the status bar says why.
+- REAL WORLD traffic: you pick the start time in 15-minute blocks on the day chart.
+- Voice: frequencies are recognised more reliably, and "disregard" after a full instruction cancels the whole transmission.
+- Fixes: many improvements to the AUTO approach and area controllers, and many bugs reported during the playtest are fixed. An arrival too high over the threshold now goes around instead of flying on at 2000 ft. The Mac build no longer crashes when you start a game, and the Linux build no longer lags on the BID, LID and TID.
+
+---
+
 ## v0.42.0 MultiScope ATC on the Mac
 
 - The playtest has a macOS build for both Apple Silicon and Intel Macs. Steam installs the right build for your system, next to the Windows and Linux ones.
