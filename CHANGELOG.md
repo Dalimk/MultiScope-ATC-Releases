@@ -6,6 +6,58 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.0 Early Access build
+
+This is the build for Early Access. We are waiting for Steam to approve the store page, and Early Access opens on Steam once it has. Every career starts fresh with this version.
+
+**Getting started**
+- An Early Access notice greets you on launch, with a button to our Discord. Tick "Don't show again" to skip it next time.
+- New PROCEDURES sheet: the airport's standard operating procedures on one chart. Its pages cover the airspace, the runways, feeder and arrival work, transits to Rotterdam, COSYS and missed approaches. In single sector it shows the airspace and runway pages.
+- You open the procedures sheet from New Game or from the pause menu. Before your first game at an airport it opens by itself, once for single sector and once for multisector, and in multiplayer it opens on your first READY.
+- When you start a game, New Game suggests the training to do first, based on your difficulty and what you are about to play. You can always start anyway.
+
+**Academy**
+- A new CONTROLS lesson, next to the Introduction, takes you through every input device, the keyboard, voice and the label as a notepad in one guided session.
+- Advanced training adds Parallel approaches and a COSYS course of short scenarios, played on a training copy of the COSYS box.
+- Give an instruction the lesson did not ask for and the aircraft flies it for a few seconds. Rodger or Wilko then explain what goes wrong, and you put it right or step back.
+
+**Career**
+- Aircraft collection in CAREER > COLLECTION: a card for every aircraft type and airline you have handled, with rarity and sets to complete.
+- An aircraft you had under control now counts as yours for scoring, also when you never had to give it an instruction.
+- The career screens use one colour rule: good results in green, poor ones in amber, plain facts in white. Airport statistics show runway names such as 27.
+
+**Traffic and coordination**
+- When a runway in use has been out of its wind limits for 30 seconds, the tower asks you in COSYS for a runway change and proposes a combination (multisector).
+- In multisector, an arrival the AUTO sends around because of the wind is given a better landing runway, and a departure held for the wind moves to another runway.
+- A departure whose slot comes after its runway closes in an agreed runway change is moved to another runway.
+- Single sector: while 36R and 36C both land, the 36R Area is in force by itself, so your approach traffic may use it at 3000 ft.
+- AUTO approach: when a parallel runway is open but has no traffic, arrivals join on their own side instead of crossing the field over SPL.
+
+**Holding**
+- Holds are flown at the ICAO holding speed of 230 kt with ICAO turns.
+- The entries follow ICAO too. A teardrop entry rolls out on the inbound track, and the entry path stays on the scope until the aircraft is established in the hold. Every hold shows arrows for its direction and keeps the same size.
+
+**Radar and screens**
+- The runway selection in the side panel now matches the New Game screen. While it is open you see what your choice would do before it takes effect: which runways stay open for the traffic still on them, the capacity, and which combinations can lead to conflicting traffic flows, with the runways named.
+- New Game now shows every runway warning that applies.
+- A right-click on an aircraft hides or shows its PTL, also when PTL: ALL AIRCRAFT is on.
+- The logo on the loading screen is now animated.
+
+**Multiplayer**
+- When one player agrees a runway change, the other players get a COSYS message about it. The same goes for REDUCE FLOW.
+- The flow requests from EHAM_SUP and the tower go to the host, and only the host can change the weather.
+- The radar shows when a player joins or leaves, and the READY button shows how many players are ready.
+- You can connect Discord without Steam.
+
+**Voice**
+- The speech model now recognises the newer phrases better, such as climb via SID, descend via STAR, expected approach time, delays, caution wake turbulence and remain this frequency. The Academy airspace is recognised better too.
+
+**Also**
+- The About / Legal screen now includes a photosensitive seizure warning and links to the privacy notice and terms.
+- Fixes: in multiplayer, an arrival to a runway that was being closed skipped the Arrival position. A check-in that had to wait behind other calls was never heard with arcade under-control. A runway selected again in the picker kept its dashed frame. Training flights that take off and land at the same airport no longer appear.
+
+---
+
 ## v0.43.0 Multiplayer
 
 - Up to four players can now work one multisector session together. Each player takes any desired position(s), and the AUTO controllers work every position nobody holds. Players without a position watch as the spectator.
