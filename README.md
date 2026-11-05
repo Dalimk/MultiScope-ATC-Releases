@@ -66,5 +66,5 @@ In active development and preparing for Steam Early Access. Early Access launche
 ## License
 
 MultiScope ATC is **all rights reserved**. The source code, assets, and
-documentation are the property of Dalí Klaassen and Pim van Gool and may not be
+documentation are the property of Scope Studios V.O.F. and may not be
 reproduced, distributed, or modified without prior written permission. See [LICENSE](LICENSE).
