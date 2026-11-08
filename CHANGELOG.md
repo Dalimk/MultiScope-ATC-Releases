@@ -6,6 +6,48 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.2 Community requests and fixes
+
+Your requests and reports: conditional voice instructions, a turn side on every direct, a label size slider and your own mouse cursor.
+
+**Controls**
+- Voice: "when established, contact tower" and "when established, reduce speed 160" are read back and carried out once the aircraft is established on the localizer.
+- Voice: "at 4 miles final, contact tower" and "at 4 DME, reduce speed 160" wait until the aircraft is that far from the runway. "After passing 3000 feet" can now hold a frequency change too.
+- Voice: "when established, descend on the glide path" clears an aircraft that has the localizer only for the full approach.
+- Voice: a turn side now goes with every direct, such as "turn left direct SUGOL" or "direct SPY, left turn", and "fly direct" counts as a direct.
+- Voice: on some keyboards push-to-talk lost the recording while the key was held down. That is fixed.
+- TID: one LVL digit is read as thousands of feet, so LVL 5 is 5000 ft or FL050.
+- TID: RTE stays available while you fill in a COSYS message's conditions.
+- With COMMAND OFF, EXE writes the exact level, heading and speed on the tag instead of the nearest row in the list.
+- Remote TID: the QR code now holds the address your phone can actually reach.
+- The label size shortcut is listed on the CONTROLS page of the settings.
+
+**Area control (multisector)**
+- COSYS: EDIT on an active Holding in force changes its release to the expected approach time, EAT plus 5 to 30 minutes, or on request.
+
+**Approach**
+- The AUTO approach no longer holds up an arrival's base turn for an aircraft behind it that you can still make room for.
+
+**Academy**
+- An aircraft the lesson has locked refuses instructions from every input, voice included. In ILS and LOC intercept, DLH82F stays locked until the lesson asks for it.
+- COSYS course: a PENDING card follows every request, and the holding scenario waits until both aircraft are really in the hold.
+
+**Radar and screens**
+- Settings: LABEL SIZE is a slider from 70 to 200 %.
+- Settings: you can import your own Windows mouse cursor (.cur), and REVERT brings back the crosshair.
+- A released aircraft keeps its PTL through the transfer.
+- Voice Auto Label Update off: a voice "contact" no longer marks the tag REL by itself or makes it small, and an aircraft you released keeps your notepad until the next controller takes it.
+
+**Multiplayer**
+- F8 pauses the game for everyone while you write a report.
+- After a transfer between players, the pilot calls the next player after 12 to 20 seconds.
+
+**Crash reports**
+- Fixed a crash in the side panel ("Handle is not initialized").
+- When you are connected to Discord, the report form fills in your Discord user ID. You can change or clear it.
+
+---
+
 ## v0.44.1 Release hotfixes
 
 Fixes from your first reports since the Early Access build, safer holding by area control, and controller support for every shortcut.
