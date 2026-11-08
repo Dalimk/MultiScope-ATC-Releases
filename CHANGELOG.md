@@ -31,6 +31,7 @@ Your requests and reports: conditional voice instructions, a turn side on every 
 **Academy**
 - An aircraft the lesson has locked refuses instructions from every input, voice included. In ILS and LOC intercept, DLH82F stays locked until the lesson asks for it.
 - COSYS course: a PENDING card follows every request, and the holding scenario waits until both aircraft are really in the hold.
+- An aircraft still with Academy Control no longer costs you points or disappears when its hold takes it outside the box.
 
 **Radar and screens**
 - Settings: LABEL SIZE is a slider from 70 to 200 %.
