@@ -6,6 +6,24 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.3 Crash fix
+
+A fix for a crash when you select an aircraft and one for the tag after a transfer, plus two fixes from the v0.44.2 notes that were not yet in that build.
+
+**Area control (multisector)**
+- COSYS: the EDIT menu on an active Holding in force now stays open, so you can pick the new release.
+
+**Academy**
+- An aircraft still with Academy Control no longer costs you points or disappears when its hold takes it outside the box.
+
+**Radar and screens**
+- Voice Auto Label Update off: an aircraft you transferred keeps its normal white tag until you press REL, also when the next controller has already taken it. An ILS arrival handed to the tower used to turn grey at once.
+
+**Crash reports**
+- Selecting an aircraft could crash the game while the command panel rebuilt its buttons.
+
+---
+
 ## v0.44.2 Community requests and fixes
 
 Your requests and reports: conditional voice instructions, a turn side on every direct, a label size slider and your own mouse cursor.
