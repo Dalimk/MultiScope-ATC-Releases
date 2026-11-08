@@ -6,6 +6,39 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.1 Release hotfixes
+
+Fixes from your first reports since the Early Access build, safer holding by area control, and controller support for every shortcut.
+
+**Controls**
+- You can now put any shortcut on a button of a game controller, joystick, foot pedal or push-to-talk interface, or on a mouse side button.
+- TID: the HOTKEY menu works in the Academy, each fix key keeps its own binding, and a key that cannot be used says so on the button.
+- Remote TID: a touch is no longer lost when a browser add-on blocks the phone's vibration, and you can connect the remote TID in Academy lessons once every device is open.
+
+**Area control (multisector)**
+- Area control no longer stops an arrival's descent for traffic its route turns away from, so you get it at its normal IAF level.
+- Holding stacks keep a level free for an aircraft still on its way to the hold, and for one just released that flies back over the fix. An aircraft joining a stack is never climbed through other traffic.
+- Area control never stops an aircraft at a level that is already taken in its hold.
+
+**Traffic**
+- All SID departures from runway 22 are always spaced against departures from runway 24.
+- After the traffic preload, departures call you once airborne instead of appearing already under control with FL130.
+- Single sector: an arrival should no longer appear inside wake turbulence separation behind a slower aircraft.
+
+**Academy**
+- Skip my Sector: Academy Arrival lands KLM1186, descends only inside the box, and you no longer lose points for it.
+
+**Radar and screens**
+- The AMAN and DMAN windows fit the screen at every resolution, so the resize corner is always within reach.
+- A fix name you switch off in the waypoint editor stays off, also for the Rotterdam feeder fixes such as HELHO.
+- PROCEDURES: the 36R and 36C labels on the parallels page stay in place, the text in the header and side panel is white, and Esc closes the sheet instead of the pause menu.
+- The career leaderboard shows your rank without the rank score.
+
+**Crash reports**
+- A crash report includes more detail to help find the cause, and your Steam and Discord names are no longer in the logs that are sent.
+
+---
+
 ## v0.44.0 Early Access build
 
 This is the build for Early Access. We are waiting for Steam to approve the store page, and Early Access opens on Steam once it has. Every career starts fresh with this version.
