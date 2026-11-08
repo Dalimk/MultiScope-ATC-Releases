@@ -16,7 +16,7 @@ Your requests and reports: conditional voice instructions, a turn side on every 
 - Voice: "when established, descend on the glide path" clears an aircraft that has the localizer only for the full approach.
 - Voice: a turn side now goes with every direct, such as "turn left direct SUGOL" or "direct SPY, left turn", and "fly direct" counts as a direct.
 - Voice: on some keyboards push-to-talk lost the recording while the key was held down. That is fixed.
-- TID: one LVL digit is read as thousands of feet, so LVL 5 is 5000 ft or FL050.
+- TID: one LVL digit is read as thousands of feet, as an altitude up to the transition altitude and as a flight level above it: LVL 3 is 3000 ft and LVL 5 is FL050.
 - TID: RTE stays available while you fill in a COSYS message's conditions.
 - With COMMAND OFF, EXE writes the exact level, heading and speed on the tag instead of the nearest row in the list.
 - Remote TID: the QR code now holds the address your phone can actually reach.
