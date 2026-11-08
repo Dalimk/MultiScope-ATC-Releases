@@ -35,7 +35,7 @@ Fixes from your first reports since the Early Access build, safer holding by are
 - The career leaderboard shows your rank without the rank score.
 
 **Crash reports**
-- A crash report includes more detail to help find the cause, and your Steam and Discord names are no longer in the logs that are sent.
+- A crash report includes more detail to help find the cause.
 
 ---
 
