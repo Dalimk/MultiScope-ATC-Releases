@@ -6,6 +6,36 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.4 Voice corrections and leaderboard privacy
+
+Voice fixes for corrections and Korean Air, a choice to keep your scores off the Steam leaderboards, and multiplayer copies that now stay in step.
+
+**Controls**
+- Voice: "sorry" now works as a correction, so "descend to 2000 feet, sorry, 3000 feet" is one descent to 3000 feet.
+- Voice: a correction can give only the new value. "Heading one five zero, correction two five zero" is heading 250.
+- Voice: Korean Air said as two words is recognised. It was taken as a KLM flight.
+- Voice: Air India, Egypt Air, Royal Air Maroc, Ice Air and Air China Freight are written and spoken as real words, which helps recognition.
+- Voice: when the recogniser put the previous aircraft's callsign in front of the one you said, the instruction no longer goes to the wrong aircraft.
+- Voice on Windows: microphones with more than two channels (the microphone arrays in many laptops) now work. The game reads the microphone through Windows itself.
+- The HDG, LVL, SPD and DIRECT lists keep a scroll at their top or bottom to themselves. The radar zoomed or moved instead.
+
+**Career**
+- Settings, Career: SHARE SCORES ON STEAM turns off sending your scores and rank to the Steam leaderboards.
+- REMOVE FROM LEADERBOARDS deletes your existing entries from every MultiScope ATC leaderboard on Steam, after a confirmation.
+
+**Multiplayer**
+- With more than about 22 aircraft the copies of the game were no longer checked against each other and could drift apart, with an aircraft in a different place or a go-around on one screen only. This is fixed, and go-arounds now happen on every screen together.
+- A position you take over no longer shows the earlier AUTO transfers from it as yours.
+- Looking back from the results closes the pause menu, and going back to live no longer asks every player to pause again.
+- A player waiting to be let in is no longer shown the game starting, and can leave the waiting screen with ESC after 60 seconds.
+
+**Crash reports**
+- The feedback form says that reports are posted in a public channel on our Discord server.
+- A new Send anonymously option sends a report without your Discord name. We cannot reply to an anonymous report.
+- Reports are easier for us to read: repeated log lines are folded into one, and a load that freezes names the step it stopped at.
+
+---
+
 ## v0.44.3 Crash fix
 
 A fix for a crash when you select an aircraft and one for the tag after a transfer, plus two fixes from the v0.44.2 notes that were not yet in that build.
