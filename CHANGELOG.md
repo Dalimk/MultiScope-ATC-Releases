@@ -6,6 +6,58 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.5 Labels, handovers and turns
+
+Clearer label and handover rules with Voice Auto Label Update off, aircraft that turn as real ones do, a pause key that keeps the radar in view, and fixes from your reports.
+
+**Controls**
+- PAUSE key (P by default): pauses the game with the radar still in view. Press it again or ESC to resume. In multiplayer it is your vote in the shared pause.
+- The V key now switches the PREDICTED TRACK LINES setting itself, so the settings always match the radar. It used to put a line on every aircraft while the setting still read RIGHT-CLICK ONLY.
+- Voice Auto Label Update off: an aircraft you transfer keeps your normal white label until you press REL, wherever it goes. REL can always be pressed for it, also once the next controller has it.
+- Voice Auto Label Update off: a "contact" by voice now waits for your REL before the next controller takes the aircraft. If you forget, the game presses REL for you after 10 seconds and the status line says REL AUTOMATICALLY. With the setting on, the contact hands the aircraft over straight away, as before.
+- Hover to select no longer picks the aircraft under the label menu while that menu is open.
+- Voice: "flight level zero five zero" is understood as FL050, as written on the cards of Basic radio lesson 1.
+- Voice: a pilot who cannot fly a direct, after-fix or hold now says which fix ("unable, direct ARTIP"). Before, nothing was said.
+- Voice: a misheard descent to a level above the aircraft gets "say again the level".
+- Pilots wait 4 to 5 seconds after a readback before another aircraft calls you.
+
+**Area control (multisector)**
+- The area controller gives speeds in steps of 10 knots and never below 220 knots at or below FL150. Arrivals used to come in at odd speeds such as 182 or 221 knots.
+- The arrival manager moves an inbound to another active runway when that lands it more than 2 minutes earlier. Two inbounds that would cross over the field to each other's runway swap.
+- When you give a position back to AUTO in COSYS, its aircraft show as AUTO's at once.
+
+**Approach**
+- Aircraft bank 25 degrees and roll into and out of every turn, and the AUTO controllers plan their turns the same way. Turns are wider, and turn-ins onto the localizer are cleaner.
+- The AUTO pattern speed is 220 knots for every type.
+- The AUTO approach speeds an aircraft up only when the one behind would be more than 30 seconds late, and no longer swaps two aircraft when that costs minutes.
+- Clearing an aircraft for the same ILS approach again no longer cancels an established approach.
+- An aircraft that cannot intercept the localizer by 6 NM keeps its heading and asks for vectors.
+- A departure told "climb FL130 after PAM" no longer asks for higher before PAM.
+
+**Traffic**
+- In the preload, a feeder position you are about to take keeps its arrivals until they are near their join, so you start with them.
+- GA arrivals to a runway that is not in use are worked in the preload.
+- In a calm wind, a go-around no longer gives crosswind or tailwind as its reason.
+
+**Radar and screens**
+- The departure list stretches from its bottom-right corner, as the AMAN does: wider gives every column more room, taller shows more departures per runway. LIST SIZE is gone.
+- TEXT & INTERFACE SIZE in Accessibility: 100, 125 or 150 % for the menus, the side panel, COSYS, the departure list and the radar notices.
+- STCA no longer warns for two aircraft cleared to levels 800 to 999 feet apart.
+- In a replay, an aircraft's predicted track line follows the track it flies. It used to point along its heading.
+- Remote TID: a page the browser zoomed in can be pinched back out, or reset with one tap.
+- Score log: clearer lines for spacing that was not judged.
+
+**Multiplayer**
+- A player who loses the connection is shown as reconnecting, and their seat is kept for 30 seconds.
+- A transfer to another player waits for the sender's REL, at most 10 seconds after their contact, before the receiver can press UCO.
+- Your REL mark stays yours: another player's UCO no longer clears it, and one REL press is enough.
+
+**Crash reports**
+- A crash report now includes Windows' crash dump when Windows kept one. It helps us find crashes inside the game engine.
+- COSYS no longer takes your typing while the feedback form is open.
+
+---
+
 ## v0.44.4 Voice corrections and leaderboard privacy
 
 Voice fixes for corrections and Korean Air, a choice to keep your scores off the Steam leaderboards, and multiplayer copies that now stay in step.
