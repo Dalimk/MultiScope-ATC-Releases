@@ -6,6 +6,57 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.44.6 SID and STAR display
+
+The SIDs and STARs in use can now be drawn on the radar, radar settings are edited next to the radar itself, and the Academy lessons fit the new turns.
+
+**Controls**
+- The TID keypad shortcuts are set on the TID itself: EDIT ON RADAR opens its HOTKEY menu, where you pick the key for each button.
+- Pilot accents are off by default, so pilots speak with native English voices. If you had them on, they are switched off once. Turn them back on in Settings and they stay on.
+- Saying only the callsign answers an aircraft's call once you have heard that call. Before that, the pilot makes the call it was waiting to make.
+- The instructors' typing sound in the Academy and the radio course has its own TUTORIAL VOLUME slider. At 0 % it is off.
+
+**Area control (multisector)**
+- The area controller never slows an arrival below 220 knots, so arrivals reach you at 220 to 250 knots.
+- An arrival the area controller holds is slowed to its clean speed, and to no less than 220 knots within 20 NM of the fix.
+
+**Approach**
+- The AUTO approach controller now plans a go-around's new circuit along the path it will fly. It used to check it as if it flew straight ahead, and could turn it into another aircraft.
+- A loss of separation is not charged to you when an AUTO aircraft is in a TCAS resolution advisory, or came out of one less than 60 seconds before.
+
+**Traffic**
+- Amsterdam: SUGOL arrivals to runway 27 are cleared to FL070 like every other arrival (they were cleared to FL080). The SUGOL crossing levels are unchanged.
+
+**Academy**
+- Lessons 1, 2, 3, 10 and 15 are refitted to the 25 degree bank turns from v0.44.5. Aircraft follow the yellow lines again, and a perfect run in lesson 1 no longer enters a closed block.
+- Lessons 3 and 4: the downwinds are back at 4 NM from the localizer.
+- Lesson 4 asks for speed 180 on KLM1186's intercept, and a 180 knot base is no longer called closing.
+- The downwind turn preview in lessons 3 and 4 also shows when you set the heading on the TID.
+- The TID guide shows a level as you type it: 5 0 for FL050.
+- Parallel approaches: the intercept is judged on the heading you gave, not while the aircraft is still turning onto it.
+
+**Radar and screens**
+- SID VISIBILITY and STAR VISIBILITY (Settings, RADAR, ROUTE SETTINGS) draw the SIDs flown from the departure runways in use, and the STARs joined onto each landing runway's approach route. Each has its own colour and opacity, and the T key switches both on or off. Both are off by default.
+- EDIT ON RADAR for routes, borders and waypoints opens those settings in a narrow panel beside the radar, so you see each change as you make it. The waypoint list is now part of that panel.
+- The heading preview line now shows the turn as the aircraft flies it, rolling in before it turns.
+- Settings are tidier: localizer divider options fold out under LOCALIZER VISIBILITY, the fixed keys fold out under OTHER KEYS, and the wake turbulence standard moved to GAMEPLAY.
+- Discord: Settings has CONNECT and JOIN OUR DISCORD while you are not connected, and DISCONNECT when you are. The main menu's CONNECT DISCORD window has a DON'T SHOW AGAIN box.
+- Replays show labels as they were: aircraft that had not called in, the ones you worked and transferred, and your label notes.
+
+**Multiplayer**
+- A small difference between your game and the host's is now corrected on the aircraft concerned. It used to reload the whole game, which could leave you half a minute behind the host. A reload now reads RESYNCING WITH THE HOST.
+- Looking back during a session moves the aircraft as well as the clock and labels.
+- COSYS Switch on a slow connection asks the host for a position once and shows WAITING FOR THE HOST, so repeated presses no longer give a position away.
+- An instruction the host turns down is now shown on the status line: NOT YOURS ON THE HOST, AUTO WORKS IT.
+- The pause menu opened after RESUME SESSION on the session report closes again.
+
+**Crash reports**
+- When the game freezes, it now notes this in the log and keeps a memory dump, sent with your next report.
+- When the game crashes and Windows kept no crash dump, the game writes its own and sends it with your next report.
+- Reports include the start of the log as well as the end, your graphics driver version, and the programs hooked into the game.
+
+---
+
 ## v0.44.5 Labels, handovers and turns
 
 Clearer label and handover rules with Voice Auto Label Update off, aircraft that turn as real ones do, a pause key that keeps the radar in view, and fixes from your reports.
