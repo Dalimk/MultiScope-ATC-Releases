@@ -6,6 +6,49 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.0 No Transgression Zone and parallel departures
+
+Independent parallel approaches get a No Transgression Zone, departures off parallel runways are separated against each other, and a set of check-in and voice problems is fixed.
+
+**Controls**
+- Pilots check in one after the other, in the order they called, also after a COSYS transfer. An aircraft that has left your frequency no longer calls afterwards.
+- An arrival handed to you by area control always calls you. Calling an aircraft that is still on another frequency does nothing; it used to cancel that aircraft's later check-in.
+- Saying only the callsign of an aircraft that has not called gets "go ahead".
+- A pilot no longer says "blocked" after you have already repeated the instruction.
+- "Descend FL040, then reduce speed 200": after a level instruction, "then" holds the next speed, heading, level or frequency change until the aircraft reaches that level. The pilot reads it back as "after reaching".
+- "Reduce speed two two zero zero" (the "to" heard as "two") is 200 knots, no longer 220. "Clear" heard for "cleared" still counts as the approach clearance.
+- COSYS drop-down lists close when you pick a value.
+- A transfer level agreed between the tower and you no longer caps your level list once the aircraft is yours.
+- A fix past the APP EXIT turns white in the BID, LID and TID as soon as COSYS agrees a direct to it.
+- Linux: the microphone is no longer restarted over and over while the game is paused.
+
+**Approach**
+- No Transgression Zone: between two independent parallel approaches in use (18R and 18C, 36C and 36R) the radar draws the NTZ. An arrival inside it that heads towards the other final, or flies within 1000 ft above the other final's intercept level, counts as a sector violation (15 points). Settings, RADAR BORDERS hides the drawing or changes its colour; the rules apply either way.
+- A loss of separation is no longer counted while an aircraft levels off within 200 ft of its cleared level, 1000 ft from the other aircraft.
+- The AUTO approach controller only holds an arrival and a departure over a climb-out apart when they can actually meet. Departures get a continuous climb more often.
+- An arrival the AUTO feeder routes over SPL to your Arrival position now flies over SPL, instead of cutting across the other parallel's final.
+- Amsterdam: with runway 09 departing, ARTIP arrivals to 36C or 36R fly over SPL to the west downwind, clear of the 09 climb-out (not while 36C and 36R both land).
+
+**Traffic**
+- Departures off parallel runways (36L and 36C, 18L and 18C) are separated against each other. Diverging tracks count as separation, take-offs are timed behind the other runway's departure, and the DMAN spaces conflicting SIDs across both. Off a semi-active parallel runway the tower asks for a heading clear of the other departures and of the go-arounds.
+- Amsterdam: with 27 landing, general aviation arrivals fly the 27 ILS and break off to 22. They only go to 22 directly when you land 22 yourself.
+- A COSYS runway change can take a departure runway out, with the number of departures still to go.
+
+**Academy**
+- COSYS lessons: SEND only works when the step asks for it, and picking the requested item moves the lesson on.
+- Area Delegation lesson: the borrowed area is the strip under area C inside your box, so you can descend to 2000 ft there.
+- Academy aircraft no longer ask for a higher level.
+- The parallel approach lesson explains the NTZ and its rules.
+- Radio Training: callsigns no longer end in O or I, which looked like 0 and 1.
+
+**Radar and screens**
+- FINAL SPACING LINES (Settings, RADAR, AIRCRAFT & LABEL) hides the blue and red spacing lines on final. The following aircraft then blinks when it crosses one.
+- While a predicted track line is drawn, a small readout shows its length. You can drag it to another place.
+- REMOVE ALL MEASUREMENTS clears every measuring line at once.
+- The arrival and departure managers are shown by default only on Expert.
+
+---
+
 ## v0.44.6 SID and STAR display
 
 The SIDs and STARs in use can now be drawn on the radar, radar settings are edited next to the radar itself, and the Academy lessons fit the new turns.
