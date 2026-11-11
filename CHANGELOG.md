@@ -8,9 +8,13 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ## v0.45.0 No Transgression Zone and parallel departures
 
-Independent parallel approaches get a No Transgression Zone, departures off parallel runways are separated against each other, and a set of check-in and voice problems is fixed.
+The TID gets preset values, a label value can be changed with a double-click, independent parallel approaches get a No Transgression Zone, departures off parallel runways are separated against each other, and a set of check-in and voice problems is fixed.
 
 **Controls**
+- TID presets: while LVL or SPD is selected, the three fix keys show values for the selected aircraft. Departures get levels 060, 090 and 130 and speeds 250, 270 and 290. Arrivals get levels 020, 030 and the transition level, and speeds 160, 180 and 220. Press one to fill in the value, then EXE.
+- The TID's HOTKEY key is now SETUP. KEYS changes the keyboard shortcuts as before, and PRESETS changes the preset values.
+- With the Flyout Input Device on, double-click the heading, level or speed in the selected aircraft's label to open that list right there. Pick a value, or type it and press Enter, and it is sent at once. The minus and plus buttons beside a speed send it as "or less" or "or greater".
+- Pilots read back faster by default (1.50x). A speed you set yourself is kept.
 - Pilots check in one after the other, in the order they called, also after a COSYS transfer. An aircraft that has left your frequency no longer calls afterwards.
 - An arrival handed to you by area control always calls you. Calling an aircraft that is still on another frequency does nothing; it used to cancel that aircraft's later check-in.
 - Saying only the callsign of an aircraft that has not called gets "go ahead".
