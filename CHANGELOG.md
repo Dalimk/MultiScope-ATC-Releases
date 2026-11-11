@@ -6,6 +6,17 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.1 Crash fix for older processors
+
+A fix for the game closing at every start on older processors.
+
+**Crash reports**
+- On a processor without AVX2 (for example an Intel Xeon X5670 from 2010) the game closed at every start, before the main menu showed. It now starts, and the AI speech recognition runs on a slower engine built for these processors. On Windows, voice falls back to Windows speech recognition where even that engine cannot run.
+- Settings, Audio: the line under SPEECH MODEL says when the slower engine for processors without AVX2 is in use.
+- SPEECH MODEL set to GPU now uses the lighter model when no graphics card can run the larger one, which took about 4 seconds per call on the processor.
+
+---
+
 ## v0.45.0 No Transgression Zone and parallel departures
 
 The TID gets preset values, a label value can be changed with a double-click, independent parallel approaches get a No Transgression Zone, departures off parallel runways are separated against each other, and a set of check-in and voice problems is fixed.
