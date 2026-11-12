@@ -11,7 +11,7 @@ This is the curated, plain-English changelog — it highlights what changes for 
 Measure lines can now show where two aircraft will be closest. The value lists and the label quick edit work faster, Offline Real World saves keep the schedule, and a set of readback problems is fixed.
 
 **Controls**
-- With an aircraft already selected, one click on its heading, level or speed in the label opens that list. A pick is sent at once, and several picks in a row get one readback.
+- With the Flyout Input Device (FID) enabled and an aircraft already selected, one click on its heading, level or speed in the label opens that list. A pick is sent at once, and several picks in a row get one readback.
 - Digits typed while a label list is open go to that list and show in the label field as you type. The list stays beside the label as it moves.
 - The value lists show 8 entries at a time. Typing digits jumps to the nearest matching value, and the speed row has its own - and + buttons.
 - Values staged in the Flyout Input Device show on the status bar only, no longer in the LID or BID.
