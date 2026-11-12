@@ -12,7 +12,7 @@ The tower now checks every take-off against the departures already in the air, a
 
 **Controls**
 - A transmission that clearly fits another aircraft of the same airline is ignored. This happens when the callsign was probably misheard, for example a direct to a fix that is only on the other aircraft's route. Headings, speeds and levels never count.
-- When a pilot cannot fly any part of a transmission, they now say nothing and the label turns red. They used to answer "unable" or "negative". A pilot who was checking in calls again. "Confirm QNH", "confirm climb" and "blocked" are still said.
+- When a pilot cannot fly any part of a transmission, they now say nothing and the voice transcript of what you said turns red. They used to answer "unable" or "negative". A pilot who was checking in calls again. "Confirm QNH", "confirm climb" and "blocked" are still said.
 - "Once established" now holds every instruction after it, a speed and "contact tower" alike.
 - "Via OSRON, cleared ILS runway 06" gives the direct to OSRON and the approach clearance together.
 - "Descend via the glide path" and "descend along the glide path" work as the glide path clearance. "Continue own navigation" works as "resume own navigation".
