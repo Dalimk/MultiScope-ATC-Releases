@@ -6,6 +6,51 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.2 Measure lines and the separation tool
+
+Measure lines can now show where two aircraft will be closest. The value lists and the label quick edit work faster, Offline Real World saves keep the schedule, and a set of readback problems is fixed.
+
+**Controls**
+- With an aircraft already selected, one click on its heading, level or speed in the label opens that list. A pick is sent at once, and several picks in a row get one readback.
+- Digits typed while a label list is open go to that list and show in the label field as you type. The list stays beside the label as it moves.
+- The value lists show 8 entries at a time. Typing digits jumps to the nearest matching value, and the speed row has its own - and + buttons.
+- Values staged in the Flyout Input Device show on the status bar only, no longer in the LID or BID.
+- With the side panel put away while you use the LID or BID, the Flyout Input Device turns on by itself.
+- An altitude crossing below the transition level ("to reach 4000 ft by ARTIP") needs the QNH, and the pilot reads it back with the QNH.
+- A pilot who asks for the QNH or a say again stays on your frequency. A transfer given in the same transmission follows once you have answered.
+- Readbacks no longer repeat "expedite" after a correction. A station name that does not belong to the frequency is asked again.
+
+**Area control (multisector)**
+- Arrivals start their descent at the outer transfer and are no longer held at the hand-over level.
+- Arrivals no longer spawn above their type's ceiling. GA arrivals spawn at their own requested level.
+- Rotterdam's Offline Real World departures ask for their Departure Release 2 minutes before they can go, and stay on the ground until you release them.
+
+**Approach**
+- The tower asks for a Departure Release off a semi-active runway 2 minutes before the departure can go.
+- A runway that is still opening shows its ILS, IF and NTZ for a GA arrival landing on it.
+
+**Traffic**
+- An Offline Real World save keeps every flight of the schedule as it was, Rotterdam's included. A load or a take-over gets the same flights at the same times.
+
+**Academy**
+- The forgotten-transfer card costs no points before the lesson has asked you to transfer that aircraft.
+
+**Radar and screens**
+- Measure lines: the middle mouse button draws a line and the right button removes one. Ends snap to aircraft, fixes and other lines' ends, and hints beside the cursor show what a right click will do.
+- Separation tool: a line between two aircraft that are closing shows their closest point. Both tracks are drawn ahead, with the distance and the time to that point. It turns red under 3 NM with less than 800 ft between them. Aircraft that are not closing show NO X-ING.
+- A line from an aircraft to a point shows the time to fly there at its ground speed.
+
+**Career**
+- A clean localizer intercept is judged on the track over the ground, with the wind included, no longer on the heading.
+
+**Multiplayer**
+- Runway changes reach every player at the same moment, and a runway's opening time is the same on every copy of the session.
+
+**Crash reports**
+- Starting the game after an editor run no longer sends a false crash report.
+
+---
+
 ## v0.45.1 Crash fix for older processors
 
 A fix for the game closing at every start on older processors.
