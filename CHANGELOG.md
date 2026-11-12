@@ -14,6 +14,7 @@ Measure lines can now show where two aircraft will be closest. The value lists a
 - With the Flyout Input Device (FID) enabled and an aircraft already selected, one click on its heading, level or speed in the label opens that list. A pick is sent at once, and several picks in a row get one readback.
 - Digits typed while a label list is open go to that list and show in the label field as you type. The list stays beside the label as it moves.
 - The value lists show 8 entries at a time. Typing digits jumps to the nearest matching value, and the speed row has its own - and + buttons.
+- The Flyout Input Device is now on for everyone. If yours was still off from when the Professional and Expert presets switched it off, it is turned on once. If you switch it off again after that, it stays off.
 - Values staged in the Flyout Input Device show on the status bar only, no longer in the LID or BID.
 - With the side panel put away while you use the LID or BID, the Flyout Input Device turns on by itself.
 - An altitude crossing below the transition level ("to reach 4000 ft by ARTIP") needs the QNH, and the pilot reads it back with the QNH.
