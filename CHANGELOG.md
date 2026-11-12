@@ -6,6 +6,50 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.4 Airborne check on every take-off
+
+The tower now checks every take-off against the departures already in the air, and asks you for a release when a fast departure would follow a slow one. You can also set your own aircraft colours, and pilots no longer answer a call they cannot fly.
+
+**Controls**
+- A transmission that clearly fits another aircraft of the same airline is ignored. This happens when the callsign was probably misheard, for example a direct to a fix that is only on the other aircraft's route. Headings, speeds and levels never count.
+- When a pilot cannot fly any part of a transmission, they now say nothing and the label turns red. They used to answer "unable" or "negative". A pilot who was checking in calls again. "Confirm QNH", "confirm climb" and "blocked" are still said.
+- "Once established" now holds every instruction after it, a speed and "contact tower" alike.
+- "Via OSRON, cleared ILS runway 06" gives the direct to OSRON and the approach clearance together.
+- "Descend via the glide path" and "descend along the glide path" work as the glide path clearance. "Continue own navigation" works as "resume own navigation".
+- A flight level below the transition level is no longer understood as a level.
+- A departure cannot be cleared above its requested flight level. Higher levels are greyed out in the level lists.
+- On the TID, a level or speed entry stays open after a preset, so a second preset replaces it.
+- Pilots say "KLM" as letters and "X-ray" as two words. The British pilot voice is faster (about 0.3 s a sentence instead of 1.1 s).
+
+**Area control (multisector)**
+- Your aircraft must keep 5 NM or 1000 ft from aircraft that area control is working. A loss counts as a separation loss and is listed apart as ACC SEPARATION LOSS.
+
+**Approach**
+- Every take-off waits until its climb-out stays 3.3 NM or 1000 ft clear of the departures from its airport already rolling or in the air, whatever the runway. A departure off 04 and one off 36C used to meet passing 1500 ft.
+- When it saves the departures behind it at least 2 minutes, a held departure may leave at a lower level, between 2000 ft and FL060. In multisector the tower asks you for this with a Departure Release ("SID at A020").
+- A fast departure (A or B) behind a slow one (E) off the same runway needs a Departure Release from you, unless their SIDs diverge by 45 degrees. In single sector the slow one is given a diverging heading instead.
+- When the slow one goes first with a much faster one behind it, the tower asks for it on a diverging heading at 3000 ft. The fast one then follows on its SID and climbs over it.
+- The tower's Departure Release requests propose the SID or a heading near it, whichever causes the least delay and stays clear of the go-arounds. A missed approach is only taken into account while an arrival could actually go around into the departure.
+- Selecting a Departure Release for a departure still on the ground shows in purple the SID or heading the departure would leave on. The aircraft type is shown under the callsign.
+- An aircraft on a heading now passes the SID and route fixes it flies by, as its FMS would. Those fixes leave the RNAV list and the route line.
+- The "ILS route" is now called a transition everywhere in the game.
+
+**Radar and screens**
+- AIRCRAFT COLOURS (Settings, RADAR, AIRCRAFT & LABEL): choose the label and blip colour of your aircraft, selected and not. COLOUR BY FLOW gives inbound, outbound and other traffic their own colours.
+- The AMAN, COSYS and departure list windows open where you last put them, docked or collapsed as you left them.
+- The No Transgression Zone is always drawn. Its colour is still set under RADAR BORDERS.
+- The SID and STAR VISIBILITY switches in the settings now follow the T shortcut straight away.
+- The procedures briefing lists a transition's fixes one per line.
+- Career page: FILTER works again.
+
+**Career**
+- A clean localizer intercept now allows a track of up to 40 degrees. A 30 degree heading could come out at 31 to 35 degrees over the ground with the variation and a crosswind.
+
+**Crash reports**
+- A crash report now says when the game's log was cut off, which can mean the computer itself stopped.
+
+---
+
 ## v0.45.3 Voice-only leaderboards and split calls
 
 Leaderboards now separate voice-only sessions from the rest, and the session report shows calls that could have been one transmission. Pilots tell you when a level crossing is out of reach, and the AUDIO settings page is tidied up.
