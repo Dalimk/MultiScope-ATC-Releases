@@ -6,6 +6,40 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.3 Voice-only leaderboards and split calls
+
+Leaderboards now separate voice-only sessions from the rest, and the session report shows calls that could have been one transmission. Pilots tell you when a level crossing is out of reach, and the AUDIO settings page is tidied up.
+
+**Controls**
+- Pilots now say when they cannot make a level crossing even at their maximum rate: "unable flight level seven zero by ARTIP, we need more track miles". They keep the restriction and descend or climb as fast as they can.
+- Shortcut keys work on any keyboard layout, so the KEYS BY POSITION setting is gone. Letters follow what your keyboard types (A opens the AMAN wherever your A is). Symbol keys follow their place on a US keyboard, so on a German keyboard [ and ] are the two keys right of P.
+- A heading typed on the TID, or into a heading list of the Flyout Input Device or the label, now draws its turn preview.
+- The microphone you chose under INPUT DEVICE is used every time. It sometimes fell back to Default at startup.
+- When a pilot's check-in was dropped without being said, it no longer counts as a call you left unanswered.
+
+**Academy**
+- In the parallel runways lesson, pilots and voice recognition call the runways 36R and 18L, as the radar labels them.
+
+**Radar and screens**
+- Measure lines: a line between two aircraft starts as a plain distance line. Left click it to switch to the separation tool and back.
+- The radar font has a dotted zero and a squarer G, so 0 and O, and 6 and G, are easier to tell apart at small sizes.
+- Settings, AUDIO: VOLUME comes first, then OUTPUT DEVICE, then INPUT DEVICE with the microphone test and the voice recognition setup, then PILOT VOICES. The alert sound switches are gone. Set an alert's volume to 0% to turn it off.
+- SPEECH MODEL shows AUTO (GPU) or AUTO (CPU), so you can see what it picked on your PC.
+- Settings, RADAR: ROUTE SETTINGS is now ROUTES & LOCALIZERS, and FINAL SPACING LINES (TBS) has moved there, under LOCALIZER VISIBILITY.
+
+**Career**
+- Leaderboards: a session where every instruction was given by voice also goes to a voice-only board, and any other session to an input-only board. Pick them with the new BOARD and INPUT dropdowns. The new boards start empty.
+- The statistics screen shows VOICE ONLY while every instruction so far has been by voice.
+- Session report: SPLIT CALLS lists calls to one aircraft a few seconds apart that could have been one transmission. It is not scored. Transfers never count.
+- A go-around you caused because the runway was not clear, or because of wake turbulence, now counts against safety instead of efficiency. Unstable approaches and missing landing clearances stay under efficiency.
+- The session report lists the five rarest new collection cards and how many more there are.
+
+**Crash reports**
+- The game no longer offers a crash report when the previous run was simply closed for an update.
+- On Linux, a game that freezes now saves more detail for the crash report.
+
+---
+
 ## v0.45.2 Measure lines and the separation tool
 
 Measure lines can now show where two aircraft will be closest. The value lists and the label quick edit work faster, Offline Real World saves keep the schedule, and a set of readback problems is fixed.
