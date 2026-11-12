@@ -6,7 +6,7 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
-## v0.45.4 Airborne check on every take-off
+## v0.45.4 Transitions and SIDs
 
 The tower now checks every take-off against the departures already in the air, and asks you for a release when a fast departure would follow a slow one. You can also set your own aircraft colours, and pilots no longer answer a call they cannot fly.
 
