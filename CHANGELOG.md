@@ -12,7 +12,7 @@ Leaderboards now separate voice-only sessions from the rest, and the session rep
 
 **Controls**
 - Pilots now say when they cannot make a level crossing even at their maximum rate: "unable flight level seven zero by ARTIP, we need more track miles". They keep the restriction and descend or climb as fast as they can.
-- Shortcut keys work on any keyboard layout, so the KEYS BY POSITION setting is gone. Letters follow what your keyboard types (A opens the AMAN wherever your A is). Symbol keys follow their place on a US keyboard, so on a German keyboard [ and ] are the two keys right of P.
+- Shortcut keys work on any keyboard layout. Letters follow what your keyboard types (A opens the AMAN wherever your A is). Symbol keys follow their place on a US keyboard, so on a German keyboard [ and ] are the two keys right of P.
 - A heading typed on the TID, or into a heading list of the Flyout Input Device or the label, now draws its turn preview.
 - The microphone you chose under INPUT DEVICE is used every time. It sometimes fell back to Default at startup.
 - When a pilot's check-in was dropped without being said, it no longer counts as a call you left unanswered.
