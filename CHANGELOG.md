@@ -27,8 +27,8 @@ The tower now asks for a Departure Release when the departure is ready at the ho
 
 **Approach**
 - The tower asks for a Departure Release once the departure is first at its runway's holding point. It does not line up until you release it, and the departures behind it wait.
-- A departure held for traffic already in the air keeps its turn in the queue.
-- A departure is never handed over above its requested flight level.
+- On runways that depart as one stream (such as 22, 24 and 18L), a departure held because its climb-out would meet traffic already in the air keeps its turn. The other runways' departures wait for it instead of taking off past it.
+- A departure's exit level (XFL) is never above its requested flight level. A short hop such as EHAM to Rotterdam used to keep FL130 as its exit level and could never be handed over.
 - The AUTO approach controller moves the next arrivals up when one gives up its place in the sequence, for example after a go-around.
 - Single sector: an arrival that would catch up with the one ahead before the IAF starts 1000 ft higher.
 
