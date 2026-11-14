@@ -6,6 +6,47 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.5 Releases at the holding point
+
+The tower now asks for a Departure Release when the departure is ready at the holding point, and area control asks you for a higher transfer level when it cannot space an arrival. Your career is also backed up outside Steam Cloud.
+
+**Controls**
+- F6 and F7 zoom the radar to the next range button in or out.
+- An aircraft cleared for the localizer only shows LOC on the heading field of its label. Cleared LOC and then APP, it shows both.
+- Pop-out devices open at the size you left them at.
+- Voice: a misheard callsign only matches when its number is right word for word, so an instruction no longer goes to the wrong aircraft of the same airline.
+- Voice: two different values of the same instruction in one transmission, such as two headings, are queried with "say again the heading" instead of guessed.
+- "Right by two zero degrees" now works without "turn".
+- A pilot who gets no answer calls again after 10 to 30 seconds instead of exactly 10.
+- On macOS in full screen, the panels start below the menu bar.
+
+**Area control (multisector)**
+- When area control cannot space an arrival behind the one ahead, it keeps it 1000 ft higher over the IAF and asks you in COSYS to accept that level as the transfer level. You can approve it or counter with a higher level.
+- Arrivals no longer descend by themselves on a procedure's altitude limit. They keep the level they were cleared to.
+- EHRD inbounds can be cleared direct KAKKO at most for runway 06, and REWIK for runway 24. The TID shows matching fix keys.
+
+**Approach**
+- The tower asks for a Departure Release once the departure is first at its runway's holding point. It does not line up until you release it, and the departures behind it wait.
+- A departure held for traffic already in the air keeps its turn in the queue.
+- A departure is never handed over above its requested flight level.
+- The AUTO approach controller moves the next arrivals up when one gives up its place in the sequence, for example after a go-around.
+- Single sector: an arrival that would catch up with the one ahead before the IAF starts 1000 ft higher.
+
+**Radar and screens**
+- An aircraft cleared for the approach on its route shows that route together with the localizer.
+- The career page FILTER no longer makes the page jump or stutter.
+- The remote TID pairing panel no longer widens the side panel on a PC with many network adapters.
+
+**Career**
+- The game keeps local backups of your career outside Steam Cloud. If your career ever has fewer sessions than a backup, the game offers to restore it once at start-up.
+- Aircraft from the traffic that is already flying when a session starts only count as yours once you instruct them.
+
+**Crash reports**
+- On Windows, the game no longer freezes on the loading screen when OBS game capture or the Discord overlay is running.
+- Crash reports from Windows and Linux carry more detail.
+
+---
+
 ## v0.45.4 Transitions and SIDs
 
 The tower now checks every take-off against the departures already in the air, and asks you for a release when a fast departure would follow a slow one. You can also set your own aircraft colours, and pilots no longer answer a call they cannot fly.
