@@ -6,7 +6,7 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
-## v0.45.7 Multiplayer sync, DMAN and quick reference panels, pilot voices
+## v0.45.7 Multiplayer sync, DMAN, quick reference panels and pilot voices
 
 Multiplayer synchronisation fixes, a collapsible DMAN, a movable quick reference panel and clearer accented pilot voices.
 
