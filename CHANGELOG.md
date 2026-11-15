@@ -6,7 +6,7 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
-## v0.45.6 Voice that tells you why
+## v0.45.6 Voice refusals, departure releases and pop-out windows
 
 When a transmission is ignored, the game now tells you why, and pilots understand a free traffic remark. This update also fixes departures that stayed on the ground after a runway change, and a microphone problem that froze the game at start-up on some Windows PCs.
 
@@ -44,7 +44,7 @@ When a transmission is ignored, the game now tells you why, and pilots understan
 
 ---
 
-## v0.45.5 Releases at the holding point
+## v0.45.5 Departure releases, ACC level requests and career backups
 
 The tower now asks for a Departure Release when the departure is ready at the holding point, and area control asks you for a higher transfer level when it cannot space an arrival. Your career is also backed up outside Steam Cloud.
 
