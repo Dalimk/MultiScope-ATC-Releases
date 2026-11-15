@@ -8,41 +8,42 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ## v0.45.7 Multiplayer sync, DMAN and quick reference panels, pilot voices
 
-Multiplayer sessions now stay in step beyond the aircraft themselves, and flow messages reach every approach position. The DMAN can collapse to the side, the quick reference panel can be moved anywhere, and the accented pilot voices pronounce more clearly.
+Multiplayer synchronisation fixes, a collapsible DMAN, a movable quick reference panel and clearer accented pilot voices.
 
 **Controls**
-- Why a transmission did nothing (callsign not recognised, unclear, worked by another controller, not on your frequency) now shows on a second line in the voice bar, under the words that were heard.
-- A speed is read back by what the aircraft does: "increase" to a lower speed is read back as reducing. "Decrease speed 230 knots" now works.
+- The voice bar shows why a transmission was not flown: callsign not recognised, callsign unclear, worked by another controller, or not on your frequency.
+- Speed readbacks follow the aircraft's speed change: a lower speed is read back as "reducing", a higher speed as "increasing".
+- "Decrease speed" is understood as a speed reduction.
 - "Fox" is understood as foxtrot.
-- Keying the microphone just after a pilot has finished no longer counts as a blocked transmission.
+- Transmitting directly after a pilot has finished no longer counts as a blocked transmission.
 
 **Area control (multisector)**
-- Inbound flow requests and runway changes reach every approach position, the feeders and the Arrival positions alike.
+- Inbound flow requests and runway changes are sent to every approach position, including the feeders and the Arrival positions.
 
 **Traffic**
-- After a REAL WORLD time jump, the DMAN plans the departures afresh, and last night's departures no longer hold up today's.
+- After a REAL WORLD time jump, the DMAN plans all departures again. Departures from before the jump no longer block the queue.
 
 **Radar and screens**
-- The DMAN collapses to the side like the AMAN, and its FLOW MANAGER can be collapsed.
-- The quick reference panel can be dragged anywhere and stays where you put it. Double-click its title bar to put it back in the corner.
-- Replays play at up to 128X, and dragging the replay slider is much smoother.
-- The accented pilot voices (Spanish, Icelandic, Norwegian and Swedish) pronounce letters and numbers more clearly.
+- The DMAN can be collapsed to the side of the screen, like the AMAN. Its FLOW MANAGER can be collapsed separately.
+- The quick reference panel can be moved anywhere and keeps its position. Double-click its title bar to return it to the corner.
+- Replay speed goes up to 128X, and the replay slider responds faster.
+- The Spanish, Icelandic, Norwegian and Swedish pilot voices pronounce letters and numbers more clearly.
 - COORDINATION in the side panel statistics is shown in amber.
 
 **Career**
-- A wake turbulence loss is counted once per encounter. One short encounter could count three.
-- Loading a saved game keeps the DMAN's take-off slots instead of planning them again.
+- A wake turbulence loss is counted once per encounter.
+- Loading a saved game keeps the DMAN's take-off slots.
 
 **Multiplayer**
-- The departure list, DMAN, AMAN and flow managers stay the same on every player's screen. Departures no longer get stuck at the top of a client's list.
-- Neighbour runways, runway changes, traffic load and the weather come from the host.
-- The tower's outbound flow messages go to the player who works the departures.
-- The pause menu shows who has pressed RESUME.
-- An invite shows the build its session runs, so you can see before joining when it is a different one.
-- On a Mac, Discord's "Join" can now start the game when it is closed.
+- The departure list, DMAN, AMAN and flow managers stay identical for all players.
+- Neighbour runways, runway changes, traffic load and weather are taken from the host.
+- The tower's outbound flow messages go to the player working the departures.
+- The pause menu shows which players have pressed RESUME.
+- An invite shows the game build of its session, and JOIN is disabled when it differs from yours.
+- On macOS, Discord's "Join" starts the game when it is closed.
 
 **Crash reports**
-- The main menu could freeze for good while drawing a dashed coastline.
+- Fixed: the main menu could freeze while drawing a dashed coastline.
 
 ---
 
