@@ -6,6 +6,44 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.6 Voice that tells you why
+
+When a transmission is ignored, the game now tells you why, and pilots understand a free traffic remark. This update also fixes departures that stayed on the ground after a runway change, and a microphone problem that froze the game at start-up on some Windows PCs.
+
+**Controls**
+- When the game ignores a whole transmission, the status bar now says why: callsign not recognised, callsign unclear (with the two it could be), worked by another controller, or not on your frequency. What was heard shows in red in the voice bar.
+- A level or speed the aircraft cannot fly, such as a level above its ceiling, is now queried with "say again the level" or "say again the speed" after the readback of the rest.
+- "Descend flight level 50, after PAM descend flight level 40" now descends to FL050 straight away.
+- A free traffic remark such as "caution, traffic above you" is understood, and the pilot answers "Roger".
+- A callsign followed by a stray piece of another callsign (a letter or one or two digits) is no longer taken as that aircraft.
+- If the push-to-talk key-up gets lost, the game no longer keeps transmitting.
+- A pilot readback cut off by pausing the game is replayed in full when you continue.
+
+**Approach**
+- A departure released with a heading or level now still calls you, and states its released heading.
+- Headings agreed in COSYS are rounded to the nearest 5 degrees.
+- After a runway change that turns a departure runway's other end into a landing runway, departures waiting for it no longer stay at the holding point for good. They leave while the first arrival is at least 15 track miles out, and otherwise move to another departure runway.
+- The AUTO approach controller keeps its landing order steadier and no longer swaps two arrivals back and forth.
+- An arrival you hand to the AUTO approach controller on the other side of the final is no longer sent across the localizer.
+- A straight-in arrival cleared for the ILS now stays above neighbouring airspace until it is established.
+
+**Traffic**
+- Single sector: area control climbs departures to their sector's ceiling (FL240 or FL250), as in multisector, instead of straight to their cruise level.
+
+**Academy**
+- Several lesson texts are corrected.
+
+**Radar and screens**
+- The popped-out AMAN and DMAN windows no longer slow the game down, and the DMAN's type column no longer flickers.
+- The No Transgression Zone is drawn slightly further out, to 3 NM beyond where the higher arrival leaves its altitude.
+- Typing digits in a text field, such as the F8 feedback form, no longer goes into an open value list.
+
+**Crash reports**
+- On Windows, a microphone that never sends any sound no longer freezes the game at start-up.
+- Bug reports and Linux crash reports carry more detail.
+
+---
+
 ## v0.45.5 Releases at the holding point
 
 The tower now asks for a Departure Release when the departure is ready at the holding point, and area control asks you for a higher transfer level when it cannot space an arrival. Your career is also backed up outside Steam Cloud.
