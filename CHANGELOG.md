@@ -6,6 +6,58 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.45.8 Waypoints from LVNL, inbound DCT and separation on final
+
+Real waypoint positions in the Netherlands, new COSYS inbound options, distance-based separation on final and label fixes.
+
+**Controls**
+- A pilot call that starts just before you transmit now waits until the readback of your instruction.
+
+**Area control (multisector)**
+- COSYS Inbound Procedure has a DCT option: an ACC sector's arrivals fly direct to a waypoint inside the TMA. Hovering a waypoint shows it on the radar.
+- An arrival sent direct to a waypoint on a transition or to a final fix (DIBRU, ALINA, BOVCO, KAROF) continues along that route to the IF.
+- New GENERAL transfer level rule FDR->ARR: on an Arrival position with an AUTO feeder, you set the level the feeder hands its arrivals over at, from A020 to FL070.
+- An arrival released from a hold that turns back to its IAF through area control's airspace no longer counts as a sector violation.
+- Arrivals from area control aim for a level inside the IAF crossing window and descend more gently towards it.
+- A COUNTER you accept with ROGER is now carried out.
+- The EHRD runway condition is always offered in the RWY list.
+
+**Approach**
+- With the TBS lines hidden, the final uses distance-based separation: 3 NM between arrivals on the same localizer down to the threshold, and wake separation along the leader's track.
+- With the TBS lines hidden, a loss between two aircraft with the tower counts against you if you transferred one of them.
+- Two arrivals established on a localizer are no longer exempt from separation at the tower's A015.
+- Hidden TBS lines no longer blink.
+
+**Traffic**
+- Waypoint positions in the Netherlands now come from the open data of LVNL (Air Traffic Control the Netherlands). Most moved by a few metres.
+- AM088 moved 1.1 NM to its real position, so 36L departures through AM088 fly the correct track.
+- When a new game starts, departures are already taxiing and taking off.
+- SID division for 18C with 04: 18C takes BERGI, IDRID, LOPIK and WOODY, 04 takes ANDIK, ARNEM and EDUPO.
+- ANDIK departures off 18C fly TORGA 2X, or BETUS 6Y with 18L or 09. Off 24 they fly ANDIK 3S, or SPY 5K with 18L, 09 or 22.
+- The tower's release heading takes the departure interval off its runway into account.
+- Departures off parallel runways whose SIDs close in before they are 3 NM apart are now timed.
+- Offline Real World: local flights between Schiphol and Rotterdam depart on runway heading at A030 instead of on a SID.
+
+**Radar and screens**
+- Departures that have not called you yet show a full grey label with a stem, in single sector and multisector.
+- Arrivals coming to you show a full grey label with a stem in single sector too.
+- Small labels sit at the same distance from the blip in all eight directions.
+- Collapsing or expanding the AMAN or DMAN FLOW MANAGER keeps the window edge nearest the screen edge in place.
+- The AMAN is no longer pushed below the voice transcript.
+- The range buttons no longer move next to a collapsed DEP LIST tab that does not reach them.
+- A replay starts on the runways the session started on.
+- Fixed: with many departures held at the gate, the DMAN stopped COSYS, the quick info and other panels from drawing.
+- The credits name LVNL as the source of the waypoint positions.
+- Main menu traffic: departures climb to their area control level.
+
+**Career**
+- The SCORE panel counts ACC separation losses in its SEPARATION LOSS row.
+
+**Multiplayer**
+- Windows players can join Mac and Linux players on the same version again. Since v0.45.5 the Windows build was marked as a different version.
+
+---
+
 ## v0.45.7 Multiplayer sync, DMAN, quick reference panels and pilot voices
 
 Multiplayer synchronisation fixes, a collapsible DMAN, a movable quick reference panel and clearer accented pilot voices.
