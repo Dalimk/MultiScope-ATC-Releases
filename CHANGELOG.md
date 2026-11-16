@@ -6,9 +6,9 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
-## v0.45.8 Waypoints from LVNL, inbound DCT and separation on final
+## v0.45.8 Waypoint positions, inbound DCT and separation on final
 
-Real waypoint positions in the Netherlands, new COSYS inbound options, distance-based separation on final and label fixes.
+Updated waypoint positions in the Netherlands, new COSYS inbound options, distance-based separation on final and label fixes.
 
 **Controls**
 - A pilot call that starts just before you transmit now waits until the readback of your instruction.
@@ -29,7 +29,7 @@ Real waypoint positions in the Netherlands, new COSYS inbound options, distance-
 - Hidden TBS lines no longer blink.
 
 **Traffic**
-- Waypoint positions in the Netherlands now come from the open data of LVNL (Air Traffic Control the Netherlands). Most moved by a few metres.
+- Waypoint positions in the Netherlands have been updated. Most moved by a few metres.
 - AM088 moved 1.1 NM to its real position, so 36L departures through AM088 fly the correct track.
 - When a new game starts, departures are already taxiing and taking off.
 - SID division for 18C with 04: 18C takes BERGI, IDRID, LOPIK and WOODY, 04 takes ANDIK, ARNEM and EDUPO.
@@ -47,7 +47,6 @@ Real waypoint positions in the Netherlands, new COSYS inbound options, distance-
 - The range buttons no longer move next to a collapsed DEP LIST tab that does not reach them.
 - A replay starts on the runways the session started on.
 - Fixed: with many departures held at the gate, the DMAN stopped COSYS, the quick info and other panels from drawing.
-- The credits name LVNL as the source of the waypoint positions.
 - Main menu traffic: departures climb to their area control level.
 
 **Career**
