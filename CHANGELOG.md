@@ -50,7 +50,8 @@ Updated waypoint positions in the Netherlands, new COSYS inbound options, distan
 - Main menu traffic: departures climb to their area control level.
 
 **Career**
-- The SCORE panel counts ACC separation losses in its SEPARATION LOSS row.
+- Side panel statistics: SEPARATION LOSS now includes the ACC separation losses, and the separate ACC SEPARATION LOSS row is gone. The session report and the career still show them separately.
+- Side panel statistics: the TRANSFERS row only shows in multisector.
 
 **Multiplayer**
 - Windows players can join Mac and Linux players on the same version again. Since v0.45.5 the Windows build was marked as a different version.
