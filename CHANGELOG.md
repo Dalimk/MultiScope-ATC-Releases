@@ -8,60 +8,60 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ## v0.46.0 Pilot small talk, soft measure line, start paused and favourite settings
 
-Pilots who greet and ask for descent, a measure line that follows the mouse, a pause with the radar in view, a FAVORITES page in the settings and an improved AUTO approach controller.
+Pilot small talk and descent requests, a soft measure line, start paused, settings favourites, duplicate key warnings, PTL dividers, a shared multiplayer pause and AUTO approach controller improvements.
 
 **Controls**
-- Pilots answer greetings and farewells by the time of day in the game: good morning, good evening, good night.
-- Now and then a pilot says thank you without being asked.
-- A thank you or farewell on its own no longer makes a pilot ask you to say again.
-- Pilots ask for descent themselves when you leave them level too long.
-- The voice bar shows the reason first, then what was heard, on one line.
-- A level above a departure's requested flight level is answered with "unable" and the requested level, and the voice bar says why.
-- "Disregard" with a type of instruction (level, heading, speed) cancels only that instruction.
-- Flight numbers said in groups are recognised, for example "KLM sixteen twenty nine".
-- "Bye bye" after a frequency is no longer heard as "or above".
-- Q switches COMMAND mode in the side panel on and off.
-- Binding a key that another shortcut already uses shows a DUPLICATE KEY warning: keep both or revert. A key the game reserves shows a FIXED KEY warning.
-- Settings has a FAVORITES page. Press the star in front of a setting to add it.
+- Pilots reply to greetings and farewells according to the game time.
+- Pilots occasionally thank the controller.
+- A thank you or farewell on its own no longer gets "say again".
+- Pilots request descent when kept level too long.
+- Voice bar: the reason is shown first, then the transcript, on one line.
+- A level above a departure's RFL is answered "unable" with the requested level.
+- "Disregard" followed by an instruction type (level, heading, speed) cancels only that instruction.
+- Flight numbers spoken in groups are recognised ("KLM sixteen twenty nine").
+- Fixed: "bye bye" after a frequency was heard as "or above".
+- New shortcut: Q toggles COMMAND mode.
+- New DUPLICATE KEY warning when binding a key already in use (KEEP DUPLICATE or REVERT), and FIXED KEY warning for reserved keys.
+- New FAVORITES page in Settings: star a setting to add it.
 
 **Area control (multisector)**
-- Holding stacks use measured flight times from the stack to the runway for each runway combination.
-- The lowest aircraft in a hold leaves at its expected approach time from its crossing level.
-- COSYS Inbound Procedure and inbound XFL apply to whole ACC sectors.
-- A coordination ends once the aircraft has left the position that sent it.
+- Holding stacks use measured stack-to-runway times per runway combination.
+- The lowest aircraft in a hold leaves at its EAT from its crossing level.
+- COSYS Inbound Procedure and inbound XFL apply per whole ACC sector.
+- A coordination ends when the aircraft leaves the sending position.
 
 **Approach**
-- The AUTO approach controller has been improved.
-- Aircraft change to standard pressure passing the transition altitude when climbing, and to QNH passing the transition level when descending.
-- QNH can range from 950 to 1050 hPa.
+- AUTO approach controller improved.
+- Altimeter setting: standard passing the TA when climbing, QNH passing the TL when descending.
+- QNH range 950 to 1050 hPa.
 
 **Academy**
-- The Measure lesson's hint names Shift + click.
+- Fixed: the Measure lesson hint now says Shift + click.
 
 **Radar and screens**
-- Soft measure: double-click a blip and hold to draw a measure line to the pointer. It disappears when you let go.
-- Shift + left click starts a measure line, for touchpads.
-- Chained measure lines show the time of each leg.
-- Pausing with P keeps the radar in view, with PAUSED at the top and a yellow border round the screen. ESC opens the pause menu.
-- Start paused: a loaded save and a new game with traffic preload open paused. This is on by default.
-- Predicted track lines can show time dividers, and their colour and opacity can be set.
-- A vectored aircraft's route line follows its track in the wind.
-- A vectored aircraft is no longer offered fixes it has already passed.
-- The DMAN is a window of its own, like the AMAN. Show it with Settings > Radar > DEPARTURE MANAGER and collapse it with Z.
+- New soft measure: double-click a blip and hold to measure to the pointer. Releasing the button removes the line.
+- Shift + left click starts a measure line.
+- Chained measure lines show the time per leg.
+- P pauses with the radar visible: PAUSED notice and a yellow screen border. ESC opens the pause menu.
+- New setting Start Paused for loaded saves and preloaded new games, on by default.
+- New PTL settings: time dividers, colour and opacity.
+- A vectored aircraft's route line follows its track over the ground.
+- Fixes already passed are no longer offered to a vectored aircraft.
+- The DMAN is a separate window like the AMAN: Settings > Radar > DEPARTURE MANAGER, Z to collapse.
 - COSYS and the DEP LIST keep their position under the voice transcript.
-- Wake turbulence losses between AUTO's own aircraft are no longer shown.
-- The letter U in the radar font has square corners.
-- Replays show the correct altimeter setting and the full label.
-- The feedback window scrolls on small screens, so SEND stays visible.
-- macOS: less audio crackling.
+- Wake losses between AUTO aircraft are no longer shown.
+- Radar font: square-cornered U.
+- Fixed: replays showed the wrong altimeter setting and only part of the label.
+- Fixed: the feedback window cut off SEND on small screens.
+- Fixed: audio crackling on macOS.
 
 **Multiplayer**
-- Pausing works the same for everyone: P puts all players in the radar pause, ESC in the pause menu. The PAUSED notice shows who you are waiting for.
-- Start paused follows the host's setting.
+- P puts all players in the radar pause, ESC opens the pause menu for all. PAUSED shows which players have not resumed.
+- Start Paused uses the host's setting.
 
 **Crash reports**
 - Bug reports include the whole session.
-- Linux freeze reports name programs such as the Steam overlay, MangoHud and OBS when they are involved.
+- Linux freeze reports name overlay programs on the main thread (Steam overlay, MangoHud, OBS).
 
 ---
 
