@@ -6,6 +6,65 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.0 Pilot small talk, soft measure line, start paused and favourite settings
+
+Pilots who greet and ask for descent, a measure line that follows the mouse, a pause with the radar in view, a FAVORITES page in the settings and an improved AUTO approach controller.
+
+**Controls**
+- Pilots answer greetings and farewells by the time of day in the game: good morning, good evening, good night.
+- Now and then a pilot says thank you without being asked.
+- A thank you or farewell on its own no longer makes a pilot ask you to say again.
+- Pilots ask for descent themselves when you leave them level too long.
+- The voice bar shows the reason first, then what was heard, on one line.
+- A level above a departure's requested flight level is answered with "unable" and the requested level, and the voice bar says why.
+- "Disregard" with a type of instruction (level, heading, speed) cancels only that instruction.
+- Flight numbers said in groups are recognised, for example "KLM sixteen twenty nine".
+- "Bye bye" after a frequency is no longer heard as "or above".
+- Q switches COMMAND mode in the side panel on and off.
+- Binding a key that another shortcut already uses shows a DUPLICATE KEY warning: keep both or revert. A key the game reserves shows a FIXED KEY warning.
+- Settings has a FAVORITES page. Press the star in front of a setting to add it.
+
+**Area control (multisector)**
+- Holding stacks use measured flight times from the stack to the runway for each runway combination.
+- The lowest aircraft in a hold leaves at its expected approach time from its crossing level.
+- COSYS Inbound Procedure and inbound XFL apply to whole ACC sectors.
+- A coordination ends once the aircraft has left the position that sent it.
+
+**Approach**
+- The AUTO approach controller has been improved.
+- Aircraft change to standard pressure passing the transition altitude when climbing, and to QNH passing the transition level when descending.
+- QNH can range from 950 to 1050 hPa.
+
+**Academy**
+- The Measure lesson's hint names Shift + click.
+
+**Radar and screens**
+- Soft measure: double-click a blip and hold to draw a measure line to the pointer. It disappears when you let go.
+- Shift + left click starts a measure line, for touchpads.
+- Chained measure lines show the time of each leg.
+- Pausing with P keeps the radar in view, with PAUSED at the top and a yellow border round the screen. ESC opens the pause menu.
+- Start paused: a loaded save and a new game with traffic preload open paused. This is on by default.
+- Predicted track lines can show time dividers, and their colour and opacity can be set.
+- A vectored aircraft's route line follows its track in the wind.
+- A vectored aircraft is no longer offered fixes it has already passed.
+- The DMAN is a window of its own, like the AMAN. Show it with Settings > Radar > DEPARTURE MANAGER and collapse it with Z.
+- COSYS and the DEP LIST keep their position under the voice transcript.
+- Wake turbulence losses between AUTO's own aircraft are no longer shown.
+- The letter U in the radar font has square corners.
+- Replays show the correct altimeter setting and the full label.
+- The feedback window scrolls on small screens, so SEND stays visible.
+- macOS: less audio crackling.
+
+**Multiplayer**
+- Pausing works the same for everyone: P puts all players in the radar pause, ESC in the pause menu. The PAUSED notice shows who you are waiting for.
+- Start paused follows the host's setting.
+
+**Crash reports**
+- Bug reports include the whole session.
+- Linux freeze reports name programs such as the Steam overlay, MangoHud and OBS when they are involved.
+
+---
+
 ## v0.45.8 Waypoint positions, inbound DCT and separation on final
 
 Updated waypoint positions in the Netherlands, new COSYS inbound options, distance-based separation on final and label fixes.
