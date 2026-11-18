@@ -6,6 +6,32 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.1 Microphone, Arrival readback, COSYS menus and go-arounds
+
+Fixes from player reports, a few voice additions and changes to how go-arounds are handed over.
+
+**Controls**
+- A microphone that sends no sound at all is reconnected. The voice bar asks you to say it again, and says what to check if it stays silent.
+- TOO QUIET is shown only when you spoke too softly, not when you pressed the key and said nothing.
+- The microphone test in Settings tells you when the microphone gives no sound at all.
+- Pilots handed to Arrival read back "Arrival" instead of "Approach" (multisector).
+- "Reduce minimum clean" is understood without the word "speed".
+- When a pilot asks "confirm two thousand feet", "affirm" or "correct" answers it, with or without the callsign.
+- Phraseology practice accepts a flight number spoken in groups ("transavia fifty six twelve").
+
+**Approach**
+- The tower keeps a go-around until it is separated from the tower's other traffic, and only then hands it to approach.
+- A go-around and a departure on diverging, opening tracks count as separated.
+- More runway 09 departure pairs count as procedurally separated.
+- Fixed: the AUTO approach controller sent an arrival vectored past SPL back across the field.
+
+**Radar and screens**
+- COSYS: moving the mouse into a sub-menu no longer closes it or opens another one on the way.
+- Replays show the localizer of a runway used only by general aviation arrivals, such as 36R.
+- Game font: a rounder U.
+
+---
+
 ## v0.46.0 Pilot small talk, soft measure line, start paused and favourite settings
 
 Pilot small talk and descent requests, a soft measure line, start paused, settings favourites, duplicate key warnings, PTL dividers, a shared multiplayer pause and AUTO approach controller improvements.
