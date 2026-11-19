@@ -11,16 +11,17 @@ This is the curated, plain-English changelog — it highlights what changes for 
 Fixes from player reports, a new voice instruction for a speed after a fix, and multiplayer games that stay in step with the host.
 
 **Controls**
-- New voice instruction: "after PEVOS speed 210". The aircraft keeps its speed until it passes the fix, then takes the new one. "When passing SIDNI reduce to 180 knots" and "after PEVOS maintain 210 knots" work too.
-- If the game closes while speech recognition is starting on your graphics card, speech recognition runs on your processor from the next start, and a message tells you so. To use the graphics card again: Settings, Audio, Input device, Retry GPU. After a graphics driver update the game tries the graphics card again by itself.
+- New voice instruction: "after PEVOS speed 210". The aircraft takes the new speed once it passes the fix.
+- If the game closes while speech recognition starts on your graphics card, speech recognition runs on your processor from then on.
+- To use the graphics card again: Settings, Audio, Input device, Retry GPU.
 
 **Area control (multisector)**
-- An arrival released from a hold at the IAF with an Inbound Clearance is now handed to you. It used to stay with area control, and your COSYS request for it was refused.
-- Area control no longer releases an aircraft from a hold just after it has passed the IAF. It could swing back out of your airspace and give you a sector violation before it had called you.
+- Fixed: an arrival released from a hold with an Inbound Clearance was not handed to you.
+- Fixed: area control could release an aircraft from a hold just past the IAF, causing a sector violation for you.
 
 **Approach**
-- When a landing runway is taken out of use, its Arrival position keeps working its last arrivals until they have landed, and the runway that replaces it gets that Arrival position.
-- Fixed: the AUTO approach controller could clear a departure to the same level as an arrival on a crossing track, which led to a TCAS resolution advisory.
+- A landing runway taken out of use keeps its Arrival position until its last arrival has landed.
+- Fixed: the AUTO approach controller could clear a departure to the same level as a crossing arrival.
 
 **Radar and screens**
 - New Game, Replay opens a .frames file on its own: the file now holds the whole session.
