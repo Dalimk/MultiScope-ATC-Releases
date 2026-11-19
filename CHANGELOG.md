@@ -6,6 +6,39 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.2 After-fix speeds, hold handovers, speech recognition and multiplayer
+
+Fixes from player reports, a new voice instruction for a speed after a fix, and multiplayer games that stay in step with the host.
+
+**Controls**
+- New voice instruction: "after PEVOS speed 210". The aircraft keeps its speed until it passes the fix, then takes the new one. "When passing SIDNI reduce to 180 knots" and "after PEVOS maintain 210 knots" work too.
+- If the game closes while speech recognition is starting on your graphics card, speech recognition runs on your processor from the next start, and a message tells you so. To use the graphics card again: Settings, Audio, Input device, Retry GPU. After a graphics driver update the game tries the graphics card again by itself.
+
+**Area control (multisector)**
+- An arrival released from a hold at the IAF with an Inbound Clearance is now handed to you. It used to stay with area control, and your COSYS request for it was refused.
+- Area control no longer releases an aircraft from a hold just after it has passed the IAF. It could swing back out of your airspace and give you a sector violation before it had called you.
+
+**Approach**
+- When a landing runway is taken out of use, its Arrival position keeps working its last arrivals until they have landed, and the runway that replaces it gets that Arrival position.
+- Fixed: the AUTO approach controller could clear a departure to the same level as an arrival on a crossing track, which led to a TCAS resolution advisory.
+
+**Radar and screens**
+- New Game, Replay opens a .frames file on its own: the file now holds the whole session.
+- The wake turbulence standard reads RECAT (A-F) instead of RECAT-EU.
+
+**Multiplayer**
+- A player's game that drifts from the host's is now corrected instead of reloaded.
+- Fixed: a reload from the host could freeze on BUILDING EHAM AIRSPACE.
+- When the host quits, the other players see it straight away instead of waiting 20 seconds.
+- TAKE UNDER CONTROL is each player's own setting.
+- The host's start options include descent performance, wake turbulence standard and APP spacing, and every player can see them.
+- Join requests and the joined, left and host messages are centred on the radar.
+
+**Crash reports**
+- A report says when the game closed while speech recognition was starting on the graphics card.
+
+---
+
 ## v0.46.1 Microphone, Arrival readback, COSYS menus and go-arounds
 
 Fixes from player reports, a few voice additions and changes to how go-arounds are handed over.
