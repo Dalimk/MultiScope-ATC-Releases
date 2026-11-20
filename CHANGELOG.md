@@ -6,6 +6,24 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.3 Audio freeze, voice callsigns and departure transfers
+
+Fixes from player reports.
+
+**Controls**
+- Fixed: the game could freeze on a black screen at start-up when the computer's audio service did not respond.
+- The microphone now starts in the background. If you press push-to-talk before it is ready, the voice bar says MICROPHONE STILL STARTING: TRY AGAIN IN A MOMENT.
+- The output and input device lists in Settings, Audio fill in once the computer's audio has answered.
+- Fixed: confirming the ATIS with a short "Quebec correct" after the callsign made the game ignore the whole transmission.
+- Fixed: a callsign was not recognised when speech recognition misspelt one of its letters, for example "sierrar" for sierra.
+
+**Area control (multisector)**
+- Fixed: a departure cleared direct to its SID exit point could not be transferred after passing that point.
+- Fixed: after loading an older save, arrivals that had been lost far outside the airspace were handed to you.
+- Arrivals lost far outside the airspace are removed when a save is loaded.
+
+---
+
 ## v0.46.2 After-fix speeds, hold handovers, speech recognition and multiplayer
 
 Fixes from player reports, a new voice instruction for a speed after a fix, and multiplayer games that stay in step with the host.
