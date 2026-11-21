@@ -6,6 +6,37 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.5 Vulkan on Windows, sharper radar lines and multiplayer labels
+
+Windows switches to the Vulkan renderer, the radar draws sharper and with less work, and fixes from player reports.
+
+**Controls**
+- Drag from any aircraft's blip or label to draw a measuring line from it. It goes when you let go; hold Shift as you let go to keep it.
+- The remote TID no longer shows a line with the device count and code above the TID's keys. A second device pairs with the same code as the first.
+
+**Approach**
+- Rotterdam runway 24 arrivals can be sent direct to ATWIT. Their clearance limit stays REWIK.
+- Fixed: the AUTO approach controller could turn an arrival already lined up on final round onto a long downwind.
+
+**Radar and screens**
+- On Windows the game now draws with Vulkan instead of Direct3D 12. Players on Direct3D 12 reported a black screen at start-up and freezes.
+- If the game hangs or crashes before the main menu on Vulkan, that PC switches to Direct3D 12 until its graphics driver is updated.
+- The RENDERER setting is gone. The Steam launch option `--rendering-driver d3d12` or `--rendering-driver vulkan` still picks one.
+- Every line on the radar is drawn sharp on whole pixels, without blur or flicker while panning.
+- A stretch of border that two airspace boundaries share is drawn once. Where a TMA follows the CTR, it no longer shows as a double dashed line.
+- The CTR border is 75 % opaque by default. If you never changed it, it moves from 50 % to 75 % once.
+- Selecting an aircraft and drawing the radar take less work, so clicks on a label or blip respond faster.
+- The LID, BID and TID areas keep the same height when you switch between them.
+
+**Multiplayer**
+- Fixed: with VOICE AUTO LABEL UPDATE disabled, a player joining a game saw the pre-loaded traffic's labels with old levels, and departures already handed to ACC looked as if they were still theirs.
+- In the lobby, opening PROCEDURES takes back your READY until you press it again.
+
+**Crash reports**
+- A report now says whether the game was running on Vulkan or Direct3D 12.
+
+---
+
 ## v0.46.4 Crosswind approaches, voice phrasings and crash dumps
 
 Fixes from player reports, more voice phrasings understood, and crash dumps for more crashes on Windows.
