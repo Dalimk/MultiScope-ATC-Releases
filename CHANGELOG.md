@@ -6,6 +6,40 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.4 Crosswind approaches, voice phrasings and crash dumps
+
+Fixes from player reports, more voice phrasings understood, and crash dumps for more crashes on Windows.
+
+**Controls**
+- More phrasings are understood by voice: "fly level one three zero", "fly one four zero" for a heading, "for sequencing" before or after a heading, "speed yours", "maximum speed approved" and "leave 2000 feet on the glide path".
+- A speed "until established on the localizer" now ends once the aircraft is established. Before, the "until" part was dropped and the speed kept.
+- A speed with its limit said afterwards, such as "speed 160 knots, maintain until 4 DME", is understood as one instruction.
+- Fixed: a QNH or frequency said after "correction" could be taken as another aircraft's callsign.
+- A misspelt instruction word straight after the callsign is understood, for example "speeds" for "speed".
+- A departure level above its XFL with nothing agreed in COSYS is refused by voice and in the TID, as in the level column. Before, voice could climb a departure out of the top of approach's airspace.
+
+**Approach**
+- Fixed: in a crosswind, the AUTO approach controller could cancel an arrival's approach clearance and turn it away just before it captured the localizer.
+- A Rotterdam departure worked by Schiphol approach may climb in Rotterdam's airspace up to 5000 ft without a sector violation, for as long as its climb-out lasts.
+- Fixed: an AUTO handover could climb a Rotterdam departure into Rotterdam's TMA above its limit.
+
+**Traffic**
+- Fixed: an arrival could take the callsign of a departure still waiting at its gate. That departure then could not leave, and held every departure behind it on its runway.
+
+**Radar and screens**
+- The main menu draws the airspace in the colours of a single-sector game, and its background traffic flies in calm wind.
+- Fixed: dragging the end of a measure line made the AMAN, the departure list, COSYS and other windows disappear for a moment.
+
+**Career**
+- Aircraft count in your collection as soon as you first work them. Before, an aircraft still in the air when the session ended was missing from it.
+
+**Crash reports**
+- On Windows, the game now saves a crash dump for crashes outside its own code (the engine, a graphics driver or an overlay) and sends it with the next crash report.
+- The crash report window and the privacy notice say that a report can include a crash dump, a snapshot of part of the game's memory.
+- A report sent with F8 now has 2 minutes to upload, so reports with pictures get through on slow connections. A failed send says why.
+
+---
+
 ## v0.46.3 Audio freeze, voice callsigns and departure transfers
 
 Fixes from player reports.
