@@ -6,6 +6,22 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.5.1 Multiplayer scoring fixes
+
+Fixes for multiplayer scores and the Steam leaderboards.
+
+**Career**
+- Each departure, landing and transfer counts once per session.
+- A session credited with more movements than it had flights is not scored and is not sent to the Steam leaderboards.
+- Fixed: opening the statistics screen could send a miscounted score to the Steam leaderboards.
+
+**Multiplayer**
+- Fixed: after joining or rejoining a session, a player's game counted the same departure again and again.
+- Fixed: a joining player was credited with aircraft the host had worked.
+- A spectator no longer scores.
+
+---
+
 ## v0.46.5 Vulkan on Windows, sharper radar lines and multiplayer labels
 
 Vulkan on Windows, sharper radar lines, a measuring line from any aircraft and multiplayer label fixes.
