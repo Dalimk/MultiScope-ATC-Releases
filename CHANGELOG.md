@@ -6,6 +6,35 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.6 Multiplayer sync, join pause and COSYS notices
+
+Fixes that keep every player's multiplayer game in step with the host, and a crash report fix.
+
+**Multiplayer**
+- Each player's game now stays in step with the host's on Windows, macOS and Linux alike. Tiny maths differences between the systems made the games drift apart.
+- When a player joins or reloads, the game pauses for everyone until that player has loaded.
+- A joining player starts in step with the host.
+- Much less data is sent during a session.
+- WAITING FOR THE HOST shows on the radar when nothing has come from the host for 2 seconds.
+- A player who has just joined sees the radar during the pause, with the names of the players still loading. ESC opens the menu.
+- A COSYS request from another player now shows under INBOX as INCOMING and blinks.
+- A COSYS request from another player flashes the closed COSYS tab and plays the chime.
+- APPROVE, COUNTER and REFUSE on another player's request are listed below each other.
+- APP SPACING is hidden in the lobby while every position has a player.
+- Fixed: players' games froze for seconds, or fell more than a minute behind the host.
+- Fixed: a popup, such as the voice match warning or the phraseology card, paused one player's game on its own.
+- Fixed: a player could stay paused after a lost connection.
+- Fixed: changing the interface colour ended the session for everyone.
+- Fixed: a player whose clock had turned to night before the host's flew different winds below 3000 ft.
+- Fixed: automatic COSYS instructions could be carried out twice on a player's game.
+- Fixed: LEFT THE GAME and YOU ARE NOW HOSTING showed over the session report.
+
+**Crash reports**
+- Fixed: a harmless fault during a session could use up the only crash dump, so a later crash was reported without its own.
+- A report sent from a multiplayer session includes the session's network health.
+
+---
+
 ## v0.46.5.1 Multiplayer scoring fixes
 
 Fixes for multiplayer scores and the Steam leaderboards.
