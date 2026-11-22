@@ -16,7 +16,7 @@ Fixes for multiplayer scores and the Steam leaderboards.
 - Fixed: opening the statistics screen could send a miscounted score to the Steam leaderboards.
 
 **Multiplayer**
-- Fixed: after joining or rejoining a session, a player's game counted the same departure again and again.
+- Fixed: after joining a session, or catching up with the host again, a player's game counted the same departure again and again.
 - Fixed: a joining player was credited with aircraft the host had worked.
 - A spectator no longer scores.
 
