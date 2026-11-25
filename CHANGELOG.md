@@ -28,10 +28,10 @@ Area control now sequences arrivals by speed, holds only the aircraft that need 
 - AUTO: Whether an arrival holds is now checked again all the time, so one that can make its slot after all flies on.
 - AUTO: Only an arrival that needs to hold opens a holding stack.
 - AUTO: An arrival no longer joins a holding stack behind aircraft that are still on their way to it.
-- AUTO: Two arrivals from the same IAF to the same runway can swap landing slots when that saves holding.
-- AUTO: An arrival goes to the other runway when that saves more than 2 minutes of delay, however much longer its flight to that runway is.
-- AUTO: A direct through a Dutch Mill military area is checked with Dutch Mill first, which takes a little longer. When the area is in use, area control offers a direct around it.
-- AUTO: Fixed: a direct to SONEB from Rotterdam was treated as leaving the FIR.
+- Two arrivals from the same IAF to the same runway can swap landing slots when that saves holding.
+- An arrival goes to the other runway when that saves more than 2 minutes of delay, however much longer its flight to that runway is.
+- A direct through a Dutch Mill military area is checked with Dutch Mill first, which takes a little longer. When the area is in use, area control offers a direct around it.
+- Fixed: area control countered a COSYS direct to SONEB, a FIR exit point, as if it left the FIR.
 
 **Approach**
 - AUTO: On the final, the aircraft behind is slowed and never put in front of the one ahead.
@@ -42,8 +42,8 @@ Area control now sequences arrivals by speed, holds only the aircraft that need 
 - An aircraft only counts as on final when it is flying the final, not just near the centreline.
 
 **Traffic**
-- AUTO: Departure runways that depend on each other (04 with 09, 22 with 18L or 18C) share one plan of departure slots.
-- AUTO: A 22 departure is only timed against 24, 27 or 09 when its route is one the published SID division gives to that runway.
+- Departure runways that depend on each other (04 with 09, 22 with 18L or 18C) share one plan of departure slots.
+- A 22 departure is only timed against 24, 27 or 09 when its route is one the published SID division gives to that runway.
 - Departures on the same track are 90 seconds apart.
 - Custom traffic spreads departures more evenly: area control sectors 2 and 3 get half of them, not about 60 %.
 - Amsterdam departures call approach on passing 2000 ft, as published.
