@@ -6,6 +6,69 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.7 Area control speeds, holding, departure timing and military areas
+
+Area control now sequences arrivals by speed, holds only the aircraft that need it and uses the other runway when that saves delay; departures are timed by their routes.
+
+**Controls**
+- Voice: a pilot's old descent request is dropped once it no longer applies.
+- Voice: a correction replaces the heading or direct you gave before.
+- Voice: you can ask a pilot to report the rate of climb.
+- Voice: an aircraft you have transferred answers "say again" only in the 15 seconds after the transfer.
+- TRANSFERRED: TOO LATE TO TAKE BACK now also shows in single sector, more than 2 seconds after your REL.
+- Fixed: a "direct" said again after a direct-after-a-fix instruction was read as a new direct.
+- Fixed: on macOS, a Bluetooth headset microphone did not work.
+
+**Area control (multisector)**
+- Arrivals are sequenced by speed first. Headings are only used for what speed cannot do.
+- Arrivals can be sped up to their type's maximum speed, to make room behind them or to make their slot.
+- Arrivals are handed to approach at 250 knots.
+- The time an arrival reaches its IAF now counts the wind at each level of its descent.
+- "Descend now" comes with a rate of descent when the pilot's own rate would not make the gap.
+- Whether an arrival holds is now checked again all the time, so one that can make its slot after all flies on.
+- Only an arrival that needs to hold opens a holding stack.
+- An arrival no longer joins a holding stack behind aircraft that are still on their way to it.
+- Two arrivals from the same IAF to the same runway can swap landing slots when that saves holding.
+- An arrival goes to the other runway when that saves more than 2 minutes of delay, however much longer its flight to that runway is.
+- A direct through a Dutch Mill military area is checked with Dutch Mill first, which takes a little longer. When the area is in use, area control offers a direct around it.
+- Fixed: a direct to SONEB from Rotterdam was treated as leaving the FIR.
+
+**Approach**
+- On the final, the aircraft behind is slowed and never put in front of the one ahead.
+- An aircraft on the final now goes before one that is held on its downwind because of it.
+- Landing times on the final are worked out at the speeds actually flown.
+- A go-around flies the missed approach of the runway it went around from.
+- Fixed: a Rotterdam go-around for the wind could be given an Amsterdam runway.
+- An aircraft only counts as on final when it is flying the final, not just near the centreline.
+
+**Traffic**
+- Departure runways that depend on each other (04 with 09, 22 with 18L or 18C) share one plan of departure slots.
+- A 22 departure is only timed against 24, 27 or 09 when its route is one the published SID division gives to that runway.
+- Departures on the same track are 90 seconds apart.
+- Custom traffic spreads departures more evenly: area control sectors 2 and 3 get half of them, not about 60 %.
+- Amsterdam departures call approach on passing 2000 ft, as published.
+- Rotterdam departures are transferred by the tower 60 to 120 seconds after take-off.
+- The tower keeps a departure until that moment, with no sector violation while it stays at or below its cleared level.
+- A departure without a taxi route waits at the holding point beside the runway.
+
+**Academy**
+- Fixed: in lesson 6, a heading or direct that was replaced before its step could still complete the step.
+
+**Multiplayer**
+- New: REQUEST JURISDICTION, to ask for a position held by another player.
+- The host's REAL WORLD hour jump now reaches every player.
+- Discord shows the number of players in the session.
+- An area delegation in COSYS now informs the positions other players hold.
+- Fixed: the departure queue could be in a different order on different players' games.
+- Fixed: on macOS, Discord refused a multiplayer invite with Join.
+
+**Crash reports**
+- Fixed: a real crash could lose its crash dump.
+- A game started outside Steam is no longer counted in the crash reports.
+- macOS crash reports are sent with the report.
+
+---
+
 ## v0.46.6 Multiplayer sync, join pause and COSYS notices
 
 Fixes that keep every player's multiplayer game in step with the host, and a crash report fix.
