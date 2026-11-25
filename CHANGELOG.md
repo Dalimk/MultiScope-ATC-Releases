@@ -12,7 +12,7 @@ Area control now sequences arrivals by speed, holds only the aircraft that need 
 
 **Controls**
 - Voice: a pilot's old descent request is dropped once it no longer applies.
-- Voice: a correction replaces the heading or direct you gave before.
+- Voice: after "correction", the new heading or direct replaces the one before it. The pilot used to read back and fly both.
 - Voice: you can ask a pilot to report the rate of climb.
 - Voice: an aircraft you have transferred answers "say again" only in the 15 seconds after the transfer.
 - TRANSFERRED: TOO LATE TO TAKE BACK now also shows in single sector, more than 2 seconds after your REL.
@@ -20,30 +20,30 @@ Area control now sequences arrivals by speed, holds only the aircraft that need 
 - Fixed: on macOS, a Bluetooth headset microphone did not work.
 
 **Area control (multisector)**
-- Arrivals are sequenced by speed first. Headings are only used for what speed cannot do.
-- Arrivals can be sped up to their type's maximum speed, to make room behind them or to make their slot.
-- Arrivals are handed to approach at 250 knots.
-- The time an arrival reaches its IAF now counts the wind at each level of its descent.
-- "Descend now" comes with a rate of descent when the pilot's own rate would not make the gap.
-- Whether an arrival holds is now checked again all the time, so one that can make its slot after all flies on.
-- Only an arrival that needs to hold opens a holding stack.
-- An arrival no longer joins a holding stack behind aircraft that are still on their way to it.
-- Two arrivals from the same IAF to the same runway can swap landing slots when that saves holding.
-- An arrival goes to the other runway when that saves more than 2 minutes of delay, however much longer its flight to that runway is.
-- A direct through a Dutch Mill military area is checked with Dutch Mill first, which takes a little longer. When the area is in use, area control offers a direct around it.
-- Fixed: a direct to SONEB from Rotterdam was treated as leaving the FIR.
+- AUTO: Arrivals are sequenced by speed first. Headings are only used for what speed cannot do.
+- AUTO: Arrivals can be sped up to their type's maximum speed, to make room behind them or to make their slot.
+- AUTO: Arrivals are handed to approach at 250 knots.
+- AUTO: The time an arrival reaches its IAF now counts the wind at each level of its descent.
+- AUTO: "Descend now" comes with a rate of descent when the pilot's own rate would not make the gap.
+- AUTO: Whether an arrival holds is now checked again all the time, so one that can make its slot after all flies on.
+- AUTO: Only an arrival that needs to hold opens a holding stack.
+- AUTO: An arrival no longer joins a holding stack behind aircraft that are still on their way to it.
+- AUTO: Two arrivals from the same IAF to the same runway can swap landing slots when that saves holding.
+- AUTO: An arrival goes to the other runway when that saves more than 2 minutes of delay, however much longer its flight to that runway is.
+- AUTO: A direct through a Dutch Mill military area is checked with Dutch Mill first, which takes a little longer. When the area is in use, area control offers a direct around it.
+- AUTO: Fixed: a direct to SONEB from Rotterdam was treated as leaving the FIR.
 
 **Approach**
-- On the final, the aircraft behind is slowed and never put in front of the one ahead.
-- An aircraft on the final now goes before one that is held on its downwind because of it.
-- Landing times on the final are worked out at the speeds actually flown.
+- AUTO: On the final, the aircraft behind is slowed and never put in front of the one ahead.
+- AUTO: An aircraft on the final now goes before one that is held on its downwind because of it.
+- AUTO: Landing times on the final are worked out at the speeds actually flown.
 - A go-around flies the missed approach of the runway it went around from.
 - Fixed: a Rotterdam go-around for the wind could be given an Amsterdam runway.
 - An aircraft only counts as on final when it is flying the final, not just near the centreline.
 
 **Traffic**
-- Departure runways that depend on each other (04 with 09, 22 with 18L or 18C) share one plan of departure slots.
-- A 22 departure is only timed against 24, 27 or 09 when its route is one the published SID division gives to that runway.
+- AUTO: Departure runways that depend on each other (04 with 09, 22 with 18L or 18C) share one plan of departure slots.
+- AUTO: A 22 departure is only timed against 24, 27 or 09 when its route is one the published SID division gives to that runway.
 - Departures on the same track are 90 seconds apart.
 - Custom traffic spreads departures more evenly: area control sectors 2 and 3 get half of them, not about 60 %.
 - Amsterdam departures call approach on passing 2000 ft, as published.
