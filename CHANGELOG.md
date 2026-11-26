@@ -6,6 +6,41 @@ This is the curated, plain-English changelog — it highlights what changes for 
 
 ---
 
+## v0.46.8 Arrival positions by runway, runway 22 combinations and fixes
+
+The arrival positions at Amsterdam now each work their own runways, and runway 22 can be combined with more runways.
+
+**Controls**
+- Voice: every flight level from the airport's transition level up is accepted.
+- Fixed: your settings could all go back to their defaults when the game or the PC stopped while saving them. The game now keeps a backup copy.
+
+**Area control (multisector)**
+- AUTO: Arrivals faster than 250 knots are now also slowed to 250 knots before they are handed to approach.
+- AUTO: The lowest aircraft in a holding stack leaves at its expected approach time, whatever its level.
+- AUTO: An aircraft joining a holding stack is taken down to 1000 ft above the one below it, also while that one is still on its way in.
+- Fixed: a COSYS Inbound Procedure direct was accepted but not flown.
+
+**Approach**
+- Multisector: each arrival position at Amsterdam works its own runways. ARR 1 works 18R, 06 and 36C. ARR 2 works 18C and 36R, and 27 and 22 when neither 18C nor 36R is landing. Otherwise 27 and 22 go to ARR 1.
+- Multisector: when 27 and 22 both land, they are always on the same arrival position. The New Game screen shows the same split.
+- Aircraft fly by an IAF like any other route point again, turning before it.
+- AUTO: Approach counts an arrival as past its IAF only once it is abeam it, no longer up to 2 NM before it.
+
+**Traffic**
+- Runway 22 can now be combined with 18R, 18C and 36C.
+- INBOUND and OUTBOUND FLOW OVERLOAD: ADD RWY now lists every runway you may pick, checked like a runway change (class and wind). The AUTO still only adds published combinations.
+- A departure's protection against a fix away from its SID now ends once it is abeam that fix.
+- Fixed: since v0.46.7, departures could line up without a COSYS Departure Release being asked.
+
+**Radar and screens**
+- COSYS Request Sector looks like the other coordinations: GENERAL in green and ACCEPTED on both screens.
+- NEIGHBOURS' LABELS: only aircraft going to that position next are shown full size.
+
+**Multiplayer**
+- Fixed: when a position changed hands, your transfer and REL marks stayed on its aircraft.
+
+---
+
 ## v0.46.7 Area control speeds, holding, departure timing and military areas
 
 Area control now sequences arrivals by speed, holds only the aircraft that need it and uses the other runway when that saves delay; departures are timed by their routes.
